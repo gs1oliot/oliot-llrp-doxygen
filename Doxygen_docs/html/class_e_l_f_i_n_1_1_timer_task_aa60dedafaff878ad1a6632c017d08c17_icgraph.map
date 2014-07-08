@@ -1,0 +1,10 @@
+<map id="ELFIN::TimerTask::cancel" name="ELFIN::TimerTask::cancel">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_reader_operation.html#a71a40f124e322dd5179079797c70bdf7" title="Static method to stop and delete given ReaderOperation. " alt="" coords="256,23,421,70"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_timer_task.html#a6c9a10f40780e8471379d3a3233fbf25" title="Destructor of TimerTask class. " alt="" coords="269,93,408,139"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_timer_task.html#ad63f85de09b990fffc4a6336446f8bf0" title="Initialize the TimerTask. " alt="" coords="231,163,447,192"/>
+<area shape="rect" id="node17" href="$class_e_l_f_i_n_1_1_timer_task.html#a404331c2599213942cd9deff62cc2e35" title="ELFIN::TimerTask::decrease\lCount" alt="" coords="244,215,433,262"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_r_o_admin.html#adbc39593d539c82db724d351cf042fd4" title="Enable the ROSpec. If the given ROSpec ID is 0, enable all ROSpec. " alt="" coords="497,5,719,35"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_r_o_admin.html#ad1ca9b5f64c9378eb483c69633744bca" title="Disable the ROSpec. If the given ROSpec ID is 0, disable all ROSpec. " alt="" coords="496,59,720,88"/>
+<area shape="rect" id="node13" href="$class_e_l_f_i_n_1_1_scheduler.html#a15ccc0fd833cb9e4bed78b263d43063e" title="When the scheduled TimerTask starts, this method is called to decide whether to re&#45;enable the TimerTa..." alt="" coords="541,185,675,231"/>
+<area shape="rect" id="node15" href="$class_e_l_f_i_n_1_1_scheduler.html#a22971289baf155b0714f2951fc4da1ad" title="Schedule the given TimerTask with given options. " alt="" coords="768,193,955,223"/>
+</map>

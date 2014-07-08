@@ -1,0 +1,15 @@
+<map id="ELFIN::ReaderOperation" name="ELFIN::ReaderOperation">
+<area shape="rect" id="node2" href="$class_e_l_f_i_n_1_1_timer_task.html" title="Interface for operations with time&#45;related boundary specs. For example, ReaderOperation extends Timer..." alt="" coords="1137,155,1268,184"/>
+<area shape="rect" id="node4" href="$class_e_l_f_i_n_1_1_l_l_r_p_core.html" title="LLRP Core Operation Component. " alt="" coords="819,211,947,240"/>
+<area shape="rect" id="node6" href="$class_e_l_f_i_n_1_1_event_notifier.html" title="Create and send ReaderEventNotifications to the FnC server. " alt="" coords="1131,327,1275,356"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_a_o_admin.html" title="AOAdmin(Access Operation Admin) class manages states of AccessSpecs. " alt="" coords="1141,101,1264,131"/>
+<area shape="rect" id="node16" href="$class_e_l_f_i_n_1_1_r_o_admin.html" title="ROAdmin(Reader Operation Admin) class manages states and operations of ROSpecs and schedules them..." alt="" coords="1140,403,1265,432"/>
+<area shape="rect" id="node21" href="$class_e_l_f_i_n_1_1_stub_reader.html" title="Abstraction for physical RFID reader. " alt="" coords="1135,36,1271,65"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_l_l_r_p_reader_config.html" title="Stores default configurations which can be defined with SET_READER_CONFIG message. Also, it parses the contents of default config file (config.llrp) and stores it as a default configuration. " alt="" coords="469,388,651,417"/>
+<area shape="rect" id="node14" href="$class_e_l_f_i_n_1_1_program_options.html" title="Parse the configuration file and store it. " alt="" coords="479,91,641,120"/>
+<area shape="rect" id="node18" href="$class_e_l_f_i_n_1_1_g_p_i_event_listener.html" title="Interface for handling the signal from the GPI port of LLRP Reader. " alt="" coords="797,461,968,491"/>
+<area shape="rect" id="node25" href="$class_e_l_f_i_n_1_1_stub_reader_app.html" title="Reader application which starts and controls LLRP Wrapper. LLRP Wrapper calls callbacks of this objec..." alt="" coords="1404,28,1564,57"/>
+<area shape="rect" id="node29" href="$class_e_l_f_i_n_1_1_c_connection_fn_c_mgr.html" title="Inherits CConnection class. It has additional methods for Reader role. " alt="" coords="465,211,655,240"/>
+<area shape="rect" id="node31" href="$class_e_l_f_i_n_1_1_c_connection_fn_c.html" title="Inherits LLRP::CConnection class. It has additional methods for Reader role. " alt="" coords="196,211,364,240"/>
+<area shape="rect" id="node36" href="$class_e_l_f_i_n_1_1_scheduler.html" title="TimerTask is scheduled to this class. It can be scheduled for one&#45;time or repeated execution by a Tim..." alt="" coords="1140,273,1265,303"/>
+</map>

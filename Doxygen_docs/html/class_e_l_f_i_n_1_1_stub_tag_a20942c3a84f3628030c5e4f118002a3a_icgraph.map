@@ -1,0 +1,5 @@
+<map id="ELFIN::StubTag::setRandEPC" name="ELFIN::StubTag::setRandEPC">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_stub_reader_app.html#a6aa69e9301dd6e009a6c2beef51b5fae" title="Add virtual tags with randomly generated EPCID. If there is 4 antennas and parameter is 3..." alt="" coords="257,5,423,51"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_stub_reader.html#ac676e8135f5801760de486d5aa667eb9" title="Constructor of StubReader class. " alt="" coords="268,74,412,121"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_l_l_r_p_core.html#a7fd1997d7f4e08d037ea9a9f666b4371" title="LLRP message handler method. " alt="" coords="473,5,681,51"/>
+</map>

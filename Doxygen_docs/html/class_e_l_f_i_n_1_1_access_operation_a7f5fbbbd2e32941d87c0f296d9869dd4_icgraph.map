@@ -1,0 +1,4 @@
+<map id="ELFIN::AccessOperation::compareACOpSpecResult" name="ELFIN::AccessOperation::compareACOpSpecResult">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_a_i_operation.html#ac37fc39b75785f9188b02cb62988dd18" title="Add the given pRpt to the pSet. If the same EPC number exists in the vector, then overwrite it..." alt="" coords="239,5,391,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_reader_operation.html#a5fe3a421c97daf9cb398d88d79c2b0c1" title="When the start trigger of ROSpec is invoked, the scheduled ROSpec executes this. This method performs..." alt="" coords="441,5,607,51"/>
+</map>

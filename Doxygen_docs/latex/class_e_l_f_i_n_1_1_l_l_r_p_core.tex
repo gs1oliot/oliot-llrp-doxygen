@@ -1,0 +1,884 @@
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core}{\section{E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Core Class Reference}
+\label{class_e_l_f_i_n_1_1_l_l_r_p_core}\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+}
+
+
+L\-L\-R\-P Core Operation Component.  
+
+
+
+
+{\ttfamily \#include $<$L\-L\-R\-P\-Core.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Core\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ac9ab3ee0620427813694e1c9b0ad1f80}{L\-L\-R\-P\-Core} (\hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} $\ast$\-\_\-\-\_\-prog\-Opt)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ac6a776c45e59d366b39714f4d313cf30}{$\sim$\-L\-L\-R\-P\-Core} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a70f26fde25b719082c2738e816e25438}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} object by setting default values and instantiating all required objects. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_aa0a970f6209038d2e89a2957c89c4570}{clear} ()
+\begin{DoxyCompactList}\small\item\em Destroy all required objects and return to the initial state. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a96cf0d4f95c33a628b4c7ea358a9c19a}{start\-Connection} ()
+\begin{DoxyCompactList}\small\item\em Prepare connection to the Fn\-C server. Initiate connection or wait for connection, according to the {\itshape reader\-Initiated} option. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fb97667d470bfddac25da751cf8480e}{run} ()
+\begin{DoxyCompactList}\small\item\em Start L\-L\-R\-P Wrapper. Stub\-App should execute this method to run the L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ab35aa971a25103f0e288bf6cdbd198d0}{set\-Reader\-Config} (L\-L\-R\-P\-::\-C\-Message $\ast$p\-Message)
+\begin{DoxyCompactList}\small\item\em Set the configuration of L\-L\-R\-P\-Reader with S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message object. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a606a6a467e33b1727e48a283990d0383}{load\-Default\-Config\-File} ()
+\begin{DoxyCompactList}\small\item\em Load default S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message from \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} object and apply it to L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a9aebe95ba139b752ad0575c483ec6f8a}{connect\-Reader\-App} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} $\ast$\-\_\-\-\_\-p\-Stub\-App)
+\begin{DoxyCompactList}\small\item\em Connect the Stub\-Reader\-App(or the class which inherits Stub\-Reader\-App) to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_abcc0f5f2a372cffaaf1ece1c4397576e}{send\-Message} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-\-\_\-p\-Message)
+\begin{DoxyCompactList}\small\item\em Proxy method of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a48b283f30ddd8c2b0c2ed55e844085f8}{C\-Connection\-Fn\-C\-Mgr\-::send\-Message}. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a37541d7698fb45e69c96c5d4b864d30a}{is\-Connected} ()
+\begin{DoxyCompactList}\small\item\em Proxy method of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa27f8bb83349b52dffe670824cfa0e53}{C\-Connection\-Fn\-C\-Mgr\-::is\-Connected}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a6fe47b7e4999ced885a160f0c1094a56}{set\-Log\-Level} (enum E\-Log\-Type p\-Log\-Level)
+\begin{DoxyCompactList}\small\item\em Set the log level of L\-L\-R\-P Wrapper. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_aa2ada2320d5f806217edf532ef92e229}{\hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} $\ast$ {\bfseries m\-\_\-prog\-Opt}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_aa2ada2320d5f806217edf532ef92e229}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a9c935c84e1308e257a8ccdd727a289cc}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} $\ast$ {\bfseries m\-\_\-\-L\-L\-R\-P\-Config}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a9c935c84e1308e257a8ccdd727a289cc}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a52de6e6859165a7713c667b582e07df2}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries m\-\_\-physical\-Reader}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a52de6e6859165a7713c667b582e07df2}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a0756fd49e8a3653ee8189aa8b4d2c89c}{\hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} $\ast$ {\bfseries m\-\_\-\-R\-O\-Admin}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a0756fd49e8a3653ee8189aa8b4d2c89c}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a56439c1e6a97aeb00500b3823bad1319}{\hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} $\ast$ {\bfseries m\-\_\-\-A\-O\-Admin}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a56439c1e6a97aeb00500b3823bad1319}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ace170f33e43a439da45dc30f97f544e5}{\hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr}{C\-Connection\-Fn\-C\-Mgr} $\ast$ {\bfseries m\-\_\-conn\-Mgr}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ace170f33e43a439da45dc30f97f544e5}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ad24f08548d029d580939391dbd90c684}{\hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} $\ast$ {\bfseries m\-\_\-\-Event\-Notifier}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ad24f08548d029d580939391dbd90c684}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a2d2a95baf401ee9e616ddbe408904629}{boost\-::mutex {\bfseries m\-\_\-init\-Lock}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a2d2a95baf401ee9e616ddbe408904629}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a581f73b58235596f905942612a7c9af4}{int {\bfseries m\-\_\-shutdown}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a581f73b58235596f905942612a7c9af4}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a9c1e781c40fc52f15e43a1ba83845f94}{int {\bfseries m\-\_\-received\-Close\-Connection}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a9c1e781c40fc52f15e43a1ba83845f94}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a6cb3cd955103f01ecd6c5eb4f887287e}{int {\bfseries m\-\_\-just\-Inited}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a6cb3cd955103f01ecd6c5eb4f887287e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Result\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ab4c1fdb043b0ee56c29e8c3973ef609d}{get\-Error\-Result} ()
+\begin{DoxyCompactList}\small\item\em Create Result\-\_\-t based on the m\-\_\-\-Error\-Details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a68fc07b9a02e9d81abaf3536d3be2bb3}{handle\-Get\-Supported\-Version} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e32c1a8d11bcf11f5d8143eac90fd91}{handle\-Set\-Protocol\-Version} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a6513619f9917762db82e6b145edada6d}{handle\-Get\-Reader\-Capabilities} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ada340ab8828c0e5cbe3252b63e23282c}{handle\-Add\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a4512038068328877714c3c596e7785af}{handle\-Delete\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a4b146a62a2a78e1c73862cd3d047c947}{handle\-Start\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a3de21a966ba229befbbbf0408fe4fc8e}{handle\-Stop\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ade8bc074fb35e9c20d05dfa022bfeac2}{handle\-Enable\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e65a470f564ab1e33db0aed0845ec79}{handle\-Disable\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_add0b12e57fcac6dd50a862a48a4bf31e}{handle\-Get\-R\-O\-Specs} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a17bbb63e25368171f95c5f20055f7bc9}{handle\-Add\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a04e40f0768473c1f30a475c8fd30134d}{handle\-Delete\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_aede685c6e02f5a531d554a98f03a040e}{handle\-Enable\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_ad3cb7e5ea78aebac7519ec7f49107f43}{handle\-Disable\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a0fe9819cb4d6f4f2fe7db92bb9d4c6f7}{handle\-Get\-Access\-Specs} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a875e8917fc9f44232d1355f3d91a76e2}{handle\-Get\-Reader\-Config} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a0065a7307c4ea46db3fea2cd109bc1e1}{handle\-Set\-Reader\-Config} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fd1997d7f4e08d037ea9a9f666b4371}{handle\-Close\-Connection} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)
+\begin{DoxyCompactList}\small\item\em L\-L\-R\-P message handler method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a872a1dbe07c09d91937f3329c6bb0b8a}{L\-L\-R\-P\-::\-C\-Error\-Details {\bfseries m\-\_\-\-Error\-Details}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a872a1dbe07c09d91937f3329c6bb0b8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+L\-L\-R\-P Core Operation Component. 
+
+Definition at line 30 of file L\-L\-R\-P\-Core.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ac9ab3ee0620427813694e1c9b0ad1f80}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!L\-L\-R\-P\-Core@{L\-L\-R\-P\-Core}}
+\index{L\-L\-R\-P\-Core@{L\-L\-R\-P\-Core}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{L\-L\-R\-P\-Core}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::\-L\-L\-R\-P\-Core (
+\begin{DoxyParamCaption}
+\item[{{\bf Program\-Options} $\ast$}]{\-\_\-\-\_\-prog\-Opt}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ac9ab3ee0620427813694e1c9b0ad1f80}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} class. 
+
+
+
+Definition at line 19 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_ac9ab3ee0620427813694e1c9b0ad1f80_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ac6a776c45e59d366b39714f4d313cf30}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!$\sim$\-L\-L\-R\-P\-Core@{$\sim$\-L\-L\-R\-P\-Core}}
+\index{$\sim$\-L\-L\-R\-P\-Core@{$\sim$\-L\-L\-R\-P\-Core}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{$\sim$\-L\-L\-R\-P\-Core}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::$\sim$\-L\-L\-R\-P\-Core (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ac6a776c45e59d366b39714f4d313cf30}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} class. 
+
+
+
+Definition at line 89 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_aa0a970f6209038d2e89a2957c89c4570}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!clear@{clear}}
+\index{clear@{clear}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_aa0a970f6209038d2e89a2957c89c4570}
+
+
+Destroy all required objects and return to the initial state. 
+
+
+
+Definition at line 60 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a9aebe95ba139b752ad0575c483ec6f8a}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!connect\-Reader\-App@{connect\-Reader\-App}}
+\index{connect\-Reader\-App@{connect\-Reader\-App}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{connect\-Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::connect\-Reader\-App (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader\-App} $\ast$}]{\-\_\-\-\_\-p\-Stub\-App}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a9aebe95ba139b752ad0575c483ec6f8a}
+
+
+Connect the Stub\-Reader\-App(or the class which inherits Stub\-Reader\-App) to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. 
+
+
+
+Definition at line 1208 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ab4c1fdb043b0ee56c29e8c3973ef609d}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!get\-Error\-Result@{get\-Error\-Result}}
+\index{get\-Error\-Result@{get\-Error\-Result}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{get\-Error\-Result}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Result\-\_\-t E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::get\-Error\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ab4c1fdb043b0ee56c29e8c3973ef609d}
+
+
+Create Result\-\_\-t based on the m\-\_\-\-Error\-Details. 
+
+
+
+Definition at line 1246 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_ab4c1fdb043b0ee56c29e8c3973ef609d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a17bbb63e25368171f95c5f20055f7bc9}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Add\-Access\-Spec@{handle\-Add\-Access\-Spec}}
+\index{handle\-Add\-Access\-Spec@{handle\-Add\-Access\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Add\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Add\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a17bbb63e25368171f95c5f20055f7bc9}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 632 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a17bbb63e25368171f95c5f20055f7bc9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ada340ab8828c0e5cbe3252b63e23282c}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Add\-R\-O\-Spec@{handle\-Add\-R\-O\-Spec}}
+\index{handle\-Add\-R\-O\-Spec@{handle\-Add\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Add\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Add\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ada340ab8828c0e5cbe3252b63e23282c}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 444 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_ada340ab8828c0e5cbe3252b63e23282c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fd1997d7f4e08d037ea9a9f666b4371}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Close\-Connection@{handle\-Close\-Connection}}
+\index{handle\-Close\-Connection@{handle\-Close\-Connection}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Close\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Close\-Connection (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fd1997d7f4e08d037ea9a9f666b4371}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 1151 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fd1997d7f4e08d037ea9a9f666b4371_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a04e40f0768473c1f30a475c8fd30134d}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Delete\-Access\-Spec@{handle\-Delete\-Access\-Spec}}
+\index{handle\-Delete\-Access\-Spec@{handle\-Delete\-Access\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Delete\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Delete\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a04e40f0768473c1f30a475c8fd30134d}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 661 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a04e40f0768473c1f30a475c8fd30134d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a4512038068328877714c3c596e7785af}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Delete\-R\-O\-Spec@{handle\-Delete\-R\-O\-Spec}}
+\index{handle\-Delete\-R\-O\-Spec@{handle\-Delete\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Delete\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Delete\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a4512038068328877714c3c596e7785af}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 472 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a4512038068328877714c3c596e7785af_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ad3cb7e5ea78aebac7519ec7f49107f43}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Disable\-Access\-Spec@{handle\-Disable\-Access\-Spec}}
+\index{handle\-Disable\-Access\-Spec@{handle\-Disable\-Access\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Disable\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Disable\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ad3cb7e5ea78aebac7519ec7f49107f43}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 715 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_ad3cb7e5ea78aebac7519ec7f49107f43_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e65a470f564ab1e33db0aed0845ec79}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Disable\-R\-O\-Spec@{handle\-Disable\-R\-O\-Spec}}
+\index{handle\-Disable\-R\-O\-Spec@{handle\-Disable\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Disable\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Disable\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e65a470f564ab1e33db0aed0845ec79}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 575 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e65a470f564ab1e33db0aed0845ec79_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_aede685c6e02f5a531d554a98f03a040e}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Enable\-Access\-Spec@{handle\-Enable\-Access\-Spec}}
+\index{handle\-Enable\-Access\-Spec@{handle\-Enable\-Access\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Enable\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Enable\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_aede685c6e02f5a531d554a98f03a040e}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 688 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_aede685c6e02f5a531d554a98f03a040e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ade8bc074fb35e9c20d05dfa022bfeac2}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Enable\-R\-O\-Spec@{handle\-Enable\-R\-O\-Spec}}
+\index{handle\-Enable\-R\-O\-Spec@{handle\-Enable\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Enable\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Enable\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ade8bc074fb35e9c20d05dfa022bfeac2}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 550 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_ade8bc074fb35e9c20d05dfa022bfeac2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a0fe9819cb4d6f4f2fe7db92bb9d4c6f7}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Get\-Access\-Specs@{handle\-Get\-Access\-Specs}}
+\index{handle\-Get\-Access\-Specs@{handle\-Get\-Access\-Specs}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Get\-Access\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Get\-Access\-Specs (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a0fe9819cb4d6f4f2fe7db92bb9d4c6f7}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 742 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a6513619f9917762db82e6b145edada6d}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Get\-Reader\-Capabilities@{handle\-Get\-Reader\-Capabilities}}
+\index{handle\-Get\-Reader\-Capabilities@{handle\-Get\-Reader\-Capabilities}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Get\-Reader\-Capabilities}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Get\-Reader\-Capabilities (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a6513619f9917762db82e6b145edada6d}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 341 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a6513619f9917762db82e6b145edada6d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a875e8917fc9f44232d1355f3d91a76e2}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Get\-Reader\-Config@{handle\-Get\-Reader\-Config}}
+\index{handle\-Get\-Reader\-Config@{handle\-Get\-Reader\-Config}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Get\-Reader\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Get\-Reader\-Config (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a875e8917fc9f44232d1355f3d91a76e2}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 773 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a875e8917fc9f44232d1355f3d91a76e2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_add0b12e57fcac6dd50a862a48a4bf31e}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Get\-R\-O\-Specs@{handle\-Get\-R\-O\-Specs}}
+\index{handle\-Get\-R\-O\-Specs@{handle\-Get\-R\-O\-Specs}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Get\-R\-O\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Get\-R\-O\-Specs (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_add0b12e57fcac6dd50a862a48a4bf31e}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 601 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a68fc07b9a02e9d81abaf3536d3be2bb3}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Get\-Supported\-Version@{handle\-Get\-Supported\-Version}}
+\index{handle\-Get\-Supported\-Version@{handle\-Get\-Supported\-Version}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Get\-Supported\-Version}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Get\-Supported\-Version (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a68fc07b9a02e9d81abaf3536d3be2bb3}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 290 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e32c1a8d11bcf11f5d8143eac90fd91}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Set\-Protocol\-Version@{handle\-Set\-Protocol\-Version}}
+\index{handle\-Set\-Protocol\-Version@{handle\-Set\-Protocol\-Version}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Set\-Protocol\-Version}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Set\-Protocol\-Version (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e32c1a8d11bcf11f5d8143eac90fd91}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000012}{Todo}]L\-L\-R\-P 1.\-0.\-1 is currently not supported. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000013}{Todo}]If this message comes with same protocol version twice, then L\-L\-R\-P Wrapper should response with M\-\_\-\-Unexpected\-Message. \end{DoxyRefDesc}
+
+
+Definition at line 311 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e32c1a8d11bcf11f5d8143eac90fd91_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a0065a7307c4ea46db3fea2cd109bc1e1}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Set\-Reader\-Config@{handle\-Set\-Reader\-Config}}
+\index{handle\-Set\-Reader\-Config@{handle\-Set\-Reader\-Config}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Set\-Reader\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Set\-Reader\-Config (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a0065a7307c4ea46db3fea2cd109bc1e1}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000014}{Todo}]Handle no such G\-P\-O\-Port failure \end{DoxyRefDesc}
+
+
+Definition at line 966 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a0065a7307c4ea46db3fea2cd109bc1e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a4b146a62a2a78e1c73862cd3d047c947}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Start\-R\-O\-Spec@{handle\-Start\-R\-O\-Spec}}
+\index{handle\-Start\-R\-O\-Spec@{handle\-Start\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Start\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Start\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a4b146a62a2a78e1c73862cd3d047c947}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 498 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a4b146a62a2a78e1c73862cd3d047c947_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a3de21a966ba229befbbbf0408fe4fc8e}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!handle\-Stop\-R\-O\-Spec@{handle\-Stop\-R\-O\-Spec}}
+\index{handle\-Stop\-R\-O\-Spec@{handle\-Stop\-R\-O\-Spec}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{handle\-Stop\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::handle\-Stop\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-p\-Cmd, }
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$}]{\-\_\-p\-Rsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a3de21a966ba229befbbbf0408fe4fc8e}
+
+
+L\-L\-R\-P message handler method. 
+
+
+
+Definition at line 524 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a3de21a966ba229befbbbf0408fe4fc8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a70f26fde25b719082c2738e816e25438}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!init@{init}}
+\index{init@{init}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a70f26fde25b719082c2738e816e25438}
+
+
+Initialize \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} object by setting default values and instantiating all required objects. 
+
+
+
+Definition at line 29 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a37541d7698fb45e69c96c5d4b864d30a}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a37541d7698fb45e69c96c5d4b864d30a}
+
+
+Proxy method of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa27f8bb83349b52dffe670824cfa0e53}{C\-Connection\-Fn\-C\-Mgr\-::is\-Connected}. 
+
+
+
+Definition at line 1242 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a606a6a467e33b1727e48a283990d0383}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!load\-Default\-Config\-File@{load\-Default\-Config\-File}}
+\index{load\-Default\-Config\-File@{load\-Default\-Config\-File}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{load\-Default\-Config\-File}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::load\-Default\-Config\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a606a6a467e33b1727e48a283990d0383}
+
+
+Load default S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message from \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} object and apply it to L\-L\-R\-P Wrapper. 
+
+
+
+Definition at line 1234 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fb97667d470bfddac25da751cf8480e}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!run@{run}}
+\index{run@{run}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fb97667d470bfddac25da751cf8480e}
+
+
+Start L\-L\-R\-P Wrapper. Stub\-App should execute this method to run the L\-L\-R\-P Wrapper. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]close connection more elegantly. (not using prog\-Opt to get Reader\-Initiated\-Opt) \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]close connection more elegantly. (not using prog\-Opt to get Reader\-Initiated\-Opt) \end{DoxyRefDesc}
+
+
+Definition at line 109 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_abcc0f5f2a372cffaaf1ece1c4397576e}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!send\-Message@{send\-Message}}
+\index{send\-Message@{send\-Message}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::send\-Message (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{\-\_\-\-\_\-p\-Message}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_abcc0f5f2a372cffaaf1ece1c4397576e}
+
+
+Proxy method of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a48b283f30ddd8c2b0c2ed55e844085f8}{C\-Connection\-Fn\-C\-Mgr\-::send\-Message}. 
+
+
+
+Definition at line 1238 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a6fe47b7e4999ced885a160f0c1094a56}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!set\-Log\-Level@{set\-Log\-Level}}
+\index{set\-Log\-Level@{set\-Log\-Level}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{set\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::set\-Log\-Level (
+\begin{DoxyParamCaption}
+\item[{enum E\-Log\-Type}]{p\-Log\-Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a6fe47b7e4999ced885a160f0c1094a56}
+
+
+Set the log level of L\-L\-R\-P Wrapper. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Log\-Level} & Log level. (e.\-g. L\-O\-G\-T\-Y\-P\-E\-\_\-\-A\-L\-L) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Log level is as follows,\par
+A\-L\-L $>$ T\-R\-A\-C\-E $>$ D\-E\-B\-U\-G $>$ I\-N\-F\-O $>$ W\-A\-R\-N $>$ E\-R\-R\-O\-R $>$ F\-A\-T\-A\-L $>$ O\-F\-F 
+\end{DoxyRemark}
+
+
+Definition at line 1230 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a6fe47b7e4999ced885a160f0c1094a56_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_core_a6fe47b7e4999ced885a160f0c1094a56_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_ab35aa971a25103f0e288bf6cdbd198d0}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!set\-Reader\-Config@{set\-Reader\-Config}}
+\index{set\-Reader\-Config@{set\-Reader\-Config}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{set\-Reader\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::set\-Reader\-Config (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{p\-Message}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_ab35aa971a25103f0e288bf6cdbd198d0}
+
+
+Set the configuration of L\-L\-R\-P\-Reader with S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message object. 
+
+
+
+Definition at line 1217 of file L\-L\-R\-P\-Core.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_core_a96cf0d4f95c33a628b4c7ea358a9c19a}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}!start\-Connection@{start\-Connection}}
+\index{start\-Connection@{start\-Connection}!ELFIN::LLRPCore@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core}}
+\subsubsection[{start\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core\-::start\-Connection (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_core_a96cf0d4f95c33a628b4c7ea358a9c19a}
+
+
+Prepare connection to the Fn\-C server. Initiate connection or wait for connection, according to the {\itshape reader\-Initiated} option. 
+
+
+
+Definition at line 97 of file L\-L\-R\-P\-Core.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_l_l_r_p_core_8h}{L\-L\-R\-P\-Core.\-h}\item 
+elfin\-\_\-src/\hyperlink{_l_l_r_p_core_8cpp}{L\-L\-R\-P\-Core.\-cpp}\end{DoxyCompactItemize}

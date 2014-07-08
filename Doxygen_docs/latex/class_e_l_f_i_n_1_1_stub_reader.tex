@@ -1,0 +1,729 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader}{\section{E\-L\-F\-I\-N\-:\-:Stub\-Reader Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_reader}\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+}
+
+
+Abstraction for physical R\-F\-I\-D reader.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-Reader.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Stub\-Reader\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_reader_ac676e8135f5801760de486d5aa667eb9}{Stub\-Reader} (\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_reader_a23685824e94dd0ce0a619ba6357024a2}{$\sim$\-Stub\-Reader} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} class. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$ $>$ $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a3341bdca0a4281bbd10dd1af25ef575e}{get\-Current\-Tags} (int \-\_\-\-\_\-p\-Antenna\-I\-D)
+\begin{DoxyCompactList}\small\item\em With given antenna id, creates vector of tags in the antenna and returns the pointer to vector. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_afb590c28e767dd82fcdf756f3b1a22a2}{Start\-Tag\-Singulation} (int \-\_\-\-\_\-p\-Antenna\-I\-D)
+\begin{DoxyCompactList}\small\item\em Start of tag singulation. Perform \hyperlink{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643}{tag\-Read()} and return the result. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a9cbe939234961937b64a33e2971885c7}{Finish\-Tag\-Singulation} ()
+\begin{DoxyCompactList}\small\item\em Finish of tag singulation. But actually, this method does nothing. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_aaced0c2169d09831e40f8a367a0f508f}{Interrupt\-Tag\-Singulation} ()
+\begin{DoxyCompactList}\small\item\em Interrupt tag singulation. If L\-L\-R\-P Wrapper is in wrapper mode, let the R\-F\-I\-D reader to stop tag read. If not, does nothing. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_af8b6c25d5038e884799e9ee91ddf0f95}{read\-Tag\-Memory\-Bank} (uint16\-\_\-t access\-Password, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, uint16\-\_\-t memory\-Bank, uint16\-\_\-t start\-Address, uint16\-\_\-t data\-Length)
+\begin{DoxyCompactList}\small\item\em Let the R\-F\-I\-D reader to read tag memory bank. After the reading is finished, result is stored in p\-Stub\-Tag. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a620404b769bdc5d0ceb83f88a79bc122}{write\-Tag\-Memory\-Bank} (uint16\-\_\-t access\-Password, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, uint16\-\_\-t memory\-Bank, uint16\-\_\-t start\-Address, L\-L\-R\-P\-::llrp\-\_\-u16v\-\_\-t data\-To\-Write)
+\begin{DoxyCompactList}\small\item\em Let the R\-F\-I\-D reader to write tag memory bank. After the writing is finished, result is stored in p\-Stub\-Tag. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643}{tag\-Read} ()
+\begin{DoxyCompactList}\small\item\em Let the R\-F\-I\-D reader to start tag read operation, and store the tags to each \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna}, in format of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a6e72ac9fba1db84e0d906f9eb0652d64}{check\-Stub\-Tag\-Is\-Addable} (int p\-Antenna\-I\-D, Memory\-Bank $\ast$p\-E\-P\-C\-Bank, int p\-R\-S\-S\-I)
+\begin{DoxyCompactList}\small\item\em Checks whether the antenna of given id exists, and whether the tag of given E\-P\-C exists in that antenna. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a74111fbef137ef6af88174a8df5c92a1}{inventory\-Tag} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Tag)
+\begin{DoxyCompactList}\small\item\em Add the given \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} to the antenna. Antenna id should be defined in the \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd}{invoke\-G\-P\-I\-Event\-Callback} (uint16\-\_\-t G\-P\-I\-Port\-Num, int state)
+\begin{DoxyCompactList}\small\item\em This callback is registered to \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App}, so \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} can send G\-P\-I event to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a1efbd7ee1156552ad521965b425026e2}{connect\-Stub\-App} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} $\ast$\-\_\-\-\_\-p\-Stub\-App)
+\begin{DoxyCompactList}\small\item\em Destroy currently connected \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App}, and connect the Stub\-Reader\-App(or the class which inherits Stub\-Reader\-App) to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a2a0e3d35aa7de42bbb3c07e6ea53c4e4}{get\-Stub\-App\-Is\-Emulator} ()
+\begin{DoxyCompactList}\small\item\em Check whether the current \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} is just stub one, or the inherited reader app which executed L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+float \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a9ebe11589f668d845e10a889d2685a25}{reader\-\_\-get\-Transmit\-Power} ()
+\begin{DoxyCompactList}\small\item\em Get the transmit power from R\-F\-I\-D reader. This should be used in wrapper mode. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a5a9a0ba4e3e351e7cbf7a83baf774ea5}{reader\-\_\-set\-Transmit\-Power} (float p\-Transmit\-Power)
+\begin{DoxyCompactList}\small\item\em Set the transmit power of R\-F\-I\-D reader. This should be used in wrapper mode. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a0f993c10f261ae61f809079f528532f9}{get\-Antenna} (int \-\_\-\-\_\-p\-Antenna\-I\-D)
+\begin{DoxyCompactList}\small\item\em Find \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} object with given antenna id and return it. If it does not exist, return N\-U\-L\-L. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_reader_ae72055f44bcecdaa54862dad3599ee89}{get\-G\-P\-I\-Port} (int \-\_\-\-\_\-p\-G\-P\-I\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Find \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} object with given G\-P\-I port number and return it. If it does not exist, return N\-U\-L\-L. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_reader_ac952c20d5247d1bb7d28b9b73bed0c40}{get\-G\-P\-O\-Port} (int \-\_\-\-\_\-p\-G\-P\-O\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Find \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} object with given G\-P\-O port number and return it. If it does not exist, return N\-U\-L\-L. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_af3f8a80801464546ed08640145b3d743}{void {\bfseries tag\-Data\-Callback} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Tag)}\label{class_e_l_f_i_n_1_1_stub_reader_af3f8a80801464546ed08640145b3d743}
+
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+Antenna\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a32893abad1cceff7cac16b5a70f33c76}{begin\-Antenna\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+G\-P\-I\-Port\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_abbac628834cf80d822b0438c8c6c59cd}{begin\-G\-P\-I\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+G\-P\-O\-Port\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a4c4728e39811cce09cb14238d6c40f62}{begin\-G\-P\-O\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+Antenna\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_aec9a2db3d0e94a941a63177e6b11df33}{end\-Antenna\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+G\-P\-I\-Port\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a2eafaf5236101ae79460217248e431f8}{end\-G\-P\-I\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+G\-P\-O\-Port\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a625a538fc3b61f6218d98544a4da8902}{end\-G\-P\-O\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_af689c9f11d4aa3e74cbf242ed0fa1c02}{count\-Antenna\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a10dbe74ea4b6c65c8985360919701b73}{count\-G\-P\-I\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a8c3f4692a15a37c6476480b851b722bc}{count\-G\-P\-O\-Port\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a3d1676ba2f17b83ed704fa560dce0c44}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$ {\bfseries m\-\_\-\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_stub_reader_a3d1676ba2f17b83ed704fa560dce0c44}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a2216ca77bb33207c7abcb381607a52d1}{\hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} $\ast$ {\bfseries m\-\_\-\-Prog\-Opt}}\label{class_e_l_f_i_n_1_1_stub_reader_a2216ca77bb33207c7abcb381607a52d1}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ab9e6aaecc610596dd055c77872370009}{Antenna\-Map {\bfseries m\-\_\-\-Antenna\-Map}}\label{class_e_l_f_i_n_1_1_stub_reader_ab9e6aaecc610596dd055c77872370009}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_abc03aff8a605774540fcee6ebafc3e51}{G\-P\-I\-Port\-Map {\bfseries m\-\_\-\-G\-P\-I\-Port\-Map}}\label{class_e_l_f_i_n_1_1_stub_reader_abc03aff8a605774540fcee6ebafc3e51}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a51b4b173a9d916b4a695fc3898869f37}{G\-P\-O\-Port\-Map {\bfseries m\-\_\-\-G\-P\-O\-Port\-Map}}\label{class_e_l_f_i_n_1_1_stub_reader_a51b4b173a9d916b4a695fc3898869f37}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a324b03053a3fb7a1fa85b0c9092b6bb5}{Tag\-Vector {\bfseries m\-\_\-\-Virtual\-Tag\-Vector}}\label{class_e_l_f_i_n_1_1_stub_reader_a324b03053a3fb7a1fa85b0c9092b6bb5}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a75e95cdef89ebe2f98412e0a83957431}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} $\ast$ {\bfseries m\-\_\-\-Stub\-App}}\label{class_e_l_f_i_n_1_1_stub_reader_a75e95cdef89ebe2f98412e0a83957431}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a573f179172517b449c7c711e373b5bae}{boost\-::recursive\-\_\-mutex {\bfseries m\-\_\-\-Stub\-Reader\-Lock}}\label{class_e_l_f_i_n_1_1_stub_reader_a573f179172517b449c7c711e373b5bae}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a801ba17e9e117975333a51fd6a31d313}{L\-L\-R\-P\-::llrp\-\_\-u96\-\_\-t $\ast$ {\bfseries m\-\_\-\-Reader\-E\-P\-C}}\label{class_e_l_f_i_n_1_1_stub_reader_a801ba17e9e117975333a51fd6a31d313}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ab0e33872a4103cb2f9f0f229a4191ba5}{int {\bfseries m\-\_\-\-Number\-Of\-Stub\-Tags\-Per\-Antenna}}\label{class_e_l_f_i_n_1_1_stub_reader_ab0e33872a4103cb2f9f0f229a4191ba5}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a99db9b5747bab3db0a80c150bdb992f9}{int {\bfseries m\-\_\-\-Read\-Cycle}}\label{class_e_l_f_i_n_1_1_stub_reader_a99db9b5747bab3db0a80c150bdb992f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a3b29567f2afe8f9883d0388d9a3a154c}{int {\bfseries clear\-Antenna\-Map} ()}\label{class_e_l_f_i_n_1_1_stub_reader_a3b29567f2afe8f9883d0388d9a3a154c}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_adf5778c462c27ad1455d135011ca393a}{int {\bfseries clear\-G\-P\-I\-Port\-Map} ()}\label{class_e_l_f_i_n_1_1_stub_reader_adf5778c462c27ad1455d135011ca393a}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ac3266aef0e06544eb058fe10f86c96ec}{int {\bfseries clear\-G\-P\-O\-Port\-Map} ()}\label{class_e_l_f_i_n_1_1_stub_reader_ac3266aef0e06544eb058fe10f86c96ec}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a0df240ae07622eed5f37beeab3450b9b}{int {\bfseries add\-Antenna} (\hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} $\ast$p\-Antenna)}\label{class_e_l_f_i_n_1_1_stub_reader_a0df240ae07622eed5f37beeab3450b9b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a61c4cb7b35862acbbbe9ef63a12a9be4}{int {\bfseries add\-G\-P\-I\-Port} (\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} $\ast$p\-G\-P\-I\-Port)}\label{class_e_l_f_i_n_1_1_stub_reader_a61c4cb7b35862acbbbe9ef63a12a9be4}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a663a755e21651fe73c5a0247e74ee13a}{int {\bfseries add\-G\-P\-O\-Port} (\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} $\ast$p\-G\-P\-O\-Port)}\label{class_e_l_f_i_n_1_1_stub_reader_a663a755e21651fe73c5a0247e74ee13a}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a0d4329a9ba17d36de2e38ce55644f830}{int {\bfseries remove\-Antenna} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t p\-Antenna\-I\-D)}\label{class_e_l_f_i_n_1_1_stub_reader_a0d4329a9ba17d36de2e38ce55644f830}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a94d6de20c751367c293151be7ff34cad}{int {\bfseries remove\-G\-P\-I\-Port} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t G\-P\-I\-Port\-Num)}\label{class_e_l_f_i_n_1_1_stub_reader_a94d6de20c751367c293151be7ff34cad}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_afc36ba4fb32203f8acaab48791bddd38}{int {\bfseries remove\-G\-P\-O\-Port} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t G\-P\-O\-Port\-Num)}\label{class_e_l_f_i_n_1_1_stub_reader_afc36ba4fb32203f8acaab48791bddd38}
+
+\item 
+unsigned char \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a95798bb4822e7c61e2c0c4db15fa2724}{hatoi} (unsigned char a)
+\begin{DoxyCompactList}\small\item\em Method for converting single H\-E\-X char to integer. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::llrp\-\_\-u8\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a5502d673685eba14b0f0cac8e0aa477c}{ha2i\-\_\-str} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Method for converting single byte H\-E\-X string to integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstraction for physical R\-F\-I\-D reader. 
+
+\begin{DoxyRemark}{Remarks}
+The \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} is designed to run on single thread. So every methods that utilize \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} object should gain lock of \-\_\-p\-Reader\-Lock. 
+\end{DoxyRemark}
+
+
+Definition at line 36 of file Stub\-Reader.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ac676e8135f5801760de486d5aa667eb9}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!Stub\-Reader@{Stub\-Reader}}
+\index{Stub\-Reader@{Stub\-Reader}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{Stub\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Reader\-::\-Stub\-Reader (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-p\-L\-L\-R\-P\-Core}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_ac676e8135f5801760de486d5aa667eb9}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} class. 
+
+
+
+Definition at line 16 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_e_l_f_i_n_1_1_stub_reader_ac676e8135f5801760de486d5aa667eb9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a23685824e94dd0ce0a619ba6357024a2}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!$\sim$\-Stub\-Reader@{$\sim$\-Stub\-Reader}}
+\index{$\sim$\-Stub\-Reader@{$\sim$\-Stub\-Reader}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{$\sim$\-Stub\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Reader\-::$\sim$\-Stub\-Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a23685824e94dd0ce0a619ba6357024a2}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} class. 
+
+
+
+Definition at line 104 of file Stub\-Reader.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a32893abad1cceff7cac16b5a70f33c76}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!begin\-Antenna\-Map@{begin\-Antenna\-Map}}
+\index{begin\-Antenna\-Map@{begin\-Antenna\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{begin\-Antenna\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Antenna\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::begin\-Antenna\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a32893abad1cceff7cac16b5a70f33c76}
+
+
+Iterator access method. 
+
+
+
+Definition at line 452 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_abbac628834cf80d822b0438c8c6c59cd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!begin\-G\-P\-I\-Port\-Map@{begin\-G\-P\-I\-Port\-Map}}
+\index{begin\-G\-P\-I\-Port\-Map@{begin\-G\-P\-I\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{begin\-G\-P\-I\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-I\-Port\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::begin\-G\-P\-I\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_abbac628834cf80d822b0438c8c6c59cd}
+
+
+Iterator access method. 
+
+
+
+Definition at line 456 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a4c4728e39811cce09cb14238d6c40f62}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!begin\-G\-P\-O\-Port\-Map@{begin\-G\-P\-O\-Port\-Map}}
+\index{begin\-G\-P\-O\-Port\-Map@{begin\-G\-P\-O\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{begin\-G\-P\-O\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-O\-Port\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::begin\-G\-P\-O\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a4c4728e39811cce09cb14238d6c40f62}
+
+
+Iterator access method. 
+
+
+
+Definition at line 460 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a6e72ac9fba1db84e0d906f9eb0652d64}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!check\-Stub\-Tag\-Is\-Addable@{check\-Stub\-Tag\-Is\-Addable}}
+\index{check\-Stub\-Tag\-Is\-Addable@{check\-Stub\-Tag\-Is\-Addable}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{check\-Stub\-Tag\-Is\-Addable}]{\setlength{\rightskip}{0pt plus 5cm}bool E\-L\-F\-I\-N\-::\-Stub\-Reader\-::check\-Stub\-Tag\-Is\-Addable (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-Antenna\-I\-D, }
+\item[{Memory\-Bank $\ast$}]{p\-E\-P\-C\-Bank, }
+\item[{int}]{p\-R\-S\-S\-I}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a6e72ac9fba1db84e0d906f9eb0652d64}
+
+
+Checks whether the antenna of given id exists, and whether the tag of given E\-P\-C exists in that antenna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Antenna\-I\-D} & Antenna id to check \\
+\hline
+{\em p\-E\-P\-C\-Bank} & E\-P\-C bank of the tag to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the matching tag exists, this method updates the tag with current information using \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{Stub\-Antenna\-::update\-Existing\-Stub\-Tag()} 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+If the antenna exists and the tag does not exists, returns T\-R\-U\-E. Otherwise, returns F\-A\-L\-S\-E. 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a1efbd7ee1156552ad521965b425026e2}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!connect\-Stub\-App@{connect\-Stub\-App}}
+\index{connect\-Stub\-App@{connect\-Stub\-App}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{connect\-Stub\-App}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::connect\-Stub\-App (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader\-App} $\ast$}]{\-\_\-\-\_\-p\-Stub\-App}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a1efbd7ee1156552ad521965b425026e2}
+
+
+Destroy currently connected \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App}, and connect the Stub\-Reader\-App(or the class which inherits Stub\-Reader\-App) to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. 
+
+
+
+Definition at line 488 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_af689c9f11d4aa3e74cbf242ed0fa1c02}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!count\-Antenna\-Map@{count\-Antenna\-Map}}
+\index{count\-Antenna\-Map@{count\-Antenna\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{count\-Antenna\-Map}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::count\-Antenna\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_af689c9f11d4aa3e74cbf242ed0fa1c02}
+
+
+Iterator access method. 
+
+
+
+Definition at line 476 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a10dbe74ea4b6c65c8985360919701b73}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!count\-G\-P\-I\-Port\-Map@{count\-G\-P\-I\-Port\-Map}}
+\index{count\-G\-P\-I\-Port\-Map@{count\-G\-P\-I\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{count\-G\-P\-I\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::count\-G\-P\-I\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a10dbe74ea4b6c65c8985360919701b73}
+
+
+Iterator access method. 
+
+
+
+Definition at line 480 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a8c3f4692a15a37c6476480b851b722bc}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!count\-G\-P\-O\-Port\-Map@{count\-G\-P\-O\-Port\-Map}}
+\index{count\-G\-P\-O\-Port\-Map@{count\-G\-P\-O\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{count\-G\-P\-O\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::count\-G\-P\-O\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a8c3f4692a15a37c6476480b851b722bc}
+
+
+Iterator access method. 
+
+
+
+Definition at line 484 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_aec9a2db3d0e94a941a63177e6b11df33}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!end\-Antenna\-Map@{end\-Antenna\-Map}}
+\index{end\-Antenna\-Map@{end\-Antenna\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{end\-Antenna\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Antenna\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::end\-Antenna\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_aec9a2db3d0e94a941a63177e6b11df33}
+
+
+Iterator access method. 
+
+
+
+Definition at line 464 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a2eafaf5236101ae79460217248e431f8}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!end\-G\-P\-I\-Port\-Map@{end\-G\-P\-I\-Port\-Map}}
+\index{end\-G\-P\-I\-Port\-Map@{end\-G\-P\-I\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{end\-G\-P\-I\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-I\-Port\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::end\-G\-P\-I\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a2eafaf5236101ae79460217248e431f8}
+
+
+Iterator access method. 
+
+
+
+Definition at line 468 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a625a538fc3b61f6218d98544a4da8902}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!end\-G\-P\-O\-Port\-Map@{end\-G\-P\-O\-Port\-Map}}
+\index{end\-G\-P\-O\-Port\-Map@{end\-G\-P\-O\-Port\-Map}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{end\-G\-P\-O\-Port\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-O\-Port\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Reader\-::end\-G\-P\-O\-Port\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a625a538fc3b61f6218d98544a4da8902}
+
+
+Iterator access method. 
+
+
+
+Definition at line 472 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a9cbe939234961937b64a33e2971885c7}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!Finish\-Tag\-Singulation@{Finish\-Tag\-Singulation}}
+\index{Finish\-Tag\-Singulation@{Finish\-Tag\-Singulation}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{Finish\-Tag\-Singulation}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-::\-Finish\-Tag\-Singulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a9cbe939234961937b64a33e2971885c7}
+
+
+Finish of tag singulation. But actually, this method does nothing. 
+
+
+
+Definition at line 133 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a0f993c10f261ae61f809079f528532f9}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!get\-Antenna@{get\-Antenna}}
+\index{get\-Antenna@{get\-Antenna}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{get\-Antenna}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-L\-F\-I\-N\-::\-Stub\-Antenna} $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Reader\-::get\-Antenna (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-Antenna\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a0f993c10f261ae61f809079f528532f9}
+
+
+Find \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} object with given antenna id and return it. If it does not exist, return N\-U\-L\-L. 
+
+
+
+Definition at line 177 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a3341bdca0a4281bbd10dd1af25ef575e}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!get\-Current\-Tags@{get\-Current\-Tags}}
+\index{get\-Current\-Tags@{get\-Current\-Tags}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{get\-Current\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Reader\-::get\-Current\-Tags (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-Antenna\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a3341bdca0a4281bbd10dd1af25ef575e}
+
+
+With given antenna id, creates vector of tags in the antenna and returns the pointer to vector. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to vector of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} for the given antenna I\-D. If antenna I\-D is 0, return all tags in all antennas. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+You should delete the returned vector to avoid memory leakage. 
+\end{DoxyWarning}
+
+
+Definition at line 151 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_e_l_f_i_n_1_1_stub_reader_a3341bdca0a4281bbd10dd1af25ef575e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ae72055f44bcecdaa54862dad3599ee89}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!get\-G\-P\-I\-Port@{get\-G\-P\-I\-Port}}
+\index{get\-G\-P\-I\-Port@{get\-G\-P\-I\-Port}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{get\-G\-P\-I\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port} $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Reader\-::get\-G\-P\-I\-Port (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-G\-P\-I\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_ae72055f44bcecdaa54862dad3599ee89}
+
+
+Find \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} object with given G\-P\-I port number and return it. If it does not exist, return N\-U\-L\-L. 
+
+
+
+Definition at line 186 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ac952c20d5247d1bb7d28b9b73bed0c40}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!get\-G\-P\-O\-Port@{get\-G\-P\-O\-Port}}
+\index{get\-G\-P\-O\-Port@{get\-G\-P\-O\-Port}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{get\-G\-P\-O\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port} $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Reader\-::get\-G\-P\-O\-Port (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-G\-P\-O\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_ac952c20d5247d1bb7d28b9b73bed0c40}
+
+
+Find \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} object with given G\-P\-O port number and return it. If it does not exist, return N\-U\-L\-L. 
+
+
+
+Definition at line 195 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a2a0e3d35aa7de42bbb3c07e6ea53c4e4}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!get\-Stub\-App\-Is\-Emulator@{get\-Stub\-App\-Is\-Emulator}}
+\index{get\-Stub\-App\-Is\-Emulator@{get\-Stub\-App\-Is\-Emulator}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{get\-Stub\-App\-Is\-Emulator}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::get\-Stub\-App\-Is\-Emulator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a2a0e3d35aa7de42bbb3c07e6ea53c4e4}
+
+
+Check whether the current \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} is just stub one, or the inherited reader app which executed L\-L\-R\-P Wrapper. 
+
+
+
+Definition at line 500 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a5502d673685eba14b0f0cac8e0aa477c}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!ha2i\-\_\-str@{ha2i\-\_\-str}}
+\index{ha2i\-\_\-str@{ha2i\-\_\-str}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{ha2i\-\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u8\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-Reader\-::ha2i\-\_\-str (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_reader_a5502d673685eba14b0f0cac8e0aa477c}
+
+
+Method for converting single byte H\-E\-X string to integer. 
+
+
+
+Definition at line 87 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_e_l_f_i_n_1_1_stub_reader_a5502d673685eba14b0f0cac8e0aa477c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a95798bb4822e7c61e2c0c4db15fa2724}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!hatoi@{hatoi}}
+\index{hatoi@{hatoi}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{hatoi}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char E\-L\-F\-I\-N\-::\-Stub\-Reader\-::hatoi (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_reader_a95798bb4822e7c61e2c0c4db15fa2724}
+
+
+Method for converting single H\-E\-X char to integer. 
+
+
+
+Definition at line 77 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_aaced0c2169d09831e40f8a367a0f508f}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!Interrupt\-Tag\-Singulation@{Interrupt\-Tag\-Singulation}}
+\index{Interrupt\-Tag\-Singulation@{Interrupt\-Tag\-Singulation}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{Interrupt\-Tag\-Singulation}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-::\-Interrupt\-Tag\-Singulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_aaced0c2169d09831e40f8a367a0f508f}
+
+
+Interrupt tag singulation. If L\-L\-R\-P Wrapper is in wrapper mode, let the R\-F\-I\-D reader to stop tag read. If not, does nothing. 
+
+
+
+Definition at line 138 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a74111fbef137ef6af88174a8df5c92a1}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!inventory\-Tag@{inventory\-Tag}}
+\index{inventory\-Tag@{inventory\-Tag}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{inventory\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::inventory\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Tag}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a74111fbef137ef6af88174a8df5c92a1}
+
+
+Add the given \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} to the antenna. Antenna id should be defined in the \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object. 
+
+\begin{DoxyRemark}{Remarks}
+Because there is no error checking procedure, need to use \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a6e72ac9fba1db84e0d906f9eb0652d64}{check\-Stub\-Tag\-Is\-Addable()} before using this method. 
+\end{DoxyRemark}
+
+
+Definition at line 230 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_e_l_f_i_n_1_1_stub_reader_a74111fbef137ef6af88174a8df5c92a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!invoke\-G\-P\-I\-Event\-Callback@{invoke\-G\-P\-I\-Event\-Callback}}
+\index{invoke\-G\-P\-I\-Event\-Callback@{invoke\-G\-P\-I\-Event\-Callback}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{invoke\-G\-P\-I\-Event\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::invoke\-G\-P\-I\-Event\-Callback (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{G\-P\-I\-Port\-Num, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd}
+
+
+This callback is registered to \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App}, so \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} can send G\-P\-I event to \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. 
+
+
+
+Definition at line 339 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a9ebe11589f668d845e10a889d2685a25}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!reader\-\_\-get\-Transmit\-Power@{reader\-\_\-get\-Transmit\-Power}}
+\index{reader\-\_\-get\-Transmit\-Power@{reader\-\_\-get\-Transmit\-Power}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{reader\-\_\-get\-Transmit\-Power}]{\setlength{\rightskip}{0pt plus 5cm}float E\-L\-F\-I\-N\-::\-Stub\-Reader\-::reader\-\_\-get\-Transmit\-Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a9ebe11589f668d845e10a889d2685a25}
+
+
+Get the transmit power from R\-F\-I\-D reader. This should be used in wrapper mode. 
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a5a9a0ba4e3e351e7cbf7a83baf774ea5}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!reader\-\_\-set\-Transmit\-Power@{reader\-\_\-set\-Transmit\-Power}}
+\index{reader\-\_\-set\-Transmit\-Power@{reader\-\_\-set\-Transmit\-Power}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{reader\-\_\-set\-Transmit\-Power}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::reader\-\_\-set\-Transmit\-Power (
+\begin{DoxyParamCaption}
+\item[{float}]{p\-Transmit\-Power}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a5a9a0ba4e3e351e7cbf7a83baf774ea5}
+
+
+Set the transmit power of R\-F\-I\-D reader. This should be used in wrapper mode. 
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_af8b6c25d5038e884799e9ee91ddf0f95}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!read\-Tag\-Memory\-Bank@{read\-Tag\-Memory\-Bank}}
+\index{read\-Tag\-Memory\-Bank@{read\-Tag\-Memory\-Bank}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{read\-Tag\-Memory\-Bank}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::read\-Tag\-Memory\-Bank (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{access\-Password, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{uint16\-\_\-t}]{memory\-Bank, }
+\item[{uint16\-\_\-t}]{start\-Address, }
+\item[{uint16\-\_\-t}]{data\-Length}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_af8b6c25d5038e884799e9ee91ddf0f95}
+
+
+Let the R\-F\-I\-D reader to read tag memory bank. After the reading is finished, result is stored in p\-Stub\-Tag. 
+
+
+
+Definition at line 280 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_afb590c28e767dd82fcdf756f3b1a22a2}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!Start\-Tag\-Singulation@{Start\-Tag\-Singulation}}
+\index{Start\-Tag\-Singulation@{Start\-Tag\-Singulation}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{Start\-Tag\-Singulation}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::\-Start\-Tag\-Singulation (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-Antenna\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_afb590c28e767dd82fcdf756f3b1a22a2}
+
+
+Start of tag singulation. Perform \hyperlink{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643}{tag\-Read()} and return the result. 
+
+
+
+Definition at line 124 of file Stub\-Reader.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!tag\-Read@{tag\-Read}}
+\index{tag\-Read@{tag\-Read}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{tag\-Read}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::tag\-Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643}
+
+
+Let the R\-F\-I\-D reader to start tag read operation, and store the tags to each \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna}, in format of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. 
+
+
+
+Definition at line 234 of file Stub\-Reader.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_ad2da9e11a05b0d1970fd10617fd66643_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_a620404b769bdc5d0ceb83f88a79bc122}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}!write\-Tag\-Memory\-Bank@{write\-Tag\-Memory\-Bank}}
+\index{write\-Tag\-Memory\-Bank@{write\-Tag\-Memory\-Bank}!ELFIN::StubReader@{E\-L\-F\-I\-N\-::\-Stub\-Reader}}
+\subsubsection[{write\-Tag\-Memory\-Bank}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-::write\-Tag\-Memory\-Bank (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{access\-Password, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{uint16\-\_\-t}]{memory\-Bank, }
+\item[{uint16\-\_\-t}]{start\-Address, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16v\-\_\-t}]{data\-To\-Write}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_a620404b769bdc5d0ceb83f88a79bc122}
+
+
+Let the R\-F\-I\-D reader to write tag memory bank. After the writing is finished, result is stored in p\-Stub\-Tag. 
+
+
+
+Definition at line 308 of file Stub\-Reader.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_reader_8h}{Stub\-Reader.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_reader_8cpp}{Stub\-Reader.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,311 @@
+\hypertarget{class_reader_app}{\section{Reader\-App Class Reference}
+\label{class_reader_app}\index{Reader\-App@{Reader\-App}}
+}
+
+
+Reader application example class. Developers can refer to this class to implement their own reader application.  
+
+
+
+
+{\ttfamily \#include $<$Reader\-App.\-h$>$}
+
+
+
+Inheritance diagram for Reader\-App\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_reader_app__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reader\-App\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reader_app__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reader_app_a151ab4039b8f25f5f7b27998a5f5c3e1}{Reader\-App} (\hyperlink{class_e_l_f_i_n_1_1_program_options}{E\-L\-F\-I\-N\-::\-Program\-Options} $\ast$\-\_\-\-\_\-prog\-Opt)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_reader_app}{Reader\-App} class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_reader_app_a3a4756d7a580f364dd00e7c58c9b1828}{$\sim$\-Reader\-App} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_reader_app}{Reader\-App} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_reader_app_a9c597f4245e523a0261304bb5780b492}{run} ()
+\begin{DoxyCompactList}\small\item\em Instantiate L\-L\-R\-P Wrapper and start it. And then, wait for the L\-L\-R\-P Wrapper thread finishes. \end{DoxyCompactList}\item 
+int \hyperlink{class_reader_app_aa2ff06a65b426f938a6443ed4fd822be}{stop} ()
+\begin{DoxyCompactList}\small\item\em Send stop signal to L\-L\-R\-P Wrapper and wait until it actually finishes. And then, delete L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_a9188fcc8bb91a42d0568d9f4fc72c3d3}{initializaion\-Finished\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server and ready to work. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_af303ef50ad88ff71262cc37963720715}{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback} (int p\-R\-O\-Spec\-I\-D, E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$p\-Reported\-Tag\-Vector)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the R\-O\-Spec with G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_ae90a98ed653ffa829a7dd3ddff98244b}{Inventory\-Operation\-Finished\-Callback} (int p\-R\-O\-Spec\-I\-D, E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$p\-Reported\-Tag\-Vector)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the R\-O\-Spec with non-\/\-G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_a8a2cc18b3a9e771032e763ac170957a2}{notify\-Connection\-Result\-Callback} (int conn\-Result)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_a05825232b6db23daff3ffc5e59be2043}{ready\-To\-Connect\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is initialized and ready to start connection with F\&C server. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_ac6971b9bead2c6f631fbac1c654faa1c}{connection\-Closed\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the connection to F\&C server is closed and L\-L\-R\-P Wrapper is re-\/initialized. \end{DoxyCompactList}\item 
+void \hyperlink{class_reader_app_a8ec4922b19ffc8db003380f7ee3a5fb5}{G\-P\-O\-Event\-Callback} (int port\-Num, int state)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message ordered to change G\-P\-O port value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_reader_app_a8802e67d2b33cd5256f2d79246bbd566}{\hyperlink{class_e_l_f_i_n_1_1_program_options}{E\-L\-F\-I\-N\-::\-Program\-Options} $\ast$ {\bfseries m\-\_\-\-Prog\-Opt}}\label{class_reader_app_a8802e67d2b33cd5256f2d79246bbd566}
+
+\item 
+\hypertarget{class_reader_app_aef69c77475a3cf4263138c0ba7181d01}{boost\-::thread $\ast$ {\bfseries m\-\_\-\-L\-L\-R\-P\-Reader\-Thread}}\label{class_reader_app_aef69c77475a3cf4263138c0ba7181d01}
+
+\item 
+\hypertarget{class_reader_app_a4bd19e376d76a7475db27d2876bf991f}{\hyperlink{class_e_l_f_i_n_1_1_e_l_f_i_n_reader}{E\-L\-F\-I\-N\-::\-E\-L\-F\-I\-N\-Reader} $\ast$ {\bfseries m\-\_\-\-E\-L\-F\-I\-N\-Reader}}\label{class_reader_app_a4bd19e376d76a7475db27d2876bf991f}
+
+\item 
+\hypertarget{class_reader_app_a2171d9c371a395a3416dc4467c7f1794}{int {\bfseries m\-\_\-shutdown\-Flag}}\label{class_reader_app_a2171d9c371a395a3416dc4467c7f1794}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reader application example class. Developers can refer to this class to implement their own reader application. 
+
+Definition at line 16 of file Reader\-App.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_reader_app_a151ab4039b8f25f5f7b27998a5f5c3e1}{\index{Reader\-App@{Reader\-App}!Reader\-App@{Reader\-App}}
+\index{Reader\-App@{Reader\-App}!ReaderApp@{Reader\-App}}
+\subsubsection[{Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}Reader\-App\-::\-Reader\-App (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-L\-F\-I\-N\-::\-Program\-Options} $\ast$}]{\-\_\-\-\_\-prog\-Opt}
+\end{DoxyParamCaption}
+)}}\label{class_reader_app_a151ab4039b8f25f5f7b27998a5f5c3e1}
+
+
+Constructor of \hyperlink{class_reader_app}{Reader\-App} class. 
+
+
+
+Definition at line 60 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a3a4756d7a580f364dd00e7c58c9b1828}{\index{Reader\-App@{Reader\-App}!$\sim$\-Reader\-App@{$\sim$\-Reader\-App}}
+\index{$\sim$\-Reader\-App@{$\sim$\-Reader\-App}!ReaderApp@{Reader\-App}}
+\subsubsection[{$\sim$\-Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}Reader\-App\-::$\sim$\-Reader\-App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_a3a4756d7a580f364dd00e7c58c9b1828}
+
+
+Destructor of \hyperlink{class_reader_app}{Reader\-App} class. 
+
+
+
+Definition at line 65 of file Reader\-App.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_reader_app_a3a4756d7a580f364dd00e7c58c9b1828_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_reader_app_ac6971b9bead2c6f631fbac1c654faa1c}{\index{Reader\-App@{Reader\-App}!connection\-Closed\-Callback@{connection\-Closed\-Callback}}
+\index{connection\-Closed\-Callback@{connection\-Closed\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{connection\-Closed\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::connection\-Closed\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_ac6971b9bead2c6f631fbac1c654faa1c}
+
+
+This callback is invoked when the connection to F\&C server is closed and L\-L\-R\-P Wrapper is re-\/initialized. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a772915f831ab5504f76f03cdd9eac65c}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 133 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_af303ef50ad88ff71262cc37963720715}{\index{Reader\-App@{Reader\-App}!G\-P\-I\-Triggered\-Inventory\-Finished\-Callback@{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}}
+\index{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback@{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::\-G\-P\-I\-Triggered\-Inventory\-Finished\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-R\-O\-Spec\-I\-D, }
+\item[{E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$}]{p\-Reported\-Tag\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_af303ef50ad88ff71262cc37963720715}
+
+
+This callback is invoked when the R\-O\-Spec with G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a735d892b7f4bc81d21076bea419d23cd}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 107 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a8ec4922b19ffc8db003380f7ee3a5fb5}{\index{Reader\-App@{Reader\-App}!G\-P\-O\-Event\-Callback@{G\-P\-O\-Event\-Callback}}
+\index{G\-P\-O\-Event\-Callback@{G\-P\-O\-Event\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{G\-P\-O\-Event\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::\-G\-P\-O\-Event\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{port\-Num, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_a8ec4922b19ffc8db003380f7ee3a5fb5}
+
+
+This callback is invoked when the S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message ordered to change G\-P\-O port value. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a4cf4f7c31e213da02eab0905c78dd0b1}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 139 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a9188fcc8bb91a42d0568d9f4fc72c3d3}{\index{Reader\-App@{Reader\-App}!initializaion\-Finished\-Callback@{initializaion\-Finished\-Callback}}
+\index{initializaion\-Finished\-Callback@{initializaion\-Finished\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{initializaion\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::initializaion\-Finished\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_a9188fcc8bb91a42d0568d9f4fc72c3d3}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server and ready to work. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_afb38719e5bd42ea03c4cd7d396b24f33}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 103 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_ae90a98ed653ffa829a7dd3ddff98244b}{\index{Reader\-App@{Reader\-App}!Inventory\-Operation\-Finished\-Callback@{Inventory\-Operation\-Finished\-Callback}}
+\index{Inventory\-Operation\-Finished\-Callback@{Inventory\-Operation\-Finished\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{Inventory\-Operation\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::\-Inventory\-Operation\-Finished\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-R\-O\-Spec\-I\-D, }
+\item[{E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$}]{p\-Reported\-Tag\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_ae90a98ed653ffa829a7dd3ddff98244b}
+
+
+This callback is invoked when the R\-O\-Spec with non-\/\-G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a543e972efc7806cf15338aa21a4c148a}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 115 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a8a2cc18b3a9e771032e763ac170957a2}{\index{Reader\-App@{Reader\-App}!notify\-Connection\-Result\-Callback@{notify\-Connection\-Result\-Callback}}
+\index{notify\-Connection\-Result\-Callback@{notify\-Connection\-Result\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{notify\-Connection\-Result\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::notify\-Connection\-Result\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_a8a2cc18b3a9e771032e763ac170957a2}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_ac904a86d2a2e9b2f53d5c241b67426c7}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 123 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a05825232b6db23daff3ffc5e59be2043}{\index{Reader\-App@{Reader\-App}!ready\-To\-Connect\-Callback@{ready\-To\-Connect\-Callback}}
+\index{ready\-To\-Connect\-Callback@{ready\-To\-Connect\-Callback}!ReaderApp@{Reader\-App}}
+\subsubsection[{ready\-To\-Connect\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Reader\-App\-::ready\-To\-Connect\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reader_app_a05825232b6db23daff3ffc5e59be2043}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is initialized and ready to start connection with F\&C server. 
+
+
+
+Reimplemented from \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_abb3f9fb61d1cadf87438e60271ad4bbd}{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}.
+
+
+
+Definition at line 127 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_a9c597f4245e523a0261304bb5780b492}{\index{Reader\-App@{Reader\-App}!run@{run}}
+\index{run@{run}!ReaderApp@{Reader\-App}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}int Reader\-App\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_reader_app_a9c597f4245e523a0261304bb5780b492}
+
+
+Instantiate L\-L\-R\-P Wrapper and start it. And then, wait for the L\-L\-R\-P Wrapper thread finishes. 
+
+
+
+Definition at line 73 of file Reader\-App.\-cpp.
+
+\hypertarget{class_reader_app_aa2ff06a65b426f938a6443ed4fd822be}{\index{Reader\-App@{Reader\-App}!stop@{stop}}
+\index{stop@{stop}!ReaderApp@{Reader\-App}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}int Reader\-App\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_reader_app_aa2ff06a65b426f938a6443ed4fd822be}
+
+
+Send stop signal to L\-L\-R\-P Wrapper and wait until it actually finishes. And then, delete L\-L\-R\-P Wrapper. 
+
+
+
+Definition at line 89 of file Reader\-App.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_reader_app_aa2ff06a65b426f938a6443ed4fd822be_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-app/\hyperlink{_reader_app_8h}{Reader\-App.\-h}\item 
+elfin\-\_\-app/\hyperlink{_reader_app_8cpp}{Reader\-App.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="ELFIN::ReaderOperation::stopRO" name="ELFIN::ReaderOperation::stopRO">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_reader_operation.html#a71a40f124e322dd5179079797c70bdf7" title="Static method to stop and delete given ReaderOperation. " alt="" coords="243,46,408,93"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_r_o_admin.html#ab998bfdbdd0564ca0aaf044781f58456" title="Stop the ROspec. If the given ROSpec ID is 0, it is illegal and returns error. " alt="" coords="221,116,429,145"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_r_o_admin.html#adbc39593d539c82db724d351cf042fd4" title="Enable the ROSpec. If the given ROSpec ID is 0, enable all ROSpec. " alt="" coords="479,5,700,35"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_r_o_admin.html#ad1ca9b5f64c9378eb483c69633744bca" title="Disable the ROSpec. If the given ROSpec ID is 0, disable all ROSpec. " alt="" coords="477,59,701,88"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a652f5d46a08d1889a4bd8b2db05a805d" title="Perform the operation with given port number of GPI port and its state. " alt="" coords="488,116,691,145"/>
+</map>

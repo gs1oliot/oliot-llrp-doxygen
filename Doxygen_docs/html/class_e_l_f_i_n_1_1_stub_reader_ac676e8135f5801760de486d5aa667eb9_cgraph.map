@@ -1,0 +1,14 @@
+<map id="ELFIN::StubReader::StubReader" name="ELFIN::StubReader::StubReader">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_program_options.html#ac25f97f994242da0fd2f95e36eee4dda" title="Returns the corresponding option value. " alt="" coords="220,5,383,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_stub_reader.html#a5502d673685eba14b0f0cac8e0aa477c" title="Method for converting single byte HEX string to integer. " alt="" coords="229,74,373,121"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_program_options.html#a3dcacd2989ebed87eee66765b4133b51" title="Returns the corresponding option value. " alt="" coords="220,143,383,190"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_program_options.html#adf1a0c270f3eda0ef0b589c4f765963f" title="Returns the corresponding option value. " alt="" coords="220,213,383,259"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_program_options.html#ad8d1d9804bb6c51518f6bb5359d62a8d" title="Returns the corresponding option value. " alt="" coords="220,282,383,329"/>
+<area shape="rect" id="node13" href="$class_e_l_f_i_n_1_1_program_options.html#a1cb191c3e34401d0550339ab3b62ac48" title="Returns the corresponding option value. " alt="" coords="220,351,383,398"/>
+<area shape="rect" id="node15" href="$class_e_l_f_i_n_1_1_program_options.html#ad60494ff56373efc80912162561a8fa3" title="Returns the corresponding option value. " alt="" coords="220,421,383,467"/>
+<area shape="rect" id="node17" href="$class_e_l_f_i_n_1_1_stub_tag.html#a20942c3a84f3628030c5e4f118002a3a" title="Constructor of StubTag class. EPCID is predefined randomly, with given seed. This is for virtual tags..." alt="" coords="200,491,403,520"/>
+<area shape="rect" id="node19" href="$class_e_l_f_i_n_1_1_stub_reader_app.html#a74872ae8bc6a4c826d8edc1882b7cc67" title="StubReader registers StubReader::invokeGPIEventCallback to StubReaderApp with this method..." alt="" coords="221,543,381,590"/>
+<area shape="rect" id="node21" href="$class_e_l_f_i_n_1_1_stub_reader.html#a2007cb9835b37c68409bde94ca1b27cd" title="This callback is registered to StubReaderApp, so StubReaderApp can send GPI event to StubReader..." alt="" coords="217,613,385,659"/>
+<area shape="rect" id="node23" href="$class_e_l_f_i_n_1_1_program_options.html#a8db8c8e9f0382d71fc926c42e68c9af6" title="Returns the corresponding option value. " alt="" coords="220,682,383,729"/>
+<area shape="rect" id="node25" href="$class_e_l_f_i_n_1_1_stub_reader.html#a74111fbef137ef6af88174a8df5c92a1" title="Add the given StubTag to the antenna. Antenna id should be defined in the StubTag object..." alt="" coords="229,751,373,798"/>
+</map>

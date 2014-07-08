@@ -1,0 +1,5 @@
+<map id="ELFIN::ReaderOperation::runRO" name="ELFIN::ReaderOperation::runRO">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_reader_operation.html#a2b2d664c61b9405567cd0fde3a488261" title="Creates the thread of ReaderOperation using runRO() " alt="" coords="221,13,413,43"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a6ca27b5b624ecbcc000368e7d31b8363" title="Start the ROspec. If the given ROSpec ID is 0, it is illegal and returns error. " alt="" coords="463,13,671,43"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a652f5d46a08d1889a4bd8b2db05a805d" title="Perform the operation with given port number of GPI port and its state. " alt="" coords="721,13,924,43"/>
+</map>

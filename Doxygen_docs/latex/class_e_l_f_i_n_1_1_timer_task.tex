@@ -1,0 +1,378 @@
+\hypertarget{class_e_l_f_i_n_1_1_timer_task}{\section{E\-L\-F\-I\-N\-:\-:Timer\-Task Class Reference}
+\label{class_e_l_f_i_n_1_1_timer_task}\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+}
+
+
+Interface for operations with time-\/related boundary specs. For example, \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} extends \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} to perform periodic operation.  
+
+
+
+
+{\ttfamily \#include $<$Timer\-Task.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:Timer\-Task\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_e_l_f_i_n_1_1_timer_task__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries C\-O\-U\-N\-T\-\_\-\-I\-N\-F\-I\-N\-I\-T\-Y} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em M\-A\-X age of a timer task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_timer_task_ae0139d0b04ff7b5b0d9fbeac6759a078}{Timer\-Task} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_e_l_f_i_n_1_1_timer_task_a6c9a10f40780e8471379d3a3233fbf25}{$\sim$\-Timer\-Task} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_timer_task_ad63f85de09b990fffc4a6336446f8bf0}{init\-Timer\-Task} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task}. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_timer_task_aa60dedafaff878ad1a6632c017d08c17}{cancel} ()
+\begin{DoxyCompactList}\small\item\em Immediately let this \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} wake from blocking and be stopped. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_timer_task_a404ec0115c2d3ac785f11cf2b3d421d8}{handle\-\_\-timeout} (const boost\-::system\-::error\-\_\-code \&e)=0
+\begin{DoxyCompactList}\small\item\em When the scheduled \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} starts, this method is called. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_timer_task_ae759ef0244d8588a2eefaf22f0db8ff4}{handle\-\_\-timeout\-\_\-finalize} (const boost\-::system\-::error\-\_\-code \&e)=0
+\begin{DoxyCompactList}\small\item\em Right after the final execution of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task}, this method is called. But it is not used currently. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_abed8eb97b38455e4a619706378b5bf89}{long {\bfseries scheduled\-Execution\-Time} ()}\label{class_e_l_f_i_n_1_1_timer_task_abed8eb97b38455e4a619706378b5bf89}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a3aea432608054e6831edc8f224cf076b}{bool {\bfseries is\-\_\-periodic} ()}\label{class_e_l_f_i_n_1_1_timer_task_a3aea432608054e6831edc8f224cf076b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ac8890dea124e1bc8eacd9dca2dad5ae2}{unsigned long {\bfseries get\-\_\-period} ()}\label{class_e_l_f_i_n_1_1_timer_task_ac8890dea124e1bc8eacd9dca2dad5ae2}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ac23d9073b9a8b5997f3175c958e20b0a}{unsigned long {\bfseries get\-\_\-count} ()}\label{class_e_l_f_i_n_1_1_timer_task_ac23d9073b9a8b5997f3175c958e20b0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::asio\-::deadline\-\_\-timer $\ast$ \hyperlink{class_e_l_f_i_n_1_1_timer_task_a37355e38173dbba8a3cabe26bbe797bd}{\-\_\-p\-D\-Tmr}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_timer_task_a119751683997f62a8ad228394b7476b5}{set\-\_\-active} (bool state)
+\begin{DoxyCompactList}\small\item\em private member functions. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a7240f6b7960d6f55204413261ffe8ee3}{void {\bfseries set\-\_\-period} (unsigned long p)}\label{class_e_l_f_i_n_1_1_timer_task_a7240f6b7960d6f55204413261ffe8ee3}
+
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_timer_task_a2d152a1ad35a5f5dfe4b7c05959f24ae}{set\-\_\-count} (unsigned long count)
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_timer_task_a404331c2599213942cd9deff62cc2e35}{decrease\-Count} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_e_l_f_i_n_1_1_timer_task_afe51cab64415197cd7cf98f4c95d6028}{\-\_\-periodic}
+\begin{DoxyCompactList}\small\item\em A public variable. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a96e8dc60e6ea26efcbb3eed064f2f752}{bool {\bfseries \-\_\-active}}\label{class_e_l_f_i_n_1_1_timer_task_a96e8dc60e6ea26efcbb3eed064f2f752}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_aefa52065d8a89d0e77ab85944be666e6}{int {\bfseries \-\_\-count}}\label{class_e_l_f_i_n_1_1_timer_task_aefa52065d8a89d0e77ab85944be666e6}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a8a7ea9b7dc6d61dd820745fcde56d695}{unsigned long {\bfseries \-\_\-period}}\label{class_e_l_f_i_n_1_1_timer_task_a8a7ea9b7dc6d61dd820745fcde56d695}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}{class {\bfseries Scheduler}}\label{class_e_l_f_i_n_1_1_timer_task_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for operations with time-\/related boundary specs. For example, \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} extends \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} to perform periodic operation. 
+
+Definition at line 27 of file Timer\-Task.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ad8f9f62d8fdfd1491cbbabffaea1d571}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_e_l_f_i_n_1_1_timer_task_ad8f9f62d8fdfd1491cbbabffaea1d571}
+
+
+M\-A\-X age of a timer task. 
+
+
+
+Definition at line 32 of file Timer\-Task.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ae0139d0b04ff7b5b0d9fbeac6759a078}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!Timer\-Task@{Timer\-Task}}
+\index{Timer\-Task@{Timer\-Task}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{Timer\-Task}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Timer\-Task\-::\-Timer\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_e_l_f_i_n_1_1_timer_task_ae0139d0b04ff7b5b0d9fbeac6759a078}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} class. 
+
+
+
+Definition at line 36 of file Timer\-Task.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a6c9a10f40780e8471379d3a3233fbf25}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!$\sim$\-Timer\-Task@{$\sim$\-Timer\-Task}}
+\index{$\sim$\-Timer\-Task@{$\sim$\-Timer\-Task}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{$\sim$\-Timer\-Task}]{\setlength{\rightskip}{0pt plus 5cm}virtual E\-L\-F\-I\-N\-::\-Timer\-Task\-::$\sim$\-Timer\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_timer_task_a6c9a10f40780e8471379d3a3233fbf25}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} class. 
+
+
+
+Definition at line 38 of file Timer\-Task.\-h.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a6c9a10f40780e8471379d3a3233fbf25_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_aa60dedafaff878ad1a6632c017d08c17}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!cancel@{cancel}}
+\index{cancel@{cancel}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Timer\-Task\-::cancel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_e_l_f_i_n_1_1_timer_task_aa60dedafaff878ad1a6632c017d08c17}
+
+
+Immediately let this \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} wake from blocking and be stopped. 
+
+
+
+Definition at line 56 of file Timer\-Task.\-h.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_aa60dedafaff878ad1a6632c017d08c17_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a404331c2599213942cd9deff62cc2e35}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!decrease\-Count@{decrease\-Count}}
+\index{decrease\-Count@{decrease\-Count}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{decrease\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Timer\-Task\-::decrease\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_timer_task_a404331c2599213942cd9deff62cc2e35}
+decrease age and deactivate task if age expires. 
+
+Definition at line 110 of file Timer\-Task.\-h.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a404331c2599213942cd9deff62cc2e35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a404331c2599213942cd9deff62cc2e35_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a404ec0115c2d3ac785f11cf2b3d421d8}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!handle\-\_\-timeout@{handle\-\_\-timeout}}
+\index{handle\-\_\-timeout@{handle\-\_\-timeout}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{handle\-\_\-timeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual void E\-L\-F\-I\-N\-::\-Timer\-Task\-::handle\-\_\-timeout (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_e_l_f_i_n_1_1_timer_task_a404ec0115c2d3ac785f11cf2b3d421d8}
+
+
+When the scheduled \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} starts, this method is called. 
+
+
+
+Implemented in \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1}{E\-L\-F\-I\-N\-::\-Reader\-Operation}.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a404ec0115c2d3ac785f11cf2b3d421d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ae759ef0244d8588a2eefaf22f0db8ff4}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!handle\-\_\-timeout\-\_\-finalize@{handle\-\_\-timeout\-\_\-finalize}}
+\index{handle\-\_\-timeout\-\_\-finalize@{handle\-\_\-timeout\-\_\-finalize}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{handle\-\_\-timeout\-\_\-finalize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void E\-L\-F\-I\-N\-::\-Timer\-Task\-::handle\-\_\-timeout\-\_\-finalize (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_e_l_f_i_n_1_1_timer_task_ae759ef0244d8588a2eefaf22f0db8ff4}
+
+
+Right after the final execution of \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task}, this method is called. But it is not used currently. 
+
+
+
+Implemented in \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a611b3083a92137796e04391cc6c5d9c3}{E\-L\-F\-I\-N\-::\-Reader\-Operation}.
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_ad63f85de09b990fffc4a6336446f8bf0}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!init\-Timer\-Task@{init\-Timer\-Task}}
+\index{init\-Timer\-Task@{init\-Timer\-Task}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{init\-Timer\-Task}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Timer\-Task\-::init\-Timer\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_e_l_f_i_n_1_1_timer_task_ad63f85de09b990fffc4a6336446f8bf0}
+
+
+Initialize the \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task}. 
+
+
+
+Definition at line 46 of file Timer\-Task.\-h.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_ad63f85de09b990fffc4a6336446f8bf0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_ad63f85de09b990fffc4a6336446f8bf0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a119751683997f62a8ad228394b7476b5}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!set\-\_\-active@{set\-\_\-active}}
+\index{set\-\_\-active@{set\-\_\-active}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{set\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Timer\-Task\-::set\-\_\-active (
+\begin{DoxyParamCaption}
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_timer_task_a119751683997f62a8ad228394b7476b5}
+
+
+private member functions. 
+
+
+
+Definition at line 91 of file Timer\-Task.\-h.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a119751683997f62a8ad228394b7476b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a2d152a1ad35a5f5dfe4b7c05959f24ae}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!set\-\_\-count@{set\-\_\-count}}
+\index{set\-\_\-count@{set\-\_\-count}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{set\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Timer\-Task\-::set\-\_\-count (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_timer_task_a2d152a1ad35a5f5dfe4b7c05959f24ae}
+set count to limite its lifetime 
+
+Definition at line 102 of file Timer\-Task.\-h.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_timer_task_a2d152a1ad35a5f5dfe4b7c05959f24ae_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_a37355e38173dbba8a3cabe26bbe797bd}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!\-\_\-p\-D\-Tmr@{\-\_\-p\-D\-Tmr}}
+\index{\-\_\-p\-D\-Tmr@{\-\_\-p\-D\-Tmr}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{\-\_\-p\-D\-Tmr}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::asio\-::deadline\-\_\-timer$\ast$ E\-L\-F\-I\-N\-::\-Timer\-Task\-::\-\_\-p\-D\-Tmr}}\label{class_e_l_f_i_n_1_1_timer_task_a37355e38173dbba8a3cabe26bbe797bd}
+Deadline\-\_\-timer which must exist per timer task basis. 
+
+Definition at line 135 of file Timer\-Task.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_timer_task_afe51cab64415197cd7cf98f4c95d6028}{\index{E\-L\-F\-I\-N\-::\-Timer\-Task@{E\-L\-F\-I\-N\-::\-Timer\-Task}!\-\_\-periodic@{\-\_\-periodic}}
+\index{\-\_\-periodic@{\-\_\-periodic}!ELFIN::TimerTask@{E\-L\-F\-I\-N\-::\-Timer\-Task}}
+\subsubsection[{\-\_\-periodic}]{\setlength{\rightskip}{0pt plus 5cm}bool E\-L\-F\-I\-N\-::\-Timer\-Task\-::\-\_\-periodic\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_timer_task_afe51cab64415197cd7cf98f4c95d6028}
+
+
+A public variable. 
+
+
+
+Definition at line 127 of file Timer\-Task.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_timer_task_8h}{Timer\-Task.\-h}\end{DoxyCompactItemize}

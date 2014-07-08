@@ -1,0 +1,8 @@
+<map id="ELFIN::Utils::getCurrentTimeMilliseconds" name="ELFIN::Utils::getCurrentTimeMilliseconds">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_a_i_operation.html#a13259c8516e1b5fb465e553c4c5dae01" title="Run the AIOperation according to the CAISpec. " alt="" coords="479,13,641,43"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_a_i_operation.html#a8cc8f6baacabcddac43853a5f72fa580" title="This method is used to make thread for stop trigger which is related to time. After given time..." alt="" coords="219,34,424,81"/>
+<area shape="rect" id="node10" href="$class_e_l_f_i_n_1_1_stub_antenna.html#aa42fa66b71bfa1c8224b79cded75b9d9" title="Matches the existing tag with the EPC bank contents. If exists, update the information of the tag and..." alt="" coords="239,103,404,150"/>
+<area shape="rect" id="node12" href="$class_e_l_f_i_n_1_1_stub_tag.html#a41ae74073d2499adfebf29166452fc45" title="Initialize StubTag by allocating MemoryBanks and several variables. " alt="" coords="251,173,392,203"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_reader_operation.html#a5fe3a421c97daf9cb398d88d79c2b0c1" title="When the start trigger of ROSpec is invoked, the scheduled ROSpec executes this. This method performs..." alt="" coords="697,5,863,51"/>
+<area shape="rect" id="node14" href="$class_e_l_f_i_n_1_1_stub_tag.html#a47f910ccf2c5208da7135c09c4fe381e" title="Constructor of StubTag class. EPCID is not predefined. This is for real use. " alt="" coords="473,173,647,203"/>
+</map>

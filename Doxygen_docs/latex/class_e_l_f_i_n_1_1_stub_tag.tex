@@ -1,0 +1,339 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag}{\section{E\-L\-F\-I\-N\-:\-:Stub\-Tag Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_tag}\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+}
+
+
+Abstraction for the R\-F\-I\-D Tag.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-Tag.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_tag_a47f910ccf2c5208da7135c09c4fe381e}{Stub\-Tag} (int \-\_\-\-\_\-p\-Antenna\-I\-D)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is not predefined. This is for real use. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_tag_aa7e25641d599c95809dc6d937e04b6a7}{set\-E\-P\-C} (const char $\ast$\-\_\-\-\_\-epc\-Str)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is predefined with given E\-P\-C string. This is for virtual tags. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a20942c3a84f3628030c5e4f118002a3a}{set\-Rand\-E\-P\-C} (int seed)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is predefined randomly, with given seed. This is for virtual tags. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_tag_a0ab3bd8f809c41265ca6c53046b3879c}{$\sim$\-Stub\-Tag} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a9e6e7741f743f5312ddc73b865eac346}{clone} ()
+\begin{DoxyCompactList}\small\item\em Returns clone of this \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602}{set\-Log\-E\-P\-C\-Str} ()
+\begin{DoxyCompactList}\small\item\em With the contents of E\-P\-C bank, make E\-P\-C string and store to \-\_\-log\-Epc\-Str. This string is usually used for printing log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a83854c71722dce2d2688d4b674345a0c}{int {\bfseries \-\_\-p\-Antenna\-I\-D}}\label{class_e_l_f_i_n_1_1_stub_tag_a83854c71722dce2d2688d4b674345a0c}
+
+\item 
+boost\-::unordered\-\_\-map$<$ int, \\*
+Memory\-Bank $\ast$ $>$ \hyperlink{class_e_l_f_i_n_1_1_stub_tag_aaf9799b7628bb9e7e809f4b1170e8860}{\-\_\-\-M\-B}
+\begin{DoxyCompactList}\small\item\em Memory banks of the R\-F\-I\-D tag. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{class_e_l_f_i_n_1_1_stub_tag_ad548fb36934243beeb9abd78bf798950}{\-\_\-log\-Epc\-Str} \mbox{[}25\mbox{]}
+\begin{DoxyCompactList}\small\item\em The E\-P\-C string converted by \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602}{set\-Log\-E\-P\-C\-Str()}. This is usually used for printing log. \end{DoxyCompactList}\item 
+uint64\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a64dca615c8a707c471a18603d1571827}{\-\_\-p\-First\-Seen\-Timestamp}
+\begin{DoxyCompactList}\small\item\em First seen timestamp. This is set when this \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object is firstly instantiated. \end{DoxyCompactList}\item 
+uint64\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_tag_aaacdb107e2932c933da9614fb720dd38}{\-\_\-p\-Last\-Seen\-Timestamp}
+\begin{DoxyCompactList}\small\item\em Last seen timestamp. This is updated on every round of tag singulation. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_tag_aaad01b7bf25e718764daf86a4ed36942}{\-\_\-p\-Tag\-Seen\-Count}
+\begin{DoxyCompactList}\small\item\em This variable is increased by 1 for each round of tag singulation. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a9b60ca1dc3bc6881f73f20bc98ade351}{int8\-\_\-t {\bfseries \-\_\-p\-Peak\-R\-S\-S\-I}}\label{class_e_l_f_i_n_1_1_stub_tag_a9b60ca1dc3bc6881f73f20bc98ade351}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a2db71eee957cdb37415efad564aa8c79}{int {\bfseries \-\_\-p\-Channel\-Index}}\label{class_e_l_f_i_n_1_1_stub_tag_a2db71eee957cdb37415efad564aa8c79}
+
+\item 
+bool \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a999ab50f0ec8aac7e849fdd83d47705f}{is\-Updated}
+\begin{DoxyCompactList}\small\item\em For every round of tag singulation, L\-L\-R\-P Wrapper checks whether the singulated tag exists in the \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna}.\par
+If exists, just update information and set this variable to true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a41ae74073d2499adfebf29166452fc45}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} by allocating Memory\-Banks and several variables. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_adbc7a48d38dc993b538a31b76ec8003f}{unsigned char {\bfseries hatoi} (unsigned char a)}\label{class_e_l_f_i_n_1_1_stub_tag_adbc7a48d38dc993b538a31b76ec8003f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstraction for the R\-F\-I\-D Tag. 
+
+Definition at line 24 of file Stub\-Tag.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a47f910ccf2c5208da7135c09c4fe381e}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!Stub\-Tag@{Stub\-Tag}}
+\index{Stub\-Tag@{Stub\-Tag}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{Stub\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-Stub\-Tag (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-p\-Antenna\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_a47f910ccf2c5208da7135c09c4fe381e}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is not predefined. This is for real use. 
+
+
+
+Definition at line 11 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_a47f910ccf2c5208da7135c09c4fe381e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a0ab3bd8f809c41265ca6c53046b3879c}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!$\sim$\-Stub\-Tag@{$\sim$\-Stub\-Tag}}
+\index{$\sim$\-Stub\-Tag@{$\sim$\-Stub\-Tag}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{$\sim$\-Stub\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Tag\-::$\sim$\-Stub\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_a0ab3bd8f809c41265ca6c53046b3879c}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. 
+
+
+
+Definition at line 79 of file Stub\-Tag.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a9e6e7741f743f5312ddc73b865eac346}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!clone@{clone}}
+\index{clone@{clone}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-L\-F\-I\-N\-::\-Stub\-Tag} $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Tag\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_a9e6e7741f743f5312ddc73b865eac346}
+
+
+Returns clone of this \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object. 
+
+
+
+Definition at line 90 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_a9e6e7741f743f5312ddc73b865eac346_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a41ae74073d2499adfebf29166452fc45}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!init@{init}}
+\index{init@{init}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Tag\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_tag_a41ae74073d2499adfebf29166452fc45}
+
+
+Initialize \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} by allocating Memory\-Banks and several variables. 
+
+
+
+Definition at line 130 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_stub_tag_a41ae74073d2499adfebf29166452fc45_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_a41ae74073d2499adfebf29166452fc45_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_aa7e25641d599c95809dc6d937e04b6a7}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!set\-E\-P\-C@{set\-E\-P\-C}}
+\index{set\-E\-P\-C@{set\-E\-P\-C}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{set\-E\-P\-C}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Tag\-::set\-E\-P\-C (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\-\_\-\-\_\-epc\-Str}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_aa7e25641d599c95809dc6d937e04b6a7}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is predefined with given E\-P\-C string. This is for virtual tags. 
+
+
+
+Definition at line 18 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_aa7e25641d599c95809dc6d937e04b6a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!set\-Log\-E\-P\-C\-Str@{set\-Log\-E\-P\-C\-Str}}
+\index{set\-Log\-E\-P\-C\-Str@{set\-Log\-E\-P\-C\-Str}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{set\-Log\-E\-P\-C\-Str}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Tag\-::set\-Log\-E\-P\-C\-Str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602}
+
+
+With the contents of E\-P\-C bank, make E\-P\-C string and store to \-\_\-log\-Epc\-Str. This string is usually used for printing log. 
+
+
+
+Definition at line 106 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a20942c3a84f3628030c5e4f118002a3a}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!set\-Rand\-E\-P\-C@{set\-Rand\-E\-P\-C}}
+\index{set\-Rand\-E\-P\-C@{set\-Rand\-E\-P\-C}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{set\-Rand\-E\-P\-C}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Tag\-::set\-Rand\-E\-P\-C (
+\begin{DoxyParamCaption}
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_tag_a20942c3a84f3628030c5e4f118002a3a}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} class. E\-P\-C\-I\-D is predefined randomly, with given seed. This is for virtual tags. 
+
+
+
+Definition at line 50 of file Stub\-Tag.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_tag_a20942c3a84f3628030c5e4f118002a3a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_ad548fb36934243beeb9abd78bf798950}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!\-\_\-log\-Epc\-Str@{\-\_\-log\-Epc\-Str}}
+\index{\-\_\-log\-Epc\-Str@{\-\_\-log\-Epc\-Str}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{\-\_\-log\-Epc\-Str}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-\_\-log\-Epc\-Str\mbox{[}25\mbox{]}}}\label{class_e_l_f_i_n_1_1_stub_tag_ad548fb36934243beeb9abd78bf798950}
+
+
+The E\-P\-C string converted by \hyperlink{class_e_l_f_i_n_1_1_stub_tag_a723f6fd0f93be388fc3e33e421971602}{set\-Log\-E\-P\-C\-Str()}. This is usually used for printing log. 
+
+
+
+Definition at line 44 of file Stub\-Tag.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_aaf9799b7628bb9e7e809f4b1170e8860}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!\-\_\-\-M\-B@{\-\_\-\-M\-B}}
+\index{\-\_\-\-M\-B@{\-\_\-\-M\-B}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{\-\_\-\-M\-B}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::unordered\-\_\-map$<$int, Memory\-Bank$\ast$ $>$ E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-\_\-\-M\-B}}\label{class_e_l_f_i_n_1_1_stub_tag_aaf9799b7628bb9e7e809f4b1170e8860}
+
+
+Memory banks of the R\-F\-I\-D tag. 
+
+
+
+Definition at line 42 of file Stub\-Tag.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a64dca615c8a707c471a18603d1571827}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!\-\_\-p\-First\-Seen\-Timestamp@{\-\_\-p\-First\-Seen\-Timestamp}}
+\index{\-\_\-p\-First\-Seen\-Timestamp@{\-\_\-p\-First\-Seen\-Timestamp}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{\-\_\-p\-First\-Seen\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-\_\-p\-First\-Seen\-Timestamp}}\label{class_e_l_f_i_n_1_1_stub_tag_a64dca615c8a707c471a18603d1571827}
+
+
+First seen timestamp. This is set when this \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} object is firstly instantiated. 
+
+
+
+Definition at line 46 of file Stub\-Tag.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_aaacdb107e2932c933da9614fb720dd38}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!\-\_\-p\-Last\-Seen\-Timestamp@{\-\_\-p\-Last\-Seen\-Timestamp}}
+\index{\-\_\-p\-Last\-Seen\-Timestamp@{\-\_\-p\-Last\-Seen\-Timestamp}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{\-\_\-p\-Last\-Seen\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-\_\-p\-Last\-Seen\-Timestamp}}\label{class_e_l_f_i_n_1_1_stub_tag_aaacdb107e2932c933da9614fb720dd38}
+
+
+Last seen timestamp. This is updated on every round of tag singulation. 
+
+
+
+Definition at line 48 of file Stub\-Tag.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_aaad01b7bf25e718764daf86a4ed36942}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!\-\_\-p\-Tag\-Seen\-Count@{\-\_\-p\-Tag\-Seen\-Count}}
+\index{\-\_\-p\-Tag\-Seen\-Count@{\-\_\-p\-Tag\-Seen\-Count}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{\-\_\-p\-Tag\-Seen\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Tag\-::\-\_\-p\-Tag\-Seen\-Count}}\label{class_e_l_f_i_n_1_1_stub_tag_aaad01b7bf25e718764daf86a4ed36942}
+
+
+This variable is increased by 1 for each round of tag singulation. 
+
+
+
+Definition at line 50 of file Stub\-Tag.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_tag_a999ab50f0ec8aac7e849fdd83d47705f}{\index{E\-L\-F\-I\-N\-::\-Stub\-Tag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}!is\-Updated@{is\-Updated}}
+\index{is\-Updated@{is\-Updated}!ELFIN::StubTag@{E\-L\-F\-I\-N\-::\-Stub\-Tag}}
+\subsubsection[{is\-Updated}]{\setlength{\rightskip}{0pt plus 5cm}bool E\-L\-F\-I\-N\-::\-Stub\-Tag\-::is\-Updated}}\label{class_e_l_f_i_n_1_1_stub_tag_a999ab50f0ec8aac7e849fdd83d47705f}
+
+
+For every round of tag singulation, L\-L\-R\-P Wrapper checks whether the singulated tag exists in the \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna}.\par
+If exists, just update information and set this variable to true. 
+
+
+
+Definition at line 58 of file Stub\-Tag.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_tag_8h}{Stub\-Tag.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_tag_8cpp}{Stub\-Tag.\-cpp}\end{DoxyCompactItemize}

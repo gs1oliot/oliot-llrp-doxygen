@@ -1,0 +1,4 @@
+<map id="ELFIN::ReaderOperation::deleteRO" name="ELFIN::ReaderOperation::deleteRO">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_r_o_admin.html#adbc39593d539c82db724d351cf042fd4" title="Enable the ROSpec. If the given ROSpec ID is 0, enable all ROSpec. " alt="" coords="223,5,444,35"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_r_o_admin.html#ad1ca9b5f64c9378eb483c69633744bca" title="Disable the ROSpec. If the given ROSpec ID is 0, disable all ROSpec. " alt="" coords="221,59,445,88"/>
+</map>

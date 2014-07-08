@@ -1,0 +1,341 @@
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin}{\section{E\-L\-F\-I\-N\-:\-:R\-O\-Admin Class Reference}
+\label{class_e_l_f_i_n_1_1_r_o_admin}\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+}
+
+
+R\-O\-Admin(\-Reader Operation Admin) class manages states and operations of R\-O\-Specs and schedules them.  
+
+
+
+
+{\ttfamily \#include $<$R\-O\-Admin.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:R\-O\-Admin\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_e_l_f_i_n_1_1_r_o_admin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:R\-O\-Admin\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_r_o_admin_ac0fb2f7c1644c1226196447d77cb3d83}{R\-O\-Admin} (\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-\-L\-L\-R\-P\-Core)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_r_o_admin_a550d5a80aa1489e41b1dc4fe05679f99}{$\sim$\-R\-O\-Admin} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_adbc39593d539c82db724d351cf042fd4}{enable\-R\-O\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Enable the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, enable all R\-O\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_a6ca27b5b624ecbcc000368e7d31b8363}{start\-R\-O\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Start the R\-Ospec. If the given R\-O\-Spec I\-D is 0, it is illegal and returns error. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_ab998bfdbdd0564ca0aaf044781f58456}{stop\-R\-O\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Stop the R\-Ospec. If the given R\-O\-Spec I\-D is 0, it is illegal and returns error. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_ad1ca9b5f64c9378eb483c69633744bca}{disable\-R\-O\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Disable the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, disable all R\-O\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_acb11b2392981b891099afac7be76d2d0}{add\-R\-O\-Spec} (L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$a\-Ro\-Spec)
+\begin{DoxyCompactList}\small\item\em Add the given R\-O\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_aceaacbc11a48ec74e30c0e69b2c3de18}{delete\-R\-O\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Delete the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, delete all R\-O\-Spec. \end{DoxyCompactList}\item 
+std\-::vector$<$ L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ $>$ $\ast$ \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_a7d85d578de11cde05b84f078faef08e3}{get\-R\-O\-Specs} ()
+\begin{DoxyCompactList}\small\item\em Store the pointer of all Access\-Specs to vector, and return it. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_a652f5d46a08d1889a4bd8b2db05a805d}{on\-G\-P\-I\-Event} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t G\-P\-I\-Port\-Num, enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State G\-P\-I\-Event)
+\begin{DoxyCompactList}\small\item\em Perform the operation with given port number of G\-P\-I port and its state. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_ac69a287d03feda8bcbfd356bbb926bdc}{int {\bfseries reg\-G\-P\-I\-Events} (\hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} $\ast$ro)}\label{class_e_l_f_i_n_1_1_r_o_admin_ac69a287d03feda8bcbfd356bbb926bdc}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a5ecfe45c2f982eab689e7e9e28ae889d}{int {\bfseries unreg\-G\-P\-I\-Events} (\hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} $\ast$ro)}\label{class_e_l_f_i_n_1_1_r_o_admin_a5ecfe45c2f982eab689e7e9e28ae889d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a55acaa533d684c69d09d63f42036de96}{boost\-::recursive\-\_\-mutex {\bfseries \-\_\-p\-R\-O\-Lock}}\label{class_e_l_f_i_n_1_1_r_o_admin_a55acaa533d684c69d09d63f42036de96}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a561ca8590aa2b6fb5c455f50a6e019ff}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$ {\bfseries \-\_\-\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_r_o_admin_a561ca8590aa2b6fb5c455f50a6e019ff}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a545e47eaadc651c1c3b39d3ad7c52100}{C\-R\-O\-Map {\bfseries \-\_\-\-C\-R\-O\-Map}}\label{class_e_l_f_i_n_1_1_r_o_admin_a545e47eaadc651c1c3b39d3ad7c52100}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_ad4e00e91b1a3d52196cb6e20a07d86c8}{R\-O\-Map {\bfseries \-\_\-\-R\-O\-Map}}\label{class_e_l_f_i_n_1_1_r_o_admin_ad4e00e91b1a3d52196cb6e20a07d86c8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\-O\-Admin(\-Reader Operation Admin) class manages states and operations of R\-O\-Specs and schedules them. 
+
+Definition at line 27 of file R\-O\-Admin.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_ac0fb2f7c1644c1226196447d77cb3d83}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!R\-O\-Admin@{R\-O\-Admin}}
+\index{R\-O\-Admin@{R\-O\-Admin}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{R\-O\-Admin}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::\-R\-O\-Admin (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-\-L\-L\-R\-P\-Core}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_ac0fb2f7c1644c1226196447d77cb3d83}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} class. 
+
+
+
+Definition at line 18 of file R\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a550d5a80aa1489e41b1dc4fe05679f99}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!$\sim$\-R\-O\-Admin@{$\sim$\-R\-O\-Admin}}
+\index{$\sim$\-R\-O\-Admin@{$\sim$\-R\-O\-Admin}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{$\sim$\-R\-O\-Admin}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::$\sim$\-R\-O\-Admin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_a550d5a80aa1489e41b1dc4fe05679f99}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} class. 
+
+
+
+Definition at line 23 of file R\-O\-Admin.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_acb11b2392981b891099afac7be76d2d0}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!add\-R\-O\-Spec@{add\-R\-O\-Spec}}
+\index{add\-R\-O\-Spec@{add\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{add\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::add\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$}]{a\-Ro\-Spec}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_acb11b2392981b891099afac7be76d2d0}
+
+
+Add the given R\-O\-Spec. 
+
+
+
+Definition at line 65 of file R\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_aceaacbc11a48ec74e30c0e69b2c3de18}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!delete\-R\-O\-Spec@{delete\-R\-O\-Spec}}
+\index{delete\-R\-O\-Spec@{delete\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{delete\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::delete\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_aceaacbc11a48ec74e30c0e69b2c3de18}
+
+
+Delete the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, delete all R\-O\-Spec. 
+
+
+
+Definition at line 263 of file R\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_ad1ca9b5f64c9378eb483c69633744bca}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!disable\-R\-O\-Spec@{disable\-R\-O\-Spec}}
+\index{disable\-R\-O\-Spec@{disable\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{disable\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::disable\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_ad1ca9b5f64c9378eb483c69633744bca}
+
+
+Disable the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, disable all R\-O\-Spec. 
+
+
+
+Definition at line 221 of file R\-O\-Admin.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_ad1ca9b5f64c9378eb483c69633744bca_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_adbc39593d539c82db724d351cf042fd4}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!enable\-R\-O\-Spec@{enable\-R\-O\-Spec}}
+\index{enable\-R\-O\-Spec@{enable\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{enable\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::enable\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_adbc39593d539c82db724d351cf042fd4}
+
+
+Enable the R\-O\-Spec. If the given R\-O\-Spec I\-D is 0, enable all R\-O\-Spec. 
+
+
+
+Definition at line 79 of file R\-O\-Admin.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_adbc39593d539c82db724d351cf042fd4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a7d85d578de11cde05b84f078faef08e3}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!get\-R\-O\-Specs@{get\-R\-O\-Specs}}
+\index{get\-R\-O\-Specs@{get\-R\-O\-Specs}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{get\-R\-O\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ $>$ $\ast$ E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::get\-R\-O\-Specs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_a7d85d578de11cde05b84f078faef08e3}
+
+
+Store the pointer of all Access\-Specs to vector, and return it. 
+
+\begin{DoxyWarning}{Warning}
+You should delete the returned vector to avoid memory leakage.\par
+And you must not delete the R\-O\-Specs in the vector, because they are original ones. 
+\end{DoxyWarning}
+
+
+Definition at line 305 of file R\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a652f5d46a08d1889a4bd8b2db05a805d}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!on\-G\-P\-I\-Event@{on\-G\-P\-I\-Event}}
+\index{on\-G\-P\-I\-Event@{on\-G\-P\-I\-Event}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{on\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::on\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{G\-P\-I\-Port\-Num, }
+\item[{enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State}]{G\-P\-I\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_r_o_admin_a652f5d46a08d1889a4bd8b2db05a805d}
+
+
+Perform the operation with given port number of G\-P\-I port and its state. 
+
+
+
+Implements \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_a5afdbda5a841643ca219f1e4bd3cad4f}{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}.
+
+
+
+Definition at line 39 of file R\-O\-Admin.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_a652f5d46a08d1889a4bd8b2db05a805d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_a6ca27b5b624ecbcc000368e7d31b8363}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!start\-R\-O\-Spec@{start\-R\-O\-Spec}}
+\index{start\-R\-O\-Spec@{start\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{start\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::start\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_a6ca27b5b624ecbcc000368e7d31b8363}
+
+
+Start the R\-Ospec. If the given R\-O\-Spec I\-D is 0, it is illegal and returns error. 
+
+
+
+Definition at line 143 of file R\-O\-Admin.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_a6ca27b5b624ecbcc000368e7d31b8363_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_a6ca27b5b624ecbcc000368e7d31b8363_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_r_o_admin_ab998bfdbdd0564ca0aaf044781f58456}{\index{E\-L\-F\-I\-N\-::\-R\-O\-Admin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}!stop\-R\-O\-Spec@{stop\-R\-O\-Spec}}
+\index{stop\-R\-O\-Spec@{stop\-R\-O\-Spec}!ELFIN::ROAdmin@{E\-L\-F\-I\-N\-::\-R\-O\-Admin}}
+\subsubsection[{stop\-R\-O\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-R\-O\-Admin\-::stop\-R\-O\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_r_o_admin_ab998bfdbdd0564ca0aaf044781f58456}
+
+
+Stop the R\-Ospec. If the given R\-O\-Spec I\-D is 0, it is illegal and returns error. 
+
+
+
+Definition at line 178 of file R\-O\-Admin.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_ab998bfdbdd0564ca0aaf044781f58456_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_r_o_admin_ab998bfdbdd0564ca0aaf044781f58456_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_r_o_admin_8h}{R\-O\-Admin.\-h}\item 
+elfin\-\_\-src/\hyperlink{_r_o_admin_8cpp}{R\-O\-Admin.\-cpp}\end{DoxyCompactItemize}

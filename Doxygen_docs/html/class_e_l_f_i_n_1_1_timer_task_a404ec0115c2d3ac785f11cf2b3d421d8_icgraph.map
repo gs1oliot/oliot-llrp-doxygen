@@ -1,0 +1,4 @@
+<map id="ELFIN::TimerTask::handle_timeout" name="ELFIN::TimerTask::handle_timeout">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_scheduler.html#a15ccc0fd833cb9e4bed78b263d43063e" title="When the scheduled TimerTask starts, this method is called to decide whether to re&#45;enable the TimerTa..." alt="" coords="231,5,364,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_scheduler.html#a22971289baf155b0714f2951fc4da1ad" title="Schedule the given TimerTask with given options. " alt="" coords="413,13,600,43"/>
+</map>

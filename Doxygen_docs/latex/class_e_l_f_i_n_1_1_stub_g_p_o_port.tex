@@ -1,0 +1,139 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port}{\section{E\-L\-F\-I\-N\-:\-:Stub\-G\-P\-O\-Port Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_g_p_o_port}\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+}
+
+
+Abstraction for the G\-P\-O Port.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-G\-P\-O\-Port.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Stub\-G\-P\-O\-Port\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_g_p_o_port__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port_aef1a535a8ad9cbf0e4e8026855505b0e}{Stub\-G\-P\-O\-Port} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$\-\_\-\-\_\-p\-Reader, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \-\_\-\-\_\-\-G\-P\-O\-Port\-Num, L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \-\_\-\-\_\-data)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} class. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port_afda8ce42f6702ecfc248aafb27ab5e37}{get\-Port\-Num} ()
+\begin{DoxyCompactList}\small\item\em Returns port number of this port. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port_a5c5ccbd9fcd2acffb27224e6511fa8d4}{get\-Data} ()
+\begin{DoxyCompactList}\small\item\em Returns current data. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port_a7ef2a70f60a5b17a313ba3db04ddf0ce}{set\-Data} (L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \-\_\-data)
+\begin{DoxyCompactList}\small\item\em Set data and send G\-P\-O event to Reader App. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_a4334c59d5dc5064a54af1a77a0529bc5}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries m\-\_\-\-Reader}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_a4334c59d5dc5064a54af1a77a0529bc5}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_acf051c06a9fee29c6ef29e9026ba5d32}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries m\-\_\-\-G\-P\-O\-Port\-Num}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_acf051c06a9fee29c6ef29e9026ba5d32}
+
+\item 
+L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port_a51ec3688713571be64d71a4941a90816}{m\-\_\-data}
+\begin{DoxyCompactList}\small\item\em G\-P\-I H\-I\-G\-H/\-L\-O\-W/unknown data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstraction for the G\-P\-O Port. 
+
+Definition at line 22 of file Stub\-G\-P\-O\-Port.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_aef1a535a8ad9cbf0e4e8026855505b0e}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}!Stub\-G\-P\-O\-Port@{Stub\-G\-P\-O\-Port}}
+\index{Stub\-G\-P\-O\-Port@{Stub\-G\-P\-O\-Port}!ELFIN::StubGPOPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+\subsubsection[{Stub\-G\-P\-O\-Port}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port\-::\-Stub\-G\-P\-O\-Port (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader} $\ast$}]{\-\_\-\-\_\-p\-Reader, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{\-\_\-\-\_\-\-G\-P\-O\-Port\-Num, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t}]{\-\_\-\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_aef1a535a8ad9cbf0e4e8026855505b0e}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_o_port}{Stub\-G\-P\-O\-Port} class. 
+
+
+
+Definition at line 8 of file Stub\-G\-P\-O\-Port.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_a5c5ccbd9fcd2acffb27224e6511fa8d4}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!ELFIN::StubGPOPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_a5c5ccbd9fcd2acffb27224e6511fa8d4}
+
+
+Returns current data. 
+
+
+
+Definition at line 17 of file Stub\-G\-P\-O\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_afda8ce42f6702ecfc248aafb27ab5e37}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}!get\-Port\-Num@{get\-Port\-Num}}
+\index{get\-Port\-Num@{get\-Port\-Num}!ELFIN::StubGPOPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+\subsubsection[{get\-Port\-Num}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port\-::get\-Port\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_afda8ce42f6702ecfc248aafb27ab5e37}
+
+
+Returns port number of this port. 
+
+
+
+Definition at line 13 of file Stub\-G\-P\-O\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_a7ef2a70f60a5b17a313ba3db04ddf0ce}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}!set\-Data@{set\-Data}}
+\index{set\-Data@{set\-Data}!ELFIN::StubGPOPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+\subsubsection[{set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port\-::set\-Data (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t}]{\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_a7ef2a70f60a5b17a313ba3db04ddf0ce}
+
+
+Set data and send G\-P\-O event to Reader App. 
+
+
+
+Definition at line 21 of file Stub\-G\-P\-O\-Port.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_o_port_a51ec3688713571be64d71a4941a90816}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}!m\-\_\-data@{m\-\_\-data}}
+\index{m\-\_\-data@{m\-\_\-data}!ELFIN::StubGPOPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port}}
+\subsubsection[{m\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-O\-Port\-::m\-\_\-data\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_g_p_o_port_a51ec3688713571be64d71a4941a90816}
+
+
+G\-P\-I H\-I\-G\-H/\-L\-O\-W/unknown data. 
+
+
+
+Definition at line 38 of file Stub\-G\-P\-O\-Port.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_g_p_o_port_8h}{Stub\-G\-P\-O\-Port.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_g_p_o_port_8cpp}{Stub\-G\-P\-O\-Port.\-cpp}\end{DoxyCompactItemize}

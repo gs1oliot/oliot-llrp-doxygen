@@ -1,0 +1,90 @@
+\hypertarget{_e_l_f_i_n___platform_8h}{\section{elfin\-\_\-src/\-E\-L\-F\-I\-N\-\_\-\-Platform.h File Reference}
+\label{_e_l_f_i_n___platform_8h}\index{elfin\-\_\-src/\-E\-L\-F\-I\-N\-\_\-\-Platform.\-h@{elfin\-\_\-src/\-E\-L\-F\-I\-N\-\_\-\-Platform.\-h}}
+}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+{\ttfamily \#include $<$ltkcpp.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}E\-L\-F\-I\-N\-\_\-\-Defs.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Reader\-Handler/\-Reader\-Capabilities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h\char`\"{}}\\*
+Include dependency graph for E\-L\-F\-I\-N\-\_\-\-Platform.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_e_l_f_i_n___platform_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_e_l_f_i_n___platform_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_e_l_f_i_n_1_1_utils}{E\-L\-F\-I\-N\-::\-Utils}
+\begin{DoxyCompactList}\small\item\em Some utils that are used in L\-L\-R\-P Wrapper. This includes printing log, getting timestamp, etc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_e_l_f_i_n_ab07313040ac2e9c6a734ae92d6867491}{typedef boost\-::unordered\-\_\-map\\*
+$<$ int, \\*
+L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-O\-P\-Specs\-Map}}\label{namespace_e_l_f_i_n_ab07313040ac2e9c6a734ae92d6867491}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_a1470e5f57f2e0de84ea70e55922a2cc8}{typedef boost\-::unordered\-\_\-map\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+\hyperlink{class_e_l_f_i_n_1_1_access_operation}{E\-L\-F\-I\-N\-::\-Access\-Operation} $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-A\-O\-Map}}\label{namespace_e_l_f_i_n_a1470e5f57f2e0de84ea70e55922a2cc8}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_ab641fb9e5b60c820e60c4f5388167b64}{typedef std\-::pair\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+\hyperlink{class_e_l_f_i_n_1_1_access_operation}{E\-L\-F\-I\-N\-::\-Access\-Operation} $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-A\-O\-Map\-\_\-t}}\label{namespace_e_l_f_i_n_ab641fb9e5b60c820e60c4f5388167b64}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_a0b8ca9cb42c924eb9684834d1fd0f8ca}{typedef boost\-::unordered\-\_\-map\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-C\-A\-O\-Map}}\label{namespace_e_l_f_i_n_a0b8ca9cb42c924eb9684834d1fd0f8ca}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_a1f0de4faf27ebd232e7582118aa0dc7d}{typedef std\-::pair\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-C\-A\-O\-Map\-\_\-t}}\label{namespace_e_l_f_i_n_a1f0de4faf27ebd232e7582118aa0dc7d}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_ac8cc7ed29f276ae2bc988309c81fe93d}{typedef boost\-::unordered\-\_\-map\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+\hyperlink{class_e_l_f_i_n_1_1_reader_operation}{E\-L\-F\-I\-N\-::\-Reader\-Operation} $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-R\-O\-Map}}\label{namespace_e_l_f_i_n_ac8cc7ed29f276ae2bc988309c81fe93d}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_a27efddb65bddf84a88a101db68ee7109}{typedef std\-::pair\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+Reader\-Operation $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-R\-O\-Map\-\_\-t}}\label{namespace_e_l_f_i_n_a27efddb65bddf84a88a101db68ee7109}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_ad5c82673f0f8b5b031455dd63ec20134}{typedef boost\-::unordered\-\_\-map\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-C\-R\-O\-Map}}\label{namespace_e_l_f_i_n_ad5c82673f0f8b5b031455dd63ec20134}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_ad142a2f838fed1fb311132190580adc4}{typedef std\-::pair\\*
+$<$ L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t, \\*
+L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ $>$ {\bfseries E\-L\-F\-I\-N\-::\-C\-R\-O\-Map\-\_\-t}}\label{namespace_e_l_f_i_n_ad142a2f838fed1fb311132190580adc4}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_a5f5a259e34934ae749a697024e48c8aa}{typedef boost\-::unordered\-\_\-set\\*
+$<$ L\-L\-R\-P\-::\-C\-Tag\-Report\-Data \\*
+$\ast$, Tag\-Report\-Map\-\_\-\-Hash, \\*
+Tag\-Report\-Map\-\_\-\-Pred $>$ {\bfseries E\-L\-F\-I\-N\-::\-Tag\-Report\-Set}}\label{namespace_e_l_f_i_n_a5f5a259e34934ae749a697024e48c8aa}
+
+\item 
+\hypertarget{namespace_e_l_f_i_n_affa88de38449040dd2f6040bec3ee12f}{typedef std\-::pair$<$ enum \\*
+L\-L\-R\-P\-::\-E\-Status\-Code, \\*
+L\-L\-R\-P\-::llrp\-\_\-utf8v\-\_\-t $>$ {\bfseries E\-L\-F\-I\-N\-::\-Result\-\_\-t}}\label{namespace_e_l_f_i_n_affa88de38449040dd2f6040bec3ee12f}
+
+\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="ELFIN::AIOperation::addTagReportUnique" name="ELFIN::AIOperation::addTagReportUnique">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_access_operation.html#a7f5fbbbd2e32941d87c0f296d9869dd4" title="Compare two CAccessCommandOpSpecResult. If they are identical, returns 0. If not, returns non&#45;zero va..." alt="" coords="224,5,408,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_access_operation.html#a779c7cc8692989b0b1bc5789cef29e5b" title="Get the OpSpec id from the given AccessCommandOpSpecResult. " alt="" coords="209,74,423,121"/>
+</map>

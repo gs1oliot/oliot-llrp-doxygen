@@ -1,0 +1,423 @@
+\hypertarget{class_e_l_f_i_n_1_1_access_operation}{\section{E\-L\-F\-I\-N\-:\-:Access\-Operation Class Reference}
+\label{class_e_l_f_i_n_1_1_access_operation}\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+}
+
+
+A single access operation generated based on the given Access\-Spec parameter.  
+
+
+
+
+{\ttfamily \#include $<$Access\-Operation.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Access\-Operation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_access_operation_ac2138a56bbd039b4d5c2354ddda25992}{Access\-Operation} (\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core, L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$\-\_\-\-\_\-p\-C\-Access\-Spec)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_access_operation}{Access\-Operation} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_abd6ee0b2cb143103440bd9caed9dff19}{is\-Valid} ()
+\begin{DoxyCompactList}\small\item\em Check the validity of \hyperlink{class_e_l_f_i_n_1_1_access_operation}{Access\-Operation} object. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a9f928363dd0ab1a6a0ef2f3e594e60a4}{match\-Tag\-Spec} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t p\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Match the provided \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} and R\-O\-Spec\-I\-D to the current C1\-G2\-Target\-Tag. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a7b21dfebb3248fe9e4105c8dca4ce897}{execute\-Op\-Specs} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Apply Op\-Spec to the provided \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. The Op\-Spec\-Result would be stored to the p\-Tag\-Report object. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_af944ff98cc959755f16f892ef1be7559}{handle\-C1\-G2\-Read} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles C1\-G2\-Read Op\-Spec. The result is stored to the p\-Tag\-Report object. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a019256d2d181eec3688845227ed50a62}{handle\-C1\-G2\-Write} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles C1\-G2\-Write Op\-Spec. The result is stored to the p\-Tag\-Report object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_aaa62c42a3e98fdb8a583a16561c4d416}{handle\-C1\-G2\-Kill} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles corresponding Op\-Spec. But this method is not implemented yet. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a0fccaea52a98abc72788c6fe7b5bbe2d}{handle\-C1\-G2\-Lock} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles corresponding Op\-Spec. But this method is not implemented yet. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_aa7a89cb757c2d02c222a5a68703c3fd7}{handle\-C1\-G2\-Block\-Erase} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles corresponding Op\-Spec. But this method is not implemented yet. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a33d4d046de073308c854a5e16595197f}{handle\-C1\-G2\-Block\-Write} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Tag\-Report)
+\begin{DoxyCompactList}\small\item\em Handles corresponding Op\-Spec. But this method is not implemented yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_access_operation_a153d7378aa347f667b22a2a170837622}{get\-Op\-Spec\-I\-D} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$p\-Op\-Spec)
+\begin{DoxyCompactList}\small\item\em Get the Op\-Spec id from the given Op\-Spec. \end{DoxyCompactList}\item 
+static L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_access_operation_a779c7cc8692989b0b1bc5789cef29e5b}{get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$p\-Access\-Command\-Op\-Spec\-Result)
+\begin{DoxyCompactList}\small\item\em Get the Op\-Spec id from the given Access\-Command\-Op\-Spec\-Result. \end{DoxyCompactList}\item 
+static int \hyperlink{class_e_l_f_i_n_1_1_access_operation_a7f5fbbbd2e32941d87c0f296d9869dd4}{compare\-A\-C\-Op\-Spec\-Result} (L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$p\-Result1, L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$p\-Result2)
+\begin{DoxyCompactList}\small\item\em Compare two C\-Access\-Command\-Op\-Spec\-Result. If they are identical, returns 0. If not, returns non-\/zero value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a6b116c469b2c6d8bed6d8436cfa9ed4b}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$ {\bfseries \-\_\-p\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_access_operation_a6b116c469b2c6d8bed6d8436cfa9ed4b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_aff207b159e862557b1c9b56a377dd8bf}{L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$ {\bfseries \-\_\-p\-C\-Access\-Spec}}\label{class_e_l_f_i_n_1_1_access_operation_aff207b159e862557b1c9b56a377dd8bf}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a68385342f946fc8d8815e13b26c05297}{L\-L\-R\-P\-::\-C\-Access\-Report\-Spec $\ast$ {\bfseries \-\_\-p\-Access\-Report\-Spec}}\label{class_e_l_f_i_n_1_1_access_operation_a68385342f946fc8d8815e13b26c05297}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_af20d9e59c1a139f459f8e6c250d7941c}{L\-L\-R\-P\-::\-C\-C1\-G2\-Tag\-Spec $\ast$ {\bfseries \-\_\-p\-Tag\-Spec}}\label{class_e_l_f_i_n_1_1_access_operation_af20d9e59c1a139f459f8e6c250d7941c}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_ad1b50641846c7dcb2186865362f782f6}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-p\-Operation\-Count}}\label{class_e_l_f_i_n_1_1_access_operation_ad1b50641846c7dcb2186865362f782f6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_aa51669c1cb4631a793c505b8797450ad}{int {\bfseries \-\_\-valid}}\label{class_e_l_f_i_n_1_1_access_operation_aa51669c1cb4631a793c505b8797450ad}
+
+\item 
+O\-P\-Specs\-Map \hyperlink{class_e_l_f_i_n_1_1_access_operation_ac62e4350f2fa25abff5ffa61ac853a90}{\-\_\-p\-Op\-Spec\-Map}
+\begin{DoxyCompactList}\small\item\em C\-Access\-Command\-Op\-Spec container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single access operation generated based on the given Access\-Spec parameter. 
+
+Definition at line 25 of file Access\-Operation.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_ac2138a56bbd039b4d5c2354ddda25992}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!Access\-Operation@{Access\-Operation}}
+\index{Access\-Operation@{Access\-Operation}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{Access\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Access\-Operation\-::\-Access\-Operation (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-p\-L\-L\-R\-P\-Core, }
+\item[{L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$}]{\-\_\-\-\_\-p\-C\-Access\-Spec}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_ac2138a56bbd039b4d5c2354ddda25992}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_access_operation}{Access\-Operation} class. 
+
+\begin{DoxyWarning}{Warning}
+This constructor may create invalid object. You should check its validity with \hyperlink{class_e_l_f_i_n_1_1_access_operation_abd6ee0b2cb143103440bd9caed9dff19}{is\-Valid()} method. 
+\end{DoxyWarning}
+
+
+Definition at line 18 of file Access\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_ac2138a56bbd039b4d5c2354ddda25992_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a7f5fbbbd2e32941d87c0f296d9869dd4}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!compare\-A\-C\-Op\-Spec\-Result@{compare\-A\-C\-Op\-Spec\-Result}}
+\index{compare\-A\-C\-Op\-Spec\-Result@{compare\-A\-C\-Op\-Spec\-Result}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{compare\-A\-C\-Op\-Spec\-Result}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::compare\-A\-C\-Op\-Spec\-Result (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$}]{p\-Result1, }
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$}]{p\-Result2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_access_operation_a7f5fbbbd2e32941d87c0f296d9869dd4}
+
+
+Compare two C\-Access\-Command\-Op\-Spec\-Result. If they are identical, returns 0. If not, returns non-\/zero value. 
+
+
+
+Definition at line 380 of file Access\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_a7f5fbbbd2e32941d87c0f296d9869dd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a7b21dfebb3248fe9e4105c8dca4ce897}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!execute\-Op\-Specs@{execute\-Op\-Specs}}
+\index{execute\-Op\-Specs@{execute\-Op\-Specs}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{execute\-Op\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::execute\-Op\-Specs (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_a7b21dfebb3248fe9e4105c8dca4ce897}
+
+
+Apply Op\-Spec to the provided \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. The Op\-Spec\-Result would be stored to the p\-Tag\-Report object. 
+
+
+
+Definition at line 182 of file Access\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_a7b21dfebb3248fe9e4105c8dca4ce897_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a779c7cc8692989b0b1bc5789cef29e5b}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D@{get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D}}
+\index{get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D@{get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t E\-L\-F\-I\-N\-::\-Access\-Operation\-::get\-A\-C\-Op\-Spec\-Result\-O\-P\-Spec\-I\-D (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result $\ast$}]{p\-Access\-Command\-Op\-Spec\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_access_operation_a779c7cc8692989b0b1bc5789cef29e5b}
+
+
+Get the Op\-Spec id from the given Access\-Command\-Op\-Spec\-Result. 
+
+\begin{DoxyRemark}{Remarks}
+Because L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec\-Result type does not have method to get the Op\-Spec id, this method casts the Op\-Spec\-Result to its own type and return the Op\-Spec id. 
+\end{DoxyRemark}
+
+
+Definition at line 359 of file Access\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_a779c7cc8692989b0b1bc5789cef29e5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a153d7378aa347f667b22a2a170837622}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!get\-Op\-Spec\-I\-D@{get\-Op\-Spec\-I\-D}}
+\index{get\-Op\-Spec\-I\-D@{get\-Op\-Spec\-I\-D}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{get\-Op\-Spec\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t E\-L\-F\-I\-N\-::\-Access\-Operation\-::get\-Op\-Spec\-I\-D (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_access_operation_a153d7378aa347f667b22a2a170837622}
+
+
+Get the Op\-Spec id from the given Op\-Spec. 
+
+\begin{DoxyRemark}{Remarks}
+Because L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec type does not have method to get the Op\-Spec id, this method casts the Op\-Spec to its own type and return the Op\-Spec id. 
+\end{DoxyRemark}
+
+
+Definition at line 62 of file Access\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_a153d7378aa347f667b22a2a170837622_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_aa7a89cb757c2d02c222a5a68703c3fd7}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Block\-Erase@{handle\-C1\-G2\-Block\-Erase}}
+\index{handle\-C1\-G2\-Block\-Erase@{handle\-C1\-G2\-Block\-Erase}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Block\-Erase}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Block\-Erase (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_aa7a89cb757c2d02c222a5a68703c3fd7}
+
+
+Handles corresponding Op\-Spec. But this method is not implemented yet. 
+
+
+
+Definition at line 331 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a33d4d046de073308c854a5e16595197f}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Block\-Write@{handle\-C1\-G2\-Block\-Write}}
+\index{handle\-C1\-G2\-Block\-Write@{handle\-C1\-G2\-Block\-Write}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Block\-Write}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Block\-Write (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_a33d4d046de073308c854a5e16595197f}
+
+
+Handles corresponding Op\-Spec. But this method is not implemented yet. 
+
+
+
+Definition at line 341 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_aaa62c42a3e98fdb8a583a16561c4d416}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Kill@{handle\-C1\-G2\-Kill}}
+\index{handle\-C1\-G2\-Kill@{handle\-C1\-G2\-Kill}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Kill}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Kill (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_aaa62c42a3e98fdb8a583a16561c4d416}
+
+
+Handles corresponding Op\-Spec. But this method is not implemented yet. 
+
+
+
+Definition at line 311 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a0fccaea52a98abc72788c6fe7b5bbe2d}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Lock@{handle\-C1\-G2\-Lock}}
+\index{handle\-C1\-G2\-Lock@{handle\-C1\-G2\-Lock}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Lock (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_a0fccaea52a98abc72788c6fe7b5bbe2d}
+
+
+Handles corresponding Op\-Spec. But this method is not implemented yet. 
+
+
+
+Definition at line 321 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_af944ff98cc959755f16f892ef1be7559}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Read@{handle\-C1\-G2\-Read}}
+\index{handle\-C1\-G2\-Read@{handle\-C1\-G2\-Read}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Read}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Read (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_af944ff98cc959755f16f892ef1be7559}
+
+
+Handles C1\-G2\-Read Op\-Spec. The result is stored to the p\-Tag\-Report object. 
+
+
+
+Definition at line 213 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a019256d2d181eec3688845227ed50a62}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!handle\-C1\-G2\-Write@{handle\-C1\-G2\-Write}}
+\index{handle\-C1\-G2\-Write@{handle\-C1\-G2\-Write}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{handle\-C1\-G2\-Write}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::handle\-C1\-G2\-Write (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Command\-Op\-Spec $\ast$}]{p\-Op\-Spec, }
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Tag\-Report}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_a019256d2d181eec3688845227ed50a62}
+
+
+Handles C1\-G2\-Write Op\-Spec. The result is stored to the p\-Tag\-Report object. 
+
+
+
+Definition at line 268 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_abd6ee0b2cb143103440bd9caed9dff19}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_abd6ee0b2cb143103440bd9caed9dff19}
+
+
+Check the validity of \hyperlink{class_e_l_f_i_n_1_1_access_operation}{Access\-Operation} object. 
+
+
+
+Definition at line 351 of file Access\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_a9f928363dd0ab1a6a0ef2f3e594e60a4}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!match\-Tag\-Spec@{match\-Tag\-Spec}}
+\index{match\-Tag\-Spec@{match\-Tag\-Spec}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{match\-Tag\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Access\-Operation\-::match\-Tag\-Spec (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{p\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_access_operation_a9f928363dd0ab1a6a0ef2f3e594e60a4}
+
+
+Match the provided \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} and R\-O\-Spec\-I\-D to the current C1\-G2\-Target\-Tag. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]need to remove redundant code \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Need to modify not only support the pointer multiple of 8, but also other values \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Optimize this, by not reading whole mb contents, but just target area. \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]Need to modify not only support the pointer multiple of 8, but also other values \end{DoxyRefDesc}
+
+
+Definition at line 92 of file Access\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_access_operation_a9f928363dd0ab1a6a0ef2f3e594e60a4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_access_operation_ac62e4350f2fa25abff5ffa61ac853a90}{\index{E\-L\-F\-I\-N\-::\-Access\-Operation@{E\-L\-F\-I\-N\-::\-Access\-Operation}!\-\_\-p\-Op\-Spec\-Map@{\-\_\-p\-Op\-Spec\-Map}}
+\index{\-\_\-p\-Op\-Spec\-Map@{\-\_\-p\-Op\-Spec\-Map}!ELFIN::AccessOperation@{E\-L\-F\-I\-N\-::\-Access\-Operation}}
+\subsubsection[{\-\_\-p\-Op\-Spec\-Map}]{\setlength{\rightskip}{0pt plus 5cm}O\-P\-Specs\-Map E\-L\-F\-I\-N\-::\-Access\-Operation\-::\-\_\-p\-Op\-Spec\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_access_operation_ac62e4350f2fa25abff5ffa61ac853a90}
+
+
+C\-Access\-Command\-Op\-Spec container. 
+
+
+
+Definition at line 66 of file Access\-Operation.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_access_operation_8h}{Access\-Operation.\-h}\item 
+elfin\-\_\-src/\hyperlink{_access_operation_8cpp}{Access\-Operation.\-cpp}\end{DoxyCompactItemize}

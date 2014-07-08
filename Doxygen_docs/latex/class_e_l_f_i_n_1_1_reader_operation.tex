@@ -1,0 +1,444 @@
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation}{\section{E\-L\-F\-I\-N\-:\-:Reader\-Operation Class Reference}
+\label{class_e_l_f_i_n_1_1_reader_operation}\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+}
+
+
+A single reader operation generated based on the L\-L\-R\-P R\-O\-Spec message.  
+
+
+
+
+{\ttfamily \#include $<$Reader\-Operation.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:Reader\-Operation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_e_l_f_i_n_1_1_reader_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Reader\-Operation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_reader_operation_a0cf397b0aa83e1c5c9df1a1af6a04e93}{Reader\-Operation} (L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$a\-R\-O\-Spec, \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_reader_operation_a22908408aa9e1c3204a1f9ad051a29b7}{$\sim$\-Reader\-Operation} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a2b2d664c61b9405567cd0fde3a488261}{run} ()
+\begin{DoxyCompactList}\small\item\em Creates the thread of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} using \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb}{run\-R\-O()} \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb}{run\-R\-O} ()
+\begin{DoxyCompactList}\small\item\em This method is used to make \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} thread. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_af2a3eca438c14f42f68f3558f6c0e908}{stop\-R\-O} ()
+\begin{DoxyCompactList}\small\item\em Send stop command to this \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} and wait until it actually stops. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a97729b155d5f48fff0411d7ab500e737}{run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread} (int stop\-M\-S)
+\begin{DoxyCompactList}\small\item\em This method is used to make thread for stop trigger which is related to time. After given time, interrupts tag singulation. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f}{schedule} ()
+\begin{DoxyCompactList}\small\item\em Schedule this \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} to the \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler}. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::\-C\-R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T $\ast$ \hyperlink{class_e_l_f_i_n_1_1_reader_operation_acc22207efd6fa0a5fbbf7d1bcda7b3f9}{get\-Current\-Report} (Tag\-Report\-Set $\ast$p\-Tag\-Report\-Set, Tag\-Report\-Set $\ast$p\-Upper\-Tag\-Report\-Set, int tag\-Count)
+\begin{DoxyCompactList}\small\item\em Build R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T message with currently accumulated Tag\-Report\-Data. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1}{handle\-\_\-timeout} (const boost\-::system\-::error\-\_\-code \&e)
+\begin{DoxyCompactList}\small\item\em When the start trigger of R\-O\-Spec is invoked, the scheduled R\-O\-Spec executes this. This method performs the main operation of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation}. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a611b3083a92137796e04391cc6c5d9c3}{handle\-\_\-timeout\-\_\-finalize} (const boost\-::system\-::error\-\_\-code \&e)
+\begin{DoxyCompactList}\small\item\em This method is called right before the R\-O\-Spec stops. But this is not used currently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a71a40f124e322dd5179079797c70bdf7}{delete\-R\-O} (\hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} $\ast$p\-R\-O)
+\begin{DoxyCompactList}\small\item\em Static method to stop and delete given \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a84cfb0e11e149fe6fa6bdeea2598d221}{\hyperlink{class_e_l_f_i_n_1_1_scheduler}{E\-L\-F\-I\-N\-::\-Scheduler} $\ast$ {\bfseries \-\_\-p\-Scheduler}}\label{class_e_l_f_i_n_1_1_reader_operation_a84cfb0e11e149fe6fa6bdeea2598d221}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a4115916ce6d611e716687d9ecfa477ef}{L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ {\bfseries \-\_\-\-C\-R\-O\-Spec}}\label{class_e_l_f_i_n_1_1_reader_operation_a4115916ce6d611e716687d9ecfa477ef}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a79a42c7047ae354ba127b0517069f97c}{L\-L\-R\-P\-::\-C\-R\-O\-Report\-Spec $\ast$ {\bfseries \-\_\-p\-R\-O\-Report\-Spec}}\label{class_e_l_f_i_n_1_1_reader_operation_a79a42c7047ae354ba127b0517069f97c}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a56e886debecaedb8e7e207c6686f0eb2}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$ {\bfseries \-\_\-p\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_reader_operation_a56e886debecaedb8e7e207c6686f0eb2}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_aeea84b735b7a283ad0adc72caee8b1a3}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} $\ast$ {\bfseries \-\_\-p\-Config}}\label{class_e_l_f_i_n_1_1_reader_operation_aeea84b735b7a283ad0adc72caee8b1a3}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a971a4287f58cf1cf717881ce630d02b0}{\hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin} $\ast$ {\bfseries \-\_\-p\-R\-O\-Admin}}\label{class_e_l_f_i_n_1_1_reader_operation_a971a4287f58cf1cf717881ce630d02b0}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a0fbc71a6e829f226358290304328d99d}{boost\-::thread {\bfseries \-\_\-p\-Thread}}\label{class_e_l_f_i_n_1_1_reader_operation_a0fbc71a6e829f226358290304328d99d}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_ae8915fe44157ec3040b4f6119fc2af1e}{boost\-::thread {\bfseries \-\_\-p\-R\-O\-Spec\-Stop\-Trigger\-Thread}}\label{class_e_l_f_i_n_1_1_reader_operation_ae8915fe44157ec3040b4f6119fc2af1e}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_ab1742729d91085bd6252a73b191cb951}{int {\bfseries \-\_\-p\-R\-O\-Spec\-Stop\-Trigger\-Invoked}}\label{class_e_l_f_i_n_1_1_reader_operation_ab1742729d91085bd6252a73b191cb951}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a17e5e692c72d0356525312f7a9ae57ab}{int {\bfseries \-\_\-p\-Loop\-Spec\-Infinity}}\label{class_e_l_f_i_n_1_1_reader_operation_a17e5e692c72d0356525312f7a9ae57ab}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a3f8a539a269ffcaaa5c7c8890807fe32}{int {\bfseries \-\_\-p\-Stopping}}\label{class_e_l_f_i_n_1_1_reader_operation_a3f8a539a269ffcaaa5c7c8890807fe32}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a617b9e2bb5726139853e9019b67c3604}{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t {\bfseries \-\_\-p\-Loop\-Spec\-Loop\-Count}}\label{class_e_l_f_i_n_1_1_reader_operation_a617b9e2bb5726139853e9019b67c3604}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a4a33537c6ece003612b2a1c988956e89}{L\-L\-R\-P\-::\-C\-R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T $\ast$ {\bfseries \-\_\-p\-Pending\-Report}}\label{class_e_l_f_i_n_1_1_reader_operation_a4a33537c6ece003612b2a1c988956e89}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_afd6f893ea67b5d664cac65e3fe207b00}{Abs\-Antenna\-Ops\-Map {\bfseries \-\_\-abs\-Antenna\-Ops}}\label{class_e_l_f_i_n_1_1_reader_operation_afd6f893ea67b5d664cac65e3fe207b00}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a48f616a5c2c5712aba164a2f77c1a085}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries \-\_\-p\-Reader}}\label{class_e_l_f_i_n_1_1_reader_operation_a48f616a5c2c5712aba164a2f77c1a085}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a0fcbccaea1ab2f9e6805e96a64328840}{boost\-::asio\-::io\-\_\-service {\bfseries \-\_\-ios}}\label{class_e_l_f_i_n_1_1_reader_operation_a0fcbccaea1ab2f9e6805e96a64328840}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single reader operation generated based on the L\-L\-R\-P R\-O\-Spec message. 
+
+Definition at line 31 of file Reader\-Operation.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a0cf397b0aa83e1c5c9df1a1af6a04e93}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!Reader\-Operation@{Reader\-Operation}}
+\index{Reader\-Operation@{Reader\-Operation}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{Reader\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Reader\-Operation\-::\-Reader\-Operation (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$}]{a\-R\-O\-Spec, }
+\item[{{\bf L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-p\-L\-L\-R\-P\-Core}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_a0cf397b0aa83e1c5c9df1a1af6a04e93}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} class. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000015}{Todo}]Handle the errors related to illegal Loop\-Spec \end{DoxyRefDesc}
+
+
+Definition at line 13 of file Reader\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a22908408aa9e1c3204a1f9ad051a29b7}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!$\sim$\-Reader\-Operation@{$\sim$\-Reader\-Operation}}
+\index{$\sim$\-Reader\-Operation@{$\sim$\-Reader\-Operation}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{$\sim$\-Reader\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Reader\-Operation\-::$\sim$\-Reader\-Operation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_a22908408aa9e1c3204a1f9ad051a29b7}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} class. 
+
+
+
+Definition at line 78 of file Reader\-Operation.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a71a40f124e322dd5179079797c70bdf7}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!delete\-R\-O@{delete\-R\-O}}
+\index{delete\-R\-O@{delete\-R\-O}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{delete\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::delete\-R\-O (
+\begin{DoxyParamCaption}
+\item[{{\bf Reader\-Operation} $\ast$}]{p\-R\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_reader_operation_a71a40f124e322dd5179079797c70bdf7}
+
+
+Static method to stop and delete given \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation}. 
+
+
+
+Definition at line 403 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a71a40f124e322dd5179079797c70bdf7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a71a40f124e322dd5179079797c70bdf7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_acc22207efd6fa0a5fbbf7d1bcda7b3f9}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!get\-Current\-Report@{get\-Current\-Report}}
+\index{get\-Current\-Report@{get\-Current\-Report}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{get\-Current\-Report}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::\-C\-R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T $\ast$ E\-L\-F\-I\-N\-::\-Reader\-Operation\-::get\-Current\-Report (
+\begin{DoxyParamCaption}
+\item[{Tag\-Report\-Set $\ast$}]{p\-Tag\-Report\-Set, }
+\item[{Tag\-Report\-Set $\ast$}]{p\-Upper\-Tag\-Report\-Set, }
+\item[{int}]{tag\-Count}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_acc22207efd6fa0a5fbbf7d1bcda7b3f9}
+
+
+Build R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T message with currently accumulated Tag\-Report\-Data. 
+
+
+
+Definition at line 420 of file Reader\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!handle\-\_\-timeout@{handle\-\_\-timeout}}
+\index{handle\-\_\-timeout@{handle\-\_\-timeout}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{handle\-\_\-timeout}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::handle\-\_\-timeout (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1}
+
+
+When the start trigger of R\-O\-Spec is invoked, the scheduled R\-O\-Spec executes this. This method performs the main operation of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation}. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]Add support for time based R\-O\-Report\-Spec \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000018}{Todo}]Should we send callback to \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} here? \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000019}{Todo}]Check whether we should store all reports, or only latest one. Currently, only latest one is stored. \end{DoxyRefDesc}
+
+
+Implements \hyperlink{class_e_l_f_i_n_1_1_timer_task_a404ec0115c2d3ac785f11cf2b3d421d8}{E\-L\-F\-I\-N\-::\-Timer\-Task}.
+
+
+
+Definition at line 160 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a611b3083a92137796e04391cc6c5d9c3}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!handle\-\_\-timeout\-\_\-finalize@{handle\-\_\-timeout\-\_\-finalize}}
+\index{handle\-\_\-timeout\-\_\-finalize@{handle\-\_\-timeout\-\_\-finalize}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{handle\-\_\-timeout\-\_\-finalize}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::handle\-\_\-timeout\-\_\-finalize (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_reader_operation_a611b3083a92137796e04391cc6c5d9c3}
+
+
+This method is called right before the R\-O\-Spec stops. But this is not used currently. 
+
+
+
+Implements \hyperlink{class_e_l_f_i_n_1_1_timer_task_ae759ef0244d8588a2eefaf22f0db8ff4}{E\-L\-F\-I\-N\-::\-Timer\-Task}.
+
+
+
+Definition at line 382 of file Reader\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a2b2d664c61b9405567cd0fde3a488261}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!run@{run}}
+\index{run@{run}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_a2b2d664c61b9405567cd0fde3a488261}
+
+
+Creates the thread of \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} using \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb}{run\-R\-O()} 
+
+
+
+Definition at line 108 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a2b2d664c61b9405567cd0fde3a488261_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a2b2d664c61b9405567cd0fde3a488261_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a97729b155d5f48fff0411d7ab500e737}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread@{run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread}}
+\index{run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread@{run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::run\-\_\-\-R\-O\-Spec\-Stop\-Trigger\-Thread (
+\begin{DoxyParamCaption}
+\item[{int}]{stop\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_a97729b155d5f48fff0411d7ab500e737}
+
+
+This method is used to make thread for stop trigger which is related to time. After given time, interrupts tag singulation. 
+
+
+
+Definition at line 411 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a97729b155d5f48fff0411d7ab500e737_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!run\-R\-O@{run\-R\-O}}
+\index{run\-R\-O@{run\-R\-O}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{run\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::run\-R\-O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb}
+
+
+This method is used to make \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} thread. 
+
+
+
+Definition at line 115 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_a7046ea97bbe32c4f4d8dc65874f0f7bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!schedule@{schedule}}
+\index{schedule@{schedule}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f}
+
+
+Schedule this \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} to the \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler}. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000016}{Todo}]change the sequence of parameters, to remove Timer\-Task\-::\-C\-O\-U\-N\-T\-\_\-\-I\-N\-F\-I\-N\-I\-T\-Y \end{DoxyRefDesc}
+
+
+Definition at line 121 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_reader_operation_af2a3eca438c14f42f68f3558f6c0e908}{\index{E\-L\-F\-I\-N\-::\-Reader\-Operation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}!stop\-R\-O@{stop\-R\-O}}
+\index{stop\-R\-O@{stop\-R\-O}!ELFIN::ReaderOperation@{E\-L\-F\-I\-N\-::\-Reader\-Operation}}
+\subsubsection[{stop\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Reader\-Operation\-::stop\-R\-O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_reader_operation_af2a3eca438c14f42f68f3558f6c0e908}
+
+
+Send stop command to this \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} and wait until it actually stops. 
+
+
+
+Definition at line 387 of file Reader\-Operation.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_reader_operation_af2a3eca438c14f42f68f3558f6c0e908_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_reader_operation_8h}{Reader\-Operation.\-h}\item 
+elfin\-\_\-src/\hyperlink{_reader_operation_8cpp}{Reader\-Operation.\-cpp}\end{DoxyCompactItemize}

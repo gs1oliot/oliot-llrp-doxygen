@@ -1,0 +1,187 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port}{\section{E\-L\-F\-I\-N\-:\-:Stub\-G\-P\-I\-Port Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_g_p_i_port}\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+}
+
+
+Abstraction for the G\-P\-I Port.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-G\-P\-I\-Port.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Stub\-G\-P\-I\-Port\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_g_p_i_port__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_a5dbd52b913a51f92b201a28b11d53fbd}{Stub\-G\-P\-I\-Port} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$\-\_\-\-\_\-p\-Reader, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \-\_\-\-\_\-\-G\-P\-I\-Port\-Num, L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \-\_\-\-\_\-config, enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State \-\_\-\-\_\-state)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_ae3feb12ce310b0a8cf474367cd3660c2}{set\-State} (enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State state)
+\begin{DoxyCompactList}\small\item\em Set the current state of G\-P\-I port. This method also delivers G\-P\-I event to \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin}. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_aeb89a3edf66c95e3e109b06712a4442c}{get\-Port\-Num} ()
+\begin{DoxyCompactList}\small\item\em Returns port number of this G\-P\-I port. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_aa450fcdeb234a02d7e5b47c61ad42798}{get\-Config} ()
+\begin{DoxyCompactList}\small\item\em Returns current configuration of this G\-P\-I port. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_a80e1715d4274215e8c6f6472cd50d14d}{set\-Config} (L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \-\_\-config)
+\begin{DoxyCompactList}\small\item\em Set the configuration of this G\-P\-I port. \end{DoxyCompactList}\item 
+enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_ac335751218f9ae57ad4a3edf971b90d5}{get\-State} ()
+\begin{DoxyCompactList}\small\item\em Returns current state of this G\-P\-I port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a6ece56a65733ff0d7ddff15c74f47c31}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries m\-\_\-\-Reader}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a6ece56a65733ff0d7ddff15c74f47c31}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a14655443e6c292850538f6d39d64c366}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries m\-\_\-\-Port\-Num}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a14655443e6c292850538f6d39d64c366}
+
+\item 
+L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_a1c3280d87148997b7b64ab099e802148}{m\-\_\-config}
+\begin{DoxyCompactList}\small\item\em State of G\-P\-I port. 0 means this G\-P\-I port is disabled, 1 is enabled. \end{DoxyCompactList}\item 
+enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port_a6f9af5c95457b32dda056ddeb31978fc}{m\-\_\-state}
+\begin{DoxyCompactList}\small\item\em G\-P\-I H\-I\-G\-H/\-L\-O\-W/unknown state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstraction for the G\-P\-I Port. 
+
+Definition at line 22 of file Stub\-G\-P\-I\-Port.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a5dbd52b913a51f92b201a28b11d53fbd}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!Stub\-G\-P\-I\-Port@{Stub\-G\-P\-I\-Port}}
+\index{Stub\-G\-P\-I\-Port@{Stub\-G\-P\-I\-Port}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{Stub\-G\-P\-I\-Port}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::\-Stub\-G\-P\-I\-Port (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader} $\ast$}]{\-\_\-\-\_\-p\-Reader, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{\-\_\-\-\_\-\-G\-P\-I\-Port\-Num, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t}]{\-\_\-\-\_\-config, }
+\item[{enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State}]{\-\_\-\-\_\-state}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a5dbd52b913a51f92b201a28b11d53fbd}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_g_p_i_port}{Stub\-G\-P\-I\-Port} class. 
+
+
+
+Definition at line 7 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_aa450fcdeb234a02d7e5b47c61ad42798}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!get\-Config@{get\-Config}}
+\index{get\-Config@{get\-Config}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{get\-Config}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::get\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_aa450fcdeb234a02d7e5b47c61ad42798}
+
+
+Returns current configuration of this G\-P\-I port. 
+
+
+
+Definition at line 31 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_aeb89a3edf66c95e3e109b06712a4442c}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!get\-Port\-Num@{get\-Port\-Num}}
+\index{get\-Port\-Num@{get\-Port\-Num}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{get\-Port\-Num}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::get\-Port\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_aeb89a3edf66c95e3e109b06712a4442c}
+
+
+Returns port number of this G\-P\-I port. 
+
+
+
+Definition at line 27 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_ac335751218f9ae57ad4a3edf971b90d5}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!get\-State@{get\-State}}
+\index{get\-State@{get\-State}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{get\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::get\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_ac335751218f9ae57ad4a3edf971b90d5}
+
+
+Returns current state of this G\-P\-I port. 
+
+
+
+Definition at line 23 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a80e1715d4274215e8c6f6472cd50d14d}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!set\-Config@{set\-Config}}
+\index{set\-Config@{set\-Config}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{set\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::set\-Config (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t}]{\-\_\-config}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a80e1715d4274215e8c6f6472cd50d14d}
+
+
+Set the configuration of this G\-P\-I port. 
+
+
+
+Definition at line 35 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_ae3feb12ce310b0a8cf474367cd3660c2}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!set\-State@{set\-State}}
+\index{set\-State@{set\-State}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{set\-State}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::set\-State (
+\begin{DoxyParamCaption}
+\item[{enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State}]{state}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_ae3feb12ce310b0a8cf474367cd3660c2}
+
+
+Set the current state of G\-P\-I port. This method also delivers G\-P\-I event to \hyperlink{class_e_l_f_i_n_1_1_r_o_admin}{R\-O\-Admin}. 
+
+
+
+Definition at line 13 of file Stub\-G\-P\-I\-Port.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a1c3280d87148997b7b64ab099e802148}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!m\-\_\-config@{m\-\_\-config}}
+\index{m\-\_\-config@{m\-\_\-config}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{m\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u1\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::m\-\_\-config\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a1c3280d87148997b7b64ab099e802148}
+
+
+State of G\-P\-I port. 0 means this G\-P\-I port is disabled, 1 is enabled. 
+
+
+
+Definition at line 43 of file Stub\-G\-P\-I\-Port.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_g_p_i_port_a6f9af5c95457b32dda056ddeb31978fc}{\index{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}!m\-\_\-state@{m\-\_\-state}}
+\index{m\-\_\-state@{m\-\_\-state}!ELFIN::StubGPIPort@{E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port}}
+\subsubsection[{m\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State E\-L\-F\-I\-N\-::\-Stub\-G\-P\-I\-Port\-::m\-\_\-state\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_g_p_i_port_a6f9af5c95457b32dda056ddeb31978fc}
+
+
+G\-P\-I H\-I\-G\-H/\-L\-O\-W/unknown state. 
+
+
+
+Definition at line 45 of file Stub\-G\-P\-I\-Port.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_g_p_i_port_8h}{Stub\-G\-P\-I\-Port.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_g_p_i_port_8cpp}{Stub\-G\-P\-I\-Port.\-cpp}\end{DoxyCompactItemize}

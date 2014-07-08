@@ -1,0 +1,143 @@
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener}{\section{E\-L\-F\-I\-N\-:\-:G\-P\-I\-Event\-Listener Class Reference}
+\label{class_e_l_f_i_n_1_1_g_p_i_event_listener}\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+}
+
+
+Interface for handling the signal from the G\-P\-I port of L\-L\-R\-P Reader.  
+
+
+
+
+{\ttfamily \#include $<$G\-P\-I\-Event\-Listener.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:G\-P\-I\-Event\-Listener\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_e_l_f_i_n_1_1_g_p_i_event_listener__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_a663349d73ed9d1348f970bddb342901d}{G\-P\-I\-Event\-Listener} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener}{G\-P\-I\-Event\-Listener} class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_a16d54d415de14ebd57211f6789ee1a3b}{$\sim$\-G\-P\-I\-Event\-Listener} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener}{G\-P\-I\-Event\-Listener} class. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_a5afdbda5a841643ca219f1e4bd3cad4f}{on\-G\-P\-I\-Event} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t G\-P\-I\-Port\-Num, enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State G\-P\-I\-Event)=0
+\begin{DoxyCompactList}\small\item\em Perform the operation with given port number of G\-P\-I port and its state. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_aca1758c1f28701458725f318ac21a9de}{reg\-G\-P\-I\-Event} (int G\-P\-I\-Port\-Num, int G\-P\-I\-Event, int R\-O\-Spec\-I\-D, enum E\-G\-P\-I\-Trigger\-Type trig\-Type)
+\begin{DoxyCompactList}\small\item\em Register G\-P\-I event to \-\_\-\-G\-P\-I\-Event\-Registry. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener_a00674b0da3cce658f584758d13c9201b}{unreg\-G\-P\-I\-Event} (int G\-P\-I\-Port\-Num, int G\-P\-I\-Event)
+\begin{DoxyCompactList}\small\item\em Unregister G\-P\-I event from \-\_\-\-G\-P\-I\-Event\-Registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a44ae06c56f28415591b76dcabfcc6de3}{G\-P\-I\-Event\-Registry {\bfseries \-\_\-\-G\-P\-I\-Event\-Registry}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a44ae06c56f28415591b76dcabfcc6de3}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a760b47695c99113814a982dceb6ef806}{boost\-::mutex {\bfseries \-\_\-p\-G\-P\-I\-Reg\-Lock}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a760b47695c99113814a982dceb6ef806}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for handling the signal from the G\-P\-I port of L\-L\-R\-P Reader. 
+
+Definition at line 21 of file G\-P\-I\-Event\-Listener.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a663349d73ed9d1348f970bddb342901d}{\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}!G\-P\-I\-Event\-Listener@{G\-P\-I\-Event\-Listener}}
+\index{G\-P\-I\-Event\-Listener@{G\-P\-I\-Event\-Listener}!ELFIN::GPIEventListener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+\subsubsection[{G\-P\-I\-Event\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener\-::\-G\-P\-I\-Event\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a663349d73ed9d1348f970bddb342901d}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener}{G\-P\-I\-Event\-Listener} class. 
+
+
+
+Definition at line 11 of file G\-P\-I\-Event\-Listener.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a16d54d415de14ebd57211f6789ee1a3b}{\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}!$\sim$\-G\-P\-I\-Event\-Listener@{$\sim$\-G\-P\-I\-Event\-Listener}}
+\index{$\sim$\-G\-P\-I\-Event\-Listener@{$\sim$\-G\-P\-I\-Event\-Listener}!ELFIN::GPIEventListener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+\subsubsection[{$\sim$\-G\-P\-I\-Event\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener\-::$\sim$\-G\-P\-I\-Event\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a16d54d415de14ebd57211f6789ee1a3b}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_g_p_i_event_listener}{G\-P\-I\-Event\-Listener} class. 
+
+
+
+Definition at line 15 of file G\-P\-I\-Event\-Listener.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a5afdbda5a841643ca219f1e4bd3cad4f}{\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}!on\-G\-P\-I\-Event@{on\-G\-P\-I\-Event}}
+\index{on\-G\-P\-I\-Event@{on\-G\-P\-I\-Event}!ELFIN::GPIEventListener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+\subsubsection[{on\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener\-::on\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{G\-P\-I\-Port\-Num, }
+\item[{enum L\-L\-R\-P\-::\-E\-G\-P\-I\-Port\-State}]{G\-P\-I\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a5afdbda5a841643ca219f1e4bd3cad4f}
+
+
+Perform the operation with given port number of G\-P\-I port and its state. 
+
+
+
+Implemented in \hyperlink{class_e_l_f_i_n_1_1_r_o_admin_a652f5d46a08d1889a4bd8b2db05a805d}{E\-L\-F\-I\-N\-::\-R\-O\-Admin}.
+
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_aca1758c1f28701458725f318ac21a9de}{\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}!reg\-G\-P\-I\-Event@{reg\-G\-P\-I\-Event}}
+\index{reg\-G\-P\-I\-Event@{reg\-G\-P\-I\-Event}!ELFIN::GPIEventListener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+\subsubsection[{reg\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener\-::reg\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{G\-P\-I\-Port\-Num, }
+\item[{int}]{G\-P\-I\-Event, }
+\item[{int}]{R\-O\-Spec\-I\-D, }
+\item[{enum E\-G\-P\-I\-Trigger\-Type}]{trig\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_aca1758c1f28701458725f318ac21a9de}
+
+
+Register G\-P\-I event to \-\_\-\-G\-P\-I\-Event\-Registry. 
+
+
+
+Definition at line 20 of file G\-P\-I\-Event\-Listener.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_g_p_i_event_listener_a00674b0da3cce658f584758d13c9201b}{\index{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}!unreg\-G\-P\-I\-Event@{unreg\-G\-P\-I\-Event}}
+\index{unreg\-G\-P\-I\-Event@{unreg\-G\-P\-I\-Event}!ELFIN::GPIEventListener@{E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener}}
+\subsubsection[{unreg\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-G\-P\-I\-Event\-Listener\-::unreg\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{G\-P\-I\-Port\-Num, }
+\item[{int}]{G\-P\-I\-Event}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_g_p_i_event_listener_a00674b0da3cce658f584758d13c9201b}
+
+
+Unregister G\-P\-I event from \-\_\-\-G\-P\-I\-Event\-Registry. 
+
+
+
+Definition at line 36 of file G\-P\-I\-Event\-Listener.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_g_p_i_event_listener_8h}{G\-P\-I\-Event\-Listener.\-h}\item 
+elfin\-\_\-src/\hyperlink{_g_p_i_event_listener_8cpp}{G\-P\-I\-Event\-Listener.\-cpp}\end{DoxyCompactItemize}

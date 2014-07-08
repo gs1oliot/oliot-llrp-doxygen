@@ -1,0 +1,59 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_abstract_antenna_operation_af8cd8a5e57d157a3af20c28c6e573bfb}{E\-L\-F\-I\-N\-:\-:Abstract\-Antenna\-Operation\-:\-:run} ()=0]This should be fixed to conform R\-F\-Survey\-Operation.  
+\item[\label{todo__todo000002}%
+\hypertarget{todo__todo000002}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_access_operation_a9f928363dd0ab1a6a0ef2f3e594e60a4}{E\-L\-F\-I\-N\-:\-:Access\-Operation\-:\-:match\-Tag\-Spec} (Stub\-Tag $\ast$p\-Stub\-Tag, L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t p\-R\-O\-Spec\-I\-D)]need to remove redundant code 
+
+Need to modify not only support the pointer multiple of 8, but also other values 
+
+Optimize this, by not reading whole mb contents, but just target area. 
+
+Need to modify not only support the pointer multiple of 8, but also other values  
+\item[\label{todo__todo000006}%
+\hypertarget{todo__todo000006}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01}{E\-L\-F\-I\-N\-:\-:A\-I\-Operation\-:\-:run} ()]add G\-P\-I event listener 
+
+Add handling of Antenna\-Configurations of Inventory\-Parameter\-Spec 
+
+iterate Access\-Spec in the sequence of enable time, and execute only the firstly matched one.  
+\item[\label{todo__todo000009}%
+\hypertarget{todo__todo000009}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_ac493ec01485f6a3359958919ddace01a}{E\-L\-F\-I\-N\-:\-:A\-O\-Admin\-:\-:add\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$a\-Access\-Spec)]In case there are multiple Access\-Specs that get matched during a Tag\-Spec lookup, the Reader S\-H\-A\-L\-L only execute the first enabled Access\-Spec that matches, where the ordering of the Access\-Specs is the order in which the Access\-Specs were created by the Client. (L\-L\-R\-P Spec 12.\-2.\-1.\-2)  
+\item[\label{todo__todo000012}%
+\hypertarget{todo__todo000012}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a1e32c1a8d11bcf11f5d8143eac90fd91}{E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Core\-:\-:handle\-Set\-Protocol\-Version} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)]L\-L\-R\-P 1.\-0.\-1 is currently not supported. 
+
+If this message comes with same protocol version twice, then L\-L\-R\-P Wrapper should response with M\-\_\-\-Unexpected\-Message. 
+
+If this message comes with same protocol version twice, then L\-L\-R\-P Wrapper should response with M\-\_\-\-Unexpected\-Message.  
+\item[\label{todo__todo000014}%
+\hypertarget{todo__todo000014}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a0065a7307c4ea46db3fea2cd109bc1e1}{E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Core\-:\-:handle\-Set\-Reader\-Config} (L\-L\-R\-P\-::\-C\-Message $\ast$\-\_\-p\-Cmd, L\-L\-R\-P\-::\-C\-Message $\ast$$\ast$\-\_\-p\-Rsp)]Handle no such G\-P\-O\-Port failure  
+\item[\label{todo__todo000010}%
+\hypertarget{todo__todo000010}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core_a7fb97667d470bfddac25da751cf8480e}{E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Core\-:\-:run} ()]close connection more elegantly. (not using prog\-Opt to get Reader\-Initiated\-Opt) 
+
+close connection more elegantly. (not using prog\-Opt to get Reader\-Initiated\-Opt)  
+\item[\label{todo__todo000017}%
+\hypertarget{todo__todo000017}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a5fe3a421c97daf9cb398d88d79c2b0c1}{E\-L\-F\-I\-N\-:\-:Reader\-Operation\-:\-:handle\-\_\-timeout} (const boost\-::system\-::error\-\_\-code \&e)]Add support for time based R\-O\-Report\-Spec 
+
+Should we send callback to Stub\-Reader\-App here? 
+
+Check whether we should store all reports, or only latest one. Currently, only latest one is stored.  
+\item[\label{todo__todo000015}%
+\hypertarget{todo__todo000015}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_reader_operation_a0cf397b0aa83e1c5c9df1a1af6a04e93}{E\-L\-F\-I\-N\-:\-:Reader\-Operation\-:\-:Reader\-Operation} (L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$a\-R\-O\-Spec, L\-L\-R\-P\-Core $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core)]Handle the errors related to illegal Loop\-Spec  
+\item[\label{todo__todo000016}%
+\hypertarget{todo__todo000016}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_reader_operation_af0a5fbd8e670cf99939088f8f8b6582f}{E\-L\-F\-I\-N\-:\-:Reader\-Operation\-:\-:schedule} ()]change the sequence of parameters, to remove Timer\-Task\-::\-C\-O\-U\-N\-T\-\_\-\-I\-N\-F\-I\-N\-I\-T\-Y  
+\item[\label{todo__todo000020}%
+\hypertarget{todo__todo000020}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_r_f_survey_operation_a7eea340a95a2c04a7a93081354feeaf0}{E\-L\-F\-I\-N\-:\-:R\-F\-Survey\-Operation\-:\-:run} ()]This should be modified to return R\-F\-Survey\-Report. Currently, Abstract\-Antenna\-Operation has prototype as follows, so cannot modify.  
+\item[\label{todo__todo000021}%
+\hypertarget{todo__todo000021}{}%
+Member \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a83bcedc25647781fa894c00c204b821e}{E\-L\-F\-I\-N\-:\-:Stub\-Antenna\-:\-:\-\_\-p\-Antenna\-I\-D} ]Add getter and setter of these variables and make these private. 
+\end{DoxyRefList}

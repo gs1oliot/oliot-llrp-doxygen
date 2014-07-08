@@ -1,0 +1,4 @@
+<map id="ELFIN::Utils::printCountedTime" name="ELFIN::Utils::printCountedTime">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_reader_operation.html#a5fe3a421c97daf9cb398d88d79c2b0c1" title="When the start trigger of ROSpec is invoked, the scheduled ROSpec executes this. This method performs..." alt="" coords="263,5,428,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_stub_reader.html#ad2da9e11a05b0d1970fd10617fd66643" title="Let the RFID reader to start tag read operation, and store the tags to each StubAntenna, in format of StubTag. " alt="" coords="273,74,417,121"/>
+</map>

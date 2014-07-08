@@ -1,0 +1,201 @@
+\hypertarget{class_e_l_f_i_n_1_1_scheduler}{\section{E\-L\-F\-I\-N\-:\-:Scheduler Class Reference}
+\label{class_e_l_f_i_n_1_1_scheduler}\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+}
+
+
+\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} is scheduled to this class. It can be scheduled for one-\/time or repeated execution by a Timer.  
+
+
+
+
+{\ttfamily \#include $<$Scheduler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_scheduler_a5f78691d533f87d51bc6ada4b7535770}{Scheduler} (boost\-::asio\-::io\-\_\-service \&ios)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler} class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_e_l_f_i_n_1_1_scheduler_aefab59f843a2d81b817516bc29338604}{$\sim$\-Scheduler} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler} class. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a2a85c2ab0e75916038ab2303da4f1435}{void {\bfseries run} ()}\label{class_e_l_f_i_n_1_1_scheduler_a2a85c2ab0e75916038ab2303da4f1435}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_adf28778d8a1e254a19e586682b72201b}{boost\-::asio\-::io\-\_\-service \& {\bfseries get\-\_\-io\-\_\-service} ()}\label{class_e_l_f_i_n_1_1_scheduler_adf28778d8a1e254a19e586682b72201b}
+
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_scheduler_a22971289baf155b0714f2951fc4da1ad}{schedule} (\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} $\ast$task, long delay, unsigned long count, unsigned long offset)
+\begin{DoxyCompactList}\small\item\em Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_scheduler_ae03411cae920643c05fcbecdf7e0f57b}{schedule} (\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} $\ast$task, long delay, unsigned long count)
+\begin{DoxyCompactList}\small\item\em Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_scheduler_a9fa87c60a1bc78a653b1bf053220769f}{schedule} (\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} $\ast$task, long delay)
+\begin{DoxyCompactList}\small\item\em Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_scheduler_a15ccc0fd833cb9e4bed78b263d43063e}{\-\_\-handle\-\_\-timeout} (\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} $\ast$p\-Tmr\-Task, const boost\-::system\-::error\-\_\-code \&e)
+\begin{DoxyCompactList}\small\item\em When the scheduled \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} starts, this method is called to decide whether to re-\/enable the \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} for next execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a4c10d1da65bfbf607f3fa1f7a6d62d19}{boost\-::asio\-::strand {\bfseries \-\_\-strand}}\label{class_e_l_f_i_n_1_1_scheduler_a4c10d1da65bfbf607f3fa1f7a6d62d19}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_aedc963dde267b3265ccff4cecfed3c72}{boost\-::asio\-::deadline\-\_\-timer $\ast$ {\bfseries \-\_\-pdltimer}}\label{class_e_l_f_i_n_1_1_scheduler_aedc963dde267b3265ccff4cecfed3c72}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} is scheduled to this class. It can be scheduled for one-\/time or repeated execution by a Timer. 
+
+Definition at line 23 of file Scheduler.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a5f78691d533f87d51bc6ada4b7535770}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Scheduler\-::\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{boost\-::asio\-::io\-\_\-service \&}]{ios}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_e_l_f_i_n_1_1_scheduler_a5f78691d533f87d51bc6ada4b7535770}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler} class. 
+
+
+
+Definition at line 27 of file Scheduler.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_aefab59f843a2d81b817516bc29338604}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!$\sim$\-Scheduler@{$\sim$\-Scheduler}}
+\index{$\sim$\-Scheduler@{$\sim$\-Scheduler}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{$\sim$\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}virtual E\-L\-F\-I\-N\-::\-Scheduler\-::$\sim$\-Scheduler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_scheduler_aefab59f843a2d81b817516bc29338604}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_scheduler}{Scheduler} class. 
+
+
+
+Definition at line 33 of file Scheduler.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a15ccc0fd833cb9e4bed78b263d43063e}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!\-\_\-handle\-\_\-timeout@{\-\_\-handle\-\_\-timeout}}
+\index{\-\_\-handle\-\_\-timeout@{\-\_\-handle\-\_\-timeout}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{\-\_\-handle\-\_\-timeout}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Scheduler\-::\-\_\-handle\-\_\-timeout (
+\begin{DoxyParamCaption}
+\item[{{\bf Timer\-Task} $\ast$}]{p\-Tmr\-Task, }
+\item[{const boost\-::system\-::error\-\_\-code \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_scheduler_a15ccc0fd833cb9e4bed78b263d43063e}
+
+
+When the scheduled \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} starts, this method is called to decide whether to re-\/enable the \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} for next execution. 
+
+
+
+Definition at line 25 of file Scheduler.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_scheduler_a15ccc0fd833cb9e4bed78b263d43063e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_scheduler_a15ccc0fd833cb9e4bed78b263d43063e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a22971289baf155b0714f2951fc4da1ad}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Scheduler\-::schedule (
+\begin{DoxyParamCaption}
+\item[{{\bf Timer\-Task} $\ast$}]{task, }
+\item[{long}]{delay, }
+\item[{unsigned long}]{count, }
+\item[{unsigned long}]{offset}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_scheduler_a22971289baf155b0714f2951fc4da1ad}
+
+
+Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. 
+
+
+
+Definition at line 62 of file Scheduler.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_scheduler_a22971289baf155b0714f2951fc4da1ad_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_ae03411cae920643c05fcbecdf7e0f57b}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Scheduler\-::schedule (
+\begin{DoxyParamCaption}
+\item[{{\bf Timer\-Task} $\ast$}]{task, }
+\item[{long}]{delay, }
+\item[{unsigned long}]{count}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_scheduler_ae03411cae920643c05fcbecdf7e0f57b}
+
+
+Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. 
+
+
+
+Definition at line 57 of file Scheduler.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_scheduler_a9fa87c60a1bc78a653b1bf053220769f}{\index{E\-L\-F\-I\-N\-::\-Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!ELFIN::Scheduler@{E\-L\-F\-I\-N\-::\-Scheduler}}
+\subsubsection[{schedule}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Scheduler\-::schedule (
+\begin{DoxyParamCaption}
+\item[{{\bf Timer\-Task} $\ast$}]{task, }
+\item[{long}]{delay}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_scheduler_a9fa87c60a1bc78a653b1bf053220769f}
+
+
+Schedule the given \hyperlink{class_e_l_f_i_n_1_1_timer_task}{Timer\-Task} with given options. 
+
+
+
+Definition at line 120 of file Scheduler.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_scheduler_8h}{Scheduler.\-h}\item 
+elfin\-\_\-src/\hyperlink{_scheduler_8cpp}{Scheduler.\-cpp}\end{DoxyCompactItemize}

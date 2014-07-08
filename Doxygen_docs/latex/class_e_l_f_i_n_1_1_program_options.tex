@@ -1,0 +1,470 @@
+\hypertarget{class_e_l_f_i_n_1_1_program_options}{\section{E\-L\-F\-I\-N\-:\-:Program\-Options Class Reference}
+\label{class_e_l_f_i_n_1_1_program_options}\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+}
+
+
+Parse the configuration file and store it.  
+
+
+
+
+{\ttfamily \#include $<$E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_program_options_ae9c76cc6526e9e5e9a86406cbf7557ae}{Program\-Options} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_e_l_f_i_n_1_1_program_options_a49087de0dba7f30558b339711e25b244}{$\sim$\-Program\-Options} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_a0597be1826180e777bcf3aa5ee5192a2}{process\-Cmdline\-Options} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Parse the command line and configuration file options, and store them. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_program_options_afef36c153116f9e303c32393d2f3b9a5}{bool {\bfseries is\-Help\-Option} ()}\label{class_e_l_f_i_n_1_1_program_options_afef36c153116f9e303c32393d2f3b9a5}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a872d4fcf3d92230f5195095faf6794c4}{void {\bfseries print\-Help} ()}\label{class_e_l_f_i_n_1_1_program_options_a872d4fcf3d92230f5195095faf6794c4}
+
+\item 
+void \hyperlink{class_e_l_f_i_n_1_1_program_options_ab7ab803dd5e6e0b1ffa650da4be82dee}{print\-Options} ()
+\begin{DoxyCompactList}\small\item\em Print current option values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_aa230c3fa171bb043cbc5eb8d8735bae9}{get\-Reader\-Initiated\-Opt} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_e_l_f_i_n_1_1_program_options_a70ff019169c55e71c5d6b4083ffc8acf}{get\-Fn\-C\-Address} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_a862c78cff3445b6c69c982d64c553ed1}{get\-Fn\-C\-Port} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_e_l_f_i_n_1_1_program_options_ac25f97f994242da0fd2f95e36eee4dda}{get\-E\-P\-C} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_a8db8c8e9f0382d71fc926c42e68c9af6}{get\-Is\-Emulator\-Mode} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_a1cb191c3e34401d0550339ab3b62ac48}{get\-G\-P\-I\-Port\-Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_ad60494ff56373efc80912162561a8fa3}{get\-G\-P\-O\-Port\-Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_ad8d1d9804bb6c51518f6bb5359d62a8d}{get\-Antenna\-Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_a3dcacd2989ebed87eee66765b4133b51}{get\-Read\-Cycle} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_program_options_adf1a0c270f3eda0ef0b589c4f765963f}{get\-Virtual\-Tag\-Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+enum E\-Log\-Type \hyperlink{class_e_l_f_i_n_1_1_program_options_a25118270b4fb86ca2bc98ef9996ce847}{get\-Log\-Level} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_e_l_f_i_n_1_1_program_options_adbd9e9656083dcf06a0a2b99afab33b7}{get\-L\-L\-R\-P\-File\-Name} ()
+\begin{DoxyCompactList}\small\item\em Returns the corresponding option value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a634928958af27c5c61bec63b1c322ed7}{boost\-::program\-\_\-options\-::variables\-\_\-map {\bfseries \-\_\-vm}}\label{class_e_l_f_i_n_1_1_program_options_a634928958af27c5c61bec63b1c322ed7}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a61846db95193a0bfac31cbc959b85c5a}{boost\-::program\-\_\-options\-::options\-\_\-description {\bfseries \-\_\-visible\-Desc}}\label{class_e_l_f_i_n_1_1_program_options_a61846db95193a0bfac31cbc959b85c5a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parse the configuration file and store it. 
+
+Definition at line 18 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_program_options_ae9c76cc6526e9e5e9a86406cbf7557ae}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!Program\-Options@{Program\-Options}}
+\index{Program\-Options@{Program\-Options}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{Program\-Options}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Program\-Options\-::\-Program\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_ae9c76cc6526e9e5e9a86406cbf7557ae}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} class. 
+
+
+
+Definition at line 44 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a49087de0dba7f30558b339711e25b244}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!$\sim$\-Program\-Options@{$\sim$\-Program\-Options}}
+\index{$\sim$\-Program\-Options@{$\sim$\-Program\-Options}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{$\sim$\-Program\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual E\-L\-F\-I\-N\-::\-Program\-Options\-::$\sim$\-Program\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_program_options_a49087de0dba7f30558b339711e25b244}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} class. 
+
+
+
+Definition at line 24 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_program_options_ad8d1d9804bb6c51518f6bb5359d62a8d}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Antenna\-Count@{get\-Antenna\-Count}}
+\index{get\-Antenna\-Count@{get\-Antenna\-Count}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Antenna\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Antenna\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_ad8d1d9804bb6c51518f6bb5359d62a8d}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 372 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_ad8d1d9804bb6c51518f6bb5359d62a8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_ac25f97f994242da0fd2f95e36eee4dda}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-E\-P\-C@{get\-E\-P\-C}}
+\index{get\-E\-P\-C@{get\-E\-P\-C}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-E\-P\-C}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-E\-P\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_ac25f97f994242da0fd2f95e36eee4dda}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 290 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_ac25f97f994242da0fd2f95e36eee4dda_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a70ff019169c55e71c5d6b4083ffc8acf}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Fn\-C\-Address@{get\-Fn\-C\-Address}}
+\index{get\-Fn\-C\-Address@{get\-Fn\-C\-Address}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Fn\-C\-Address}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Fn\-C\-Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a70ff019169c55e71c5d6b4083ffc8acf}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 255 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_program_options_a70ff019169c55e71c5d6b4083ffc8acf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a862c78cff3445b6c69c982d64c553ed1}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Fn\-C\-Port@{get\-Fn\-C\-Port}}
+\index{get\-Fn\-C\-Port@{get\-Fn\-C\-Port}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Fn\-C\-Port}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Fn\-C\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a862c78cff3445b6c69c982d64c553ed1}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 271 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_program_options_a862c78cff3445b6c69c982d64c553ed1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a1cb191c3e34401d0550339ab3b62ac48}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-G\-P\-I\-Port\-Count@{get\-G\-P\-I\-Port\-Count}}
+\index{get\-G\-P\-I\-Port\-Count@{get\-G\-P\-I\-Port\-Count}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-G\-P\-I\-Port\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-G\-P\-I\-Port\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a1cb191c3e34401d0550339ab3b62ac48}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 334 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_a1cb191c3e34401d0550339ab3b62ac48_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_ad60494ff56373efc80912162561a8fa3}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-G\-P\-O\-Port\-Count@{get\-G\-P\-O\-Port\-Count}}
+\index{get\-G\-P\-O\-Port\-Count@{get\-G\-P\-O\-Port\-Count}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-G\-P\-O\-Port\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-G\-P\-O\-Port\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_ad60494ff56373efc80912162561a8fa3}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 352 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_ad60494ff56373efc80912162561a8fa3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a8db8c8e9f0382d71fc926c42e68c9af6}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Is\-Emulator\-Mode@{get\-Is\-Emulator\-Mode}}
+\index{get\-Is\-Emulator\-Mode@{get\-Is\-Emulator\-Mode}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Is\-Emulator\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Is\-Emulator\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a8db8c8e9f0382d71fc926c42e68c9af6}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 306 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_a8db8c8e9f0382d71fc926c42e68c9af6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_adbd9e9656083dcf06a0a2b99afab33b7}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-L\-L\-R\-P\-File\-Name@{get\-L\-L\-R\-P\-File\-Name}}
+\index{get\-L\-L\-R\-P\-File\-Name@{get\-L\-L\-R\-P\-File\-Name}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-L\-L\-R\-P\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-L\-L\-R\-P\-File\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_adbd9e9656083dcf06a0a2b99afab33b7}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 426 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a25118270b4fb86ca2bc98ef9996ce847}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Log\-Level@{get\-Log\-Level}}
+\index{get\-Log\-Level@{get\-Log\-Level}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}enum E\-L\-F\-I\-N\-::\-E\-Log\-Type E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Log\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a25118270b4fb86ca2bc98ef9996ce847}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 442 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_program_options_a25118270b4fb86ca2bc98ef9996ce847_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a3dcacd2989ebed87eee66765b4133b51}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Read\-Cycle@{get\-Read\-Cycle}}
+\index{get\-Read\-Cycle@{get\-Read\-Cycle}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Read\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Read\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a3dcacd2989ebed87eee66765b4133b51}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 390 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_a3dcacd2989ebed87eee66765b4133b51_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_aa230c3fa171bb043cbc5eb8d8735bae9}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Reader\-Initiated\-Opt@{get\-Reader\-Initiated\-Opt}}
+\index{get\-Reader\-Initiated\-Opt@{get\-Reader\-Initiated\-Opt}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Reader\-Initiated\-Opt}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Reader\-Initiated\-Opt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_aa230c3fa171bb043cbc5eb8d8735bae9}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 227 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_program_options_aa230c3fa171bb043cbc5eb8d8735bae9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_adf1a0c270f3eda0ef0b589c4f765963f}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!get\-Virtual\-Tag\-Count@{get\-Virtual\-Tag\-Count}}
+\index{get\-Virtual\-Tag\-Count@{get\-Virtual\-Tag\-Count}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{get\-Virtual\-Tag\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::get\-Virtual\-Tag\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_adf1a0c270f3eda0ef0b589c4f765963f}
+
+
+Returns the corresponding option value. 
+
+
+
+Definition at line 408 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_program_options_adf1a0c270f3eda0ef0b589c4f765963f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_ab7ab803dd5e6e0b1ffa650da4be82dee}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!print\-Options@{print\-Options}}
+\index{print\-Options@{print\-Options}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{print\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Program\-Options\-::print\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_ab7ab803dd5e6e0b1ffa650da4be82dee}
+
+
+Print current option values. 
+
+
+
+Definition at line 155 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_program_options_ab7ab803dd5e6e0b1ffa650da4be82dee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_program_options_a0597be1826180e777bcf3aa5ee5192a2}{\index{E\-L\-F\-I\-N\-::\-Program\-Options@{E\-L\-F\-I\-N\-::\-Program\-Options}!process\-Cmdline\-Options@{process\-Cmdline\-Options}}
+\index{process\-Cmdline\-Options@{process\-Cmdline\-Options}!ELFIN::ProgramOptions@{E\-L\-F\-I\-N\-::\-Program\-Options}}
+\subsubsection[{process\-Cmdline\-Options}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Program\-Options\-::process\-Cmdline\-Options (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_program_options_a0597be1826180e777bcf3aa5ee5192a2}
+
+
+Parse the command line and configuration file options, and store them. 
+
+That class is intended to store values of options, and can store values of arbitrary types. Next, the calls to store, parse\-\_\-command\-\_\-line and notify functions cause vm to contain all the options found on the command line.
+
+Definition at line 49 of file E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_e_l_f_i_n___prog_opts_8h}{E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-h}\item 
+elfin\-\_\-src/\hyperlink{_e_l_f_i_n___prog_opts_8cpp}{E\-L\-F\-I\-N\-\_\-\-Prog\-Opts.\-cpp}\end{DoxyCompactItemize}

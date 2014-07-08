@@ -1,0 +1,296 @@
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation}{\section{E\-L\-F\-I\-N\-:\-:A\-I\-Operation Class Reference}
+\label{class_e_l_f_i_n_1_1_a_i_operation}\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+}
+
+
+A single antenna inventory operation generated based on the A\-I\-Spec parameter in the given R\-O\-Spec.  
+
+
+
+
+{\ttfamily \#include $<$A\-I\-Operation.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:A\-I\-Operation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_e_l_f_i_n_1_1_a_i_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:A\-I\-Operation\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a77f1def7da7b7712981030a08746513e}{A\-I\-Operation} (L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$\-\_\-\-\_\-p\-R\-O\-Spec, L\-L\-R\-P\-::\-C\-A\-I\-Spec $\ast$\-\_\-\-\_\-p\-A\-I\-Spec, \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$\-\_\-\-\_\-p\-Reader, \hyperlink{class_e_l_f_i_n_1_1_reader_operation}{Reader\-Operation} $\ast$\-\_\-\-\_\-p\-R\-O, \hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} $\ast$\-\_\-\-\_\-p\-A\-O\-Admin, int \-\_\-\-\_\-p\-Spec\-Index)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a95756463bda120c3ce5290f5dffc9747}{$\sim$\-A\-I\-Operation} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} class. \end{DoxyCompactList}\item 
+Tag\-Report\-Set $\ast$ \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01}{run} ()
+\begin{DoxyCompactList}\small\item\em Run the \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} according to the C\-A\-I\-Spec. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_ac37fc39b75785f9188b02cb62988dd18}{add\-Tag\-Report\-Unique} (Tag\-Report\-Set $\ast$p\-Set, L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$p\-Rpt)
+\begin{DoxyCompactList}\small\item\em Add the given p\-Rpt to the p\-Set. If the same E\-P\-C number exists in the vector, then overwrite it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$ \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_ab691057f5895c3af2dc617f2fcf4d9c4}{create\-Tag\-Report\-Data} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Stub\-Tag, int p\-Inv\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Create base tag report data for the given \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a8cc8f6baacabcddac43853a5f72fa580}{run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread} (int stop\-M\-S)
+\begin{DoxyCompactList}\small\item\em This method is used to make thread for stop trigger which is related to time. After given time, interrupts tag singulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a93b754086e1bc532db5b22d0c8d785f1}{L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$ {\bfseries \-\_\-p\-R\-O\-Spec}}\label{class_e_l_f_i_n_1_1_a_i_operation_a93b754086e1bc532db5b22d0c8d785f1}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a08a5b54d1283d2c54686f9a4f82fea29}{L\-L\-R\-P\-::\-C\-A\-I\-Spec $\ast$ {\bfseries \-\_\-p\-A\-I\-Spec}}\label{class_e_l_f_i_n_1_1_a_i_operation_a08a5b54d1283d2c54686f9a4f82fea29}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a79732664a72ca6ed9fbcff3cb0c65a03}{L\-L\-R\-P\-::\-C\-R\-O\-Report\-Spec $\ast$ {\bfseries \-\_\-p\-R\-O\-Report\-Spec}}\label{class_e_l_f_i_n_1_1_a_i_operation_a79732664a72ca6ed9fbcff3cb0c65a03}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a2c4e4215a3a81717b30386f6d3bcd2cf}{L\-L\-R\-P\-::\-C\-C1\-G2\-E\-P\-C\-Memory\-Selector $\ast$ {\bfseries \-\_\-p\-Mem\-Selector}}\label{class_e_l_f_i_n_1_1_a_i_operation_a2c4e4215a3a81717b30386f6d3bcd2cf}
+
+\item 
+Tag\-Report\-Set $\ast$ \hyperlink{class_e_l_f_i_n_1_1_a_i_operation_a565a8b3215c53586eaaf56a91e62a4bd}{\-\_\-p\-Tag\-Report\-Set}
+\begin{DoxyCompactList}\small\item\em C\-Tag\-Report\-Data container. \end{DoxyCompactList}\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a7c6ce0591568c71473935b6191603eae}{boost\-::thread {\bfseries \-\_\-p\-A\-I\-Spec\-Stop\-Trigger\-Thread}}\label{class_e_l_f_i_n_1_1_a_i_operation_a7c6ce0591568c71473935b6191603eae}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_ae45f89acd8dd62e448a96772137a9678}{int {\bfseries is\-On\-Singulation}}\label{class_e_l_f_i_n_1_1_a_i_operation_ae45f89acd8dd62e448a96772137a9678}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a5a2d4fa187eafd1a1256a9c8df096a40}{\hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} $\ast$ {\bfseries \-\_\-p\-A\-O\-Admin}}\label{class_e_l_f_i_n_1_1_a_i_operation_a5a2d4fa187eafd1a1256a9c8df096a40}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single antenna inventory operation generated based on the A\-I\-Spec parameter in the given R\-O\-Spec. 
+
+Definition at line 23 of file A\-I\-Operation.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a77f1def7da7b7712981030a08746513e}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!A\-I\-Operation@{A\-I\-Operation}}
+\index{A\-I\-Operation@{A\-I\-Operation}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{A\-I\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::\-A\-I\-Operation (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-R\-O\-Spec $\ast$}]{\-\_\-\-\_\-p\-R\-O\-Spec, }
+\item[{L\-L\-R\-P\-::\-C\-A\-I\-Spec $\ast$}]{\-\_\-\-\_\-p\-A\-I\-Spec, }
+\item[{{\bf Stub\-Reader} $\ast$}]{\-\_\-\-\_\-p\-Reader, }
+\item[{{\bf Reader\-Operation} $\ast$}]{\-\_\-\-\_\-p\-R\-O, }
+\item[{{\bf A\-O\-Admin} $\ast$}]{\-\_\-\-\_\-p\-A\-O\-Admin, }
+\item[{int}]{\-\_\-\-\_\-p\-Spec\-Index}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_i_operation_a77f1def7da7b7712981030a08746513e}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} class. 
+
+
+
+Definition at line 15 of file A\-I\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a95756463bda120c3ce5290f5dffc9747}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!$\sim$\-A\-I\-Operation@{$\sim$\-A\-I\-Operation}}
+\index{$\sim$\-A\-I\-Operation@{$\sim$\-A\-I\-Operation}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{$\sim$\-A\-I\-Operation}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::$\sim$\-A\-I\-Operation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_i_operation_a95756463bda120c3ce5290f5dffc9747}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} class. 
+
+
+
+Definition at line 37 of file A\-I\-Operation.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_ac37fc39b75785f9188b02cb62988dd18}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!add\-Tag\-Report\-Unique@{add\-Tag\-Report\-Unique}}
+\index{add\-Tag\-Report\-Unique@{add\-Tag\-Report\-Unique}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{add\-Tag\-Report\-Unique}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::add\-Tag\-Report\-Unique (
+\begin{DoxyParamCaption}
+\item[{Tag\-Report\-Set $\ast$}]{p\-Set, }
+\item[{L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$}]{p\-Rpt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_a_i_operation_ac37fc39b75785f9188b02cb62988dd18}
+
+
+Add the given p\-Rpt to the p\-Set. If the same E\-P\-C number exists in the vector, then overwrite it. 
+
+
+
+Definition at line 399 of file A\-I\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_ac37fc39b75785f9188b02cb62988dd18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_ac37fc39b75785f9188b02cb62988dd18_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_ab691057f5895c3af2dc617f2fcf4d9c4}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!create\-Tag\-Report\-Data@{create\-Tag\-Report\-Data}}
+\index{create\-Tag\-Report\-Data@{create\-Tag\-Report\-Data}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{create\-Tag\-Report\-Data}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::\-C\-Tag\-Report\-Data $\ast$ E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::create\-Tag\-Report\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Stub\-Tag, }
+\item[{int}]{p\-Inv\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_a_i_operation_ab691057f5895c3af2dc617f2fcf4d9c4}
+
+
+Create base tag report data for the given \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. 
+
+
+
+Definition at line 322 of file A\-I\-Operation.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!run@{run}}
+\index{run@{run}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Tag\-Report\-Set $\ast$ E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01}
+
+
+Run the \hyperlink{class_e_l_f_i_n_1_1_a_i_operation}{A\-I\-Operation} according to the C\-A\-I\-Spec. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]add G\-P\-I event listener \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]Add handling of Antenna\-Configurations of Inventory\-Parameter\-Spec \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]iterate Access\-Spec in the sequence of enable time, and execute only the firstly matched one. \end{DoxyRefDesc}
+
+
+Implements \hyperlink{class_e_l_f_i_n_1_1_abstract_antenna_operation_af8cd8a5e57d157a3af20c28c6e573bfb}{E\-L\-F\-I\-N\-::\-Abstract\-Antenna\-Operation}.
+
+
+
+Definition at line 43 of file A\-I\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_a13259c8516e1b5fb465e553c4c5dae01_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a8cc8f6baacabcddac43853a5f72fa580}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread@{run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread}}
+\index{run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread@{run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::run\-\_\-\-A\-I\-Spec\-Stop\-Trigger\-Thread (
+\begin{DoxyParamCaption}
+\item[{int}]{stop\-M\-S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_a_i_operation_a8cc8f6baacabcddac43853a5f72fa580}
+
+
+This method is used to make thread for stop trigger which is related to time. After given time, interrupts tag singulation. 
+
+
+
+Definition at line 458 of file A\-I\-Operation.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_a8cc8f6baacabcddac43853a5f72fa580_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_i_operation_a8cc8f6baacabcddac43853a5f72fa580_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_i_operation_a565a8b3215c53586eaaf56a91e62a4bd}{\index{E\-L\-F\-I\-N\-::\-A\-I\-Operation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}!\-\_\-p\-Tag\-Report\-Set@{\-\_\-p\-Tag\-Report\-Set}}
+\index{\-\_\-p\-Tag\-Report\-Set@{\-\_\-p\-Tag\-Report\-Set}!ELFIN::AIOperation@{E\-L\-F\-I\-N\-::\-A\-I\-Operation}}
+\subsubsection[{\-\_\-p\-Tag\-Report\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Tag\-Report\-Set$\ast$ E\-L\-F\-I\-N\-::\-A\-I\-Operation\-::\-\_\-p\-Tag\-Report\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_a_i_operation_a565a8b3215c53586eaaf56a91e62a4bd}
+
+
+C\-Tag\-Report\-Data container. 
+
+
+
+Definition at line 44 of file A\-I\-Operation.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_a_i_operation_8h}{A\-I\-Operation.\-h}\item 
+elfin\-\_\-src/\hyperlink{_a_i_operation_8cpp}{A\-I\-Operation.\-cpp}\end{DoxyCompactItemize}

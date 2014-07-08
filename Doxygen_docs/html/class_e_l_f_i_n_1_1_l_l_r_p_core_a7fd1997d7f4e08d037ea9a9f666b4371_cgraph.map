@@ -1,0 +1,5 @@
+<map id="ELFIN::LLRPCore::handleCloseConnection" name="ELFIN::LLRPCore::handleCloseConnection">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_stub_reader_app.html#a9f95210c0b1316d3c296b1f2d974dd41" title="Remove all virtual tags of the LLRP Wrapper. " alt="" coords="264,5,437,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_stub_reader_app.html#a6aa69e9301dd6e009a6c2beef51b5fae" title="Add virtual tags with randomly generated EPCID. If there is 4 antennas and parameter is 3..." alt="" coords="268,74,433,121"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_stub_tag.html#a20942c3a84f3628030c5e4f118002a3a" title="Constructor of StubTag class. EPCID is predefined randomly, with given seed. This is for virtual tags..." alt="" coords="485,83,688,112"/>
+</map>

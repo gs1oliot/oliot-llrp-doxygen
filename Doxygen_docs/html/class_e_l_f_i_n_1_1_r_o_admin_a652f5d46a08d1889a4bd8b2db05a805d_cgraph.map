@@ -1,0 +1,9 @@
+<map id="ELFIN::ROAdmin::onGPIEvent" name="ELFIN::ROAdmin::onGPIEvent">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a6ca27b5b624ecbcc000368e7d31b8363" title="Start the ROspec. If the given ROSpec ID is 0, it is illegal and returns error. " alt="" coords="260,80,468,109"/>
+<area shape="rect" id="node13" href="$class_e_l_f_i_n_1_1_r_o_admin.html#ab998bfdbdd0564ca0aaf044781f58456" title="Stop the ROspec. If the given ROSpec ID is 0, it is illegal and returns error. " alt="" coords="260,137,468,167"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_reader_operation.html#af0a5fbd8e670cf99939088f8f8b6582f" title="Schedule this ReaderOperation to the Scheduler. " alt="" coords="531,6,696,53"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_reader_operation.html#a2b2d664c61b9405567cd0fde3a488261" title="Creates the thread of ReaderOperation using runRO() " alt="" coords="517,80,709,109"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_utils.html#a9c277422b971281470b8a5080c5e646d" title="Returns current UTC timestamp in LLRP::CUTCTimeStamp type. " alt="" coords="760,5,923,51"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_reader_operation.html#a7046ea97bbe32c4f4d8dc65874f0f7bb" title="This method is used to make ReaderOperation thread. " alt="" coords="759,74,924,121"/>
+<area shape="rect" id="node15" href="$class_e_l_f_i_n_1_1_reader_operation.html#af2a3eca438c14f42f68f3558f6c0e908" title="Send stop command to this ReaderOperation and wait until it actually stops. " alt="" coords="531,133,696,179"/>
+</map>

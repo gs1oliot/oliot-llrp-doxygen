@@ -1,0 +1,362 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna}{\section{E\-L\-F\-I\-N\-:\-:Stub\-Antenna Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_antenna}\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+}
+
+
+Abstraction for the Antenna.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-Antenna.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Stub\-Antenna\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_antenna__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa2986eed573874538fb54c6cb37ef697}{Stub\-Antenna} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$\-\_\-\-\_\-physical\-Reader, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \-\_\-\-\_\-p\-Antenna\-I\-D, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \-\_\-\-\_\-p\-Antenna\-Connected, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \-\_\-\-\_\-p\-Antenna\-Gain)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_antenna_adc9c57be01ee7f073e97296f24df4e86}{$\sim$\-Stub\-Antenna} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_ab483ec3c888bdde7cdf747a2cf35065b}{clear\-Antenna\-Fo\-V} ()
+\begin{DoxyCompactList}\small\item\em Delete all \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} in the Fo\-V of this antenna. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a3ebdc1c12e14a0342be3a5128cc2ece0}{clear\-Unsensed\-Tags\-In\-Fo\-V} ()
+\begin{DoxyCompactList}\small\item\em Delete all \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} which was not sensed this time, by checking is\-Updated variable of each \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_ab9f5d4a6aca345118a00fddf88248e37}{add\-Stub\-Tag} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Tag)
+\begin{DoxyCompactList}\small\item\em Executes \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{update\-Existing\-Stub\-Tag()}. If the tag does not exist, add it. \end{DoxyCompactList}\item 
+bool \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{update\-Existing\-Stub\-Tag} (Memory\-Bank $\ast$p\-E\-P\-C\-Bank, int p\-R\-S\-S\-I)
+\begin{DoxyCompactList}\small\item\em Matches the existing tag with the E\-P\-C bank contents. If exists, update the information of the tag and return T\-R\-U\-E. If not, return F\-A\-L\-S\-E. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a623831bc7a642ed3a86019b034317ca0}{remove\-Stub\-Tag} (\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} $\ast$p\-Tag)
+\begin{DoxyCompactList}\small\item\em Remove \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} from the Antenna Fo\-V, if exists. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a36b10b8ea3c294e0b9deb1c012f752ad}{get\-Transmit\-Power} ()
+\begin{DoxyCompactList}\small\item\em Get transmit power of the R\-F\-I\-D reader, update \-\_\-p\-Transmit\-Power, and return it. If L\-L\-R\-P Wrapper is in emulator mode, just return \-\_\-p\-Transmit\-Power. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a2a3b53c5d8c6d9b004b79a84a1114b59}{set\-Transmit\-Power} (L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t p\-Transmit\-Power)
+\begin{DoxyCompactList}\small\item\em Set transmit power of the R\-F\-I\-D reader, update \-\_\-p\-Transmit\-Power, and return result. If L\-L\-R\-P Wrapper is in emulator mode, just update \-\_\-p\-Transmit\-Power. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+Antenna\-Fo\-V\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a7e5d5ce80508d01937903ff96f3236cd}{begin\-Antenna\-Fo\-V} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+Antenna\-Fo\-V\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a5c565d7f799950b727e529787f7b84d3}{end\-Antenna\-Fo\-V} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a03a00f5852a4286914f06310b55dabfd}{count\-Antenna\-Fo\-V} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a5b447fe2863538a0ccc5e09d53342a5c}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries \-\_\-p\-Reader}}\label{class_e_l_f_i_n_1_1_stub_antenna_a5b447fe2863538a0ccc5e09d53342a5c}
+
+\item 
+L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a83bcedc25647781fa894c00c204b821e}{\-\_\-p\-Antenna\-I\-D}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_aa6a2df74abfdd93700b0420e2c7c41a4}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-p\-Antenna\-Connected}}\label{class_e_l_f_i_n_1_1_stub_antenna_aa6a2df74abfdd93700b0420e2c7c41a4}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a8a49cb67003c7e75ea435d0789019258}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-p\-Antenna\-Gain}}\label{class_e_l_f_i_n_1_1_stub_antenna_a8a49cb67003c7e75ea435d0789019258}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a0bb11474fd1f934e450fe74b22854113}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-\-Receiver\-Sensitivity}}\label{class_e_l_f_i_n_1_1_stub_antenna_a0bb11474fd1f934e450fe74b22854113}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_acb003301c5678e8f9a11643e6589d44b}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-\-Channel\-Index}}\label{class_e_l_f_i_n_1_1_stub_antenna_acb003301c5678e8f9a11643e6589d44b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_ad314b5dd888fedacc91e7118a943cebd}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-\-Hop\-Table\-I\-D}}\label{class_e_l_f_i_n_1_1_stub_antenna_ad314b5dd888fedacc91e7118a943cebd}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a6b226cda31c6098087d84934a986aae6}{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t {\bfseries \-\_\-p\-Transmit\-Power}}\label{class_e_l_f_i_n_1_1_stub_antenna_a6b226cda31c6098087d84934a986aae6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Antenna\-Fo\-V\-Map \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_a6478a8726be1569db9a2345e3a05e780}{\-\_\-\-Antenna\-Fo\-V}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} in the Fo\-V of antenna are stored in this map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstraction for the Antenna. 
+
+Definition at line 23 of file Stub\-Antenna.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_aa2986eed573874538fb54c6cb37ef697}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!Stub\-Antenna@{Stub\-Antenna}}
+\index{Stub\-Antenna@{Stub\-Antenna}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{Stub\-Antenna}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::\-Stub\-Antenna (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader} $\ast$}]{\-\_\-\-\_\-physical\-Reader, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{\-\_\-\-\_\-p\-Antenna\-I\-D, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{\-\_\-\-\_\-p\-Antenna\-Connected, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{\-\_\-\-\_\-p\-Antenna\-Gain}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_aa2986eed573874538fb54c6cb37ef697}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} class. 
+
+
+
+Definition at line 11 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_adc9c57be01ee7f073e97296f24df4e86}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!$\sim$\-Stub\-Antenna@{$\sim$\-Stub\-Antenna}}
+\index{$\sim$\-Stub\-Antenna@{$\sim$\-Stub\-Antenna}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{$\sim$\-Stub\-Antenna}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::$\sim$\-Stub\-Antenna (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_adc9c57be01ee7f073e97296f24df4e86}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_antenna}{Stub\-Antenna} class. 
+
+
+
+Definition at line 16 of file Stub\-Antenna.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_ab9f5d4a6aca345118a00fddf88248e37}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!add\-Stub\-Tag@{add\-Stub\-Tag}}
+\index{add\-Stub\-Tag@{add\-Stub\-Tag}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{add\-Stub\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::add\-Stub\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Tag}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_ab9f5d4a6aca345118a00fddf88248e37}
+
+
+Executes \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{update\-Existing\-Stub\-Tag()}. If the tag does not exist, add it. 
+
+\begin{DoxyRemark}{Remarks}
+This method executes \hyperlink{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{update\-Existing\-Stub\-Tag()} to check whether the tag exists or not.\par
+So if the tag already exists, the information of the tag is updated. 
+\end{DoxyRemark}
+
+
+Definition at line 48 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a7e5d5ce80508d01937903ff96f3236cd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!begin\-Antenna\-Fo\-V@{begin\-Antenna\-Fo\-V}}
+\index{begin\-Antenna\-Fo\-V@{begin\-Antenna\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{begin\-Antenna\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Antenna\-Fo\-V\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::begin\-Antenna\-Fo\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a7e5d5ce80508d01937903ff96f3236cd}
+
+
+Iterator access method. 
+
+
+
+Definition at line 94 of file Stub\-Antenna.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_e_l_f_i_n_1_1_stub_antenna_a7e5d5ce80508d01937903ff96f3236cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_ab483ec3c888bdde7cdf747a2cf35065b}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!clear\-Antenna\-Fo\-V@{clear\-Antenna\-Fo\-V}}
+\index{clear\-Antenna\-Fo\-V@{clear\-Antenna\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{clear\-Antenna\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::clear\-Antenna\-Fo\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_ab483ec3c888bdde7cdf747a2cf35065b}
+
+
+Delete all \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} in the Fo\-V of this antenna. 
+
+
+
+Definition at line 21 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a3ebdc1c12e14a0342be3a5128cc2ece0}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!clear\-Unsensed\-Tags\-In\-Fo\-V@{clear\-Unsensed\-Tags\-In\-Fo\-V}}
+\index{clear\-Unsensed\-Tags\-In\-Fo\-V@{clear\-Unsensed\-Tags\-In\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{clear\-Unsensed\-Tags\-In\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::clear\-Unsensed\-Tags\-In\-Fo\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a3ebdc1c12e14a0342be3a5128cc2ece0}
+
+
+Delete all \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} which was not sensed this time, by checking is\-Updated variable of each \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag}. 
+
+
+
+Definition at line 30 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a03a00f5852a4286914f06310b55dabfd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!count\-Antenna\-Fo\-V@{count\-Antenna\-Fo\-V}}
+\index{count\-Antenna\-Fo\-V@{count\-Antenna\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{count\-Antenna\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::count\-Antenna\-Fo\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a03a00f5852a4286914f06310b55dabfd}
+
+
+Iterator access method. 
+
+
+
+Definition at line 102 of file Stub\-Antenna.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_e_l_f_i_n_1_1_stub_antenna_a03a00f5852a4286914f06310b55dabfd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a5c565d7f799950b727e529787f7b84d3}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!end\-Antenna\-Fo\-V@{end\-Antenna\-Fo\-V}}
+\index{end\-Antenna\-Fo\-V@{end\-Antenna\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{end\-Antenna\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Antenna\-Fo\-V\-Map\-::iterator E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::end\-Antenna\-Fo\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a5c565d7f799950b727e529787f7b84d3}
+
+
+Iterator access method. 
+
+
+
+Definition at line 98 of file Stub\-Antenna.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_e_l_f_i_n_1_1_stub_antenna_a5c565d7f799950b727e529787f7b84d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a36b10b8ea3c294e0b9deb1c012f752ad}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!get\-Transmit\-Power@{get\-Transmit\-Power}}
+\index{get\-Transmit\-Power@{get\-Transmit\-Power}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{get\-Transmit\-Power}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::get\-Transmit\-Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a36b10b8ea3c294e0b9deb1c012f752ad}
+
+
+Get transmit power of the R\-F\-I\-D reader, update \-\_\-p\-Transmit\-Power, and return it. If L\-L\-R\-P Wrapper is in emulator mode, just return \-\_\-p\-Transmit\-Power. 
+
+
+
+Definition at line 106 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a623831bc7a642ed3a86019b034317ca0}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!remove\-Stub\-Tag@{remove\-Stub\-Tag}}
+\index{remove\-Stub\-Tag@{remove\-Stub\-Tag}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{remove\-Stub\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::remove\-Stub\-Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Tag} $\ast$}]{p\-Tag}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a623831bc7a642ed3a86019b034317ca0}
+
+
+Remove \hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} from the Antenna Fo\-V, if exists. 
+
+
+
+Definition at line 79 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a2a3b53c5d8c6d9b004b79a84a1114b59}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!set\-Transmit\-Power@{set\-Transmit\-Power}}
+\index{set\-Transmit\-Power@{set\-Transmit\-Power}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{set\-Transmit\-Power}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::set\-Transmit\-Power (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{p\-Transmit\-Power}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_a2a3b53c5d8c6d9b004b79a84a1114b59}
+
+
+Set transmit power of the R\-F\-I\-D reader, update \-\_\-p\-Transmit\-Power, and return result. If L\-L\-R\-P Wrapper is in emulator mode, just update \-\_\-p\-Transmit\-Power. 
+
+
+
+Definition at line 119 of file Stub\-Antenna.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!update\-Existing\-Stub\-Tag@{update\-Existing\-Stub\-Tag}}
+\index{update\-Existing\-Stub\-Tag@{update\-Existing\-Stub\-Tag}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{update\-Existing\-Stub\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::update\-Existing\-Stub\-Tag (
+\begin{DoxyParamCaption}
+\item[{Memory\-Bank $\ast$}]{p\-E\-P\-C\-Bank, }
+\item[{int}]{p\-R\-S\-S\-I}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9}
+
+
+Matches the existing tag with the E\-P\-C bank contents. If exists, update the information of the tag and return T\-R\-U\-E. If not, return F\-A\-L\-S\-E. 
+
+
+
+Definition at line 62 of file Stub\-Antenna.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_antenna_aa42fa66b71bfa1c8224b79cded75b9d9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a6478a8726be1569db9a2345e3a05e780}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!\-\_\-\-Antenna\-Fo\-V@{\-\_\-\-Antenna\-Fo\-V}}
+\index{\-\_\-\-Antenna\-Fo\-V@{\-\_\-\-Antenna\-Fo\-V}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{\-\_\-\-Antenna\-Fo\-V}]{\setlength{\rightskip}{0pt plus 5cm}Antenna\-Fo\-V\-Map E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::\-\_\-\-Antenna\-Fo\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_stub_antenna_a6478a8726be1569db9a2345e3a05e780}
+
+
+\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{Stub\-Tag} in the Fo\-V of antenna are stored in this map. 
+
+
+
+Definition at line 43 of file Stub\-Antenna.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_antenna_a83bcedc25647781fa894c00c204b821e}{\index{E\-L\-F\-I\-N\-::\-Stub\-Antenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}!\-\_\-p\-Antenna\-I\-D@{\-\_\-p\-Antenna\-I\-D}}
+\index{\-\_\-p\-Antenna\-I\-D@{\-\_\-p\-Antenna\-I\-D}!ELFIN::StubAntenna@{E\-L\-F\-I\-N\-::\-Stub\-Antenna}}
+\subsubsection[{\-\_\-p\-Antenna\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t E\-L\-F\-I\-N\-::\-Stub\-Antenna\-::\-\_\-p\-Antenna\-I\-D}}\label{class_e_l_f_i_n_1_1_stub_antenna_a83bcedc25647781fa894c00c204b821e}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000021}{Todo}]Add getter and setter of these variables and make these private. \end{DoxyRefDesc}
+
+
+Definition at line 33 of file Stub\-Antenna.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_antenna_8h}{Stub\-Antenna.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_antenna_8cpp}{Stub\-Antenna.\-cpp}\end{DoxyCompactItemize}

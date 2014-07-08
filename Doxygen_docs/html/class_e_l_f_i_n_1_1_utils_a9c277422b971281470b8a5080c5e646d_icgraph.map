@@ -1,0 +1,11 @@
+<map id="ELFIN::Utils::getCurrentUTCTimestamp" name="ELFIN::Utils::getCurrentUTCTimestamp">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_c_connection_fn_c_mgr.html#af7ee83a8a9546bae5c1f83c4f282d56a" title="Send ConnectionAttemptEvent notification to the FnC server. " alt="" coords="220,5,423,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_c_connection_fn_c_mgr.html#a0b5e1d5ffe5b49aef3b52254d443ffef" title="Send ConnectionCloseEvent notification to the FnC server. " alt="" coords="225,74,417,121"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_event_notifier.html#a3cf83b4e23b8c16fa587e25391dc968b" title="Send corresponding event, if that event notification is enabled. " alt="" coords="249,143,393,190"/>
+<area shape="rect" id="node9" href="$class_e_l_f_i_n_1_1_event_notifier.html#a6526cc3f783409969343a5065efbf22d" title="Send corresponding event, if that event notification is enabled. " alt="" coords="249,213,393,259"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_event_notifier.html#a667910f5c8ea77f2a30f989c1feaea31" title="Send corresponding event, if that event notification is enabled. " alt="" coords="247,282,396,329"/>
+<area shape="rect" id="node13" href="$class_e_l_f_i_n_1_1_reader_operation.html#af0a5fbd8e670cf99939088f8f8b6582f" title="Schedule this ReaderOperation to the Scheduler. " alt="" coords="239,351,404,398"/>
+<area shape="rect" id="node15" href="$class_e_l_f_i_n_1_1_r_o_admin.html#adbc39593d539c82db724d351cf042fd4" title="Enable the ROSpec. If the given ROSpec ID is 0, enable all ROSpec. " alt="" coords="472,333,693,363"/>
+<area shape="rect" id="node17" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a6ca27b5b624ecbcc000368e7d31b8363" title="Start the ROspec. If the given ROSpec ID is 0, it is illegal and returns error. " alt="" coords="479,387,687,416"/>
+<area shape="rect" id="node19" href="$class_e_l_f_i_n_1_1_r_o_admin.html#a652f5d46a08d1889a4bd8b2db05a805d" title="Perform the operation with given port number of GPI port and its state. " alt="" coords="743,387,945,416"/>
+</map>

@@ -1,0 +1,91 @@
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader}{\section{E\-L\-F\-I\-N\-:\-:Sample\-Reader Class Reference}
+\label{class_e_l_f_i_n_1_1_sample_reader}\index{E\-L\-F\-I\-N\-::\-Sample\-Reader@{E\-L\-F\-I\-N\-::\-Sample\-Reader}}
+}
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:Sample\-Reader\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_e_l_f_i_n_1_1_sample_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Sample\-Reader\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_sample_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_e_l_f_i_n_1_1_sample_reader_1_1antenna}{antenna}
+\item 
+struct \hyperlink{struct_e_l_f_i_n_1_1_sample_reader_1_1reader}{reader}
+\item 
+struct \hyperlink{struct_e_l_f_i_n_1_1_sample_reader_1_1tag}{tag}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a8c6be253e99d38fdcb6f0ef47f26b912}{{\bfseries Sample\-Reader} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$a\-\_\-\-Stub\-Reader)}\label{class_e_l_f_i_n_1_1_sample_reader_a8c6be253e99d38fdcb6f0ef47f26b912}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a32720e4992fd429d7b4f49dd12fc4935}{int {\bfseries reader\-\_\-run} ()}\label{class_e_l_f_i_n_1_1_sample_reader_a32720e4992fd429d7b4f49dd12fc4935}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_aab6ac797b23992dc9166a1c9d5189964}{int {\bfseries init} ()}\label{class_e_l_f_i_n_1_1_sample_reader_aab6ac797b23992dc9166a1c9d5189964}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_adcab4d609917f956936515de05913662}{E\-L\-F\-I\-N\-::\-Tag\-Vector $\ast$ {\bfseries get\-Current\-Tags} (bool R\-S\-S\-I\-Enabled)}\label{class_e_l_f_i_n_1_1_sample_reader_adcab4d609917f956936515de05913662}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a3037003d168280c0bb1b0139d47a286a}{int {\bfseries start\-Tag\-Read} (int read\-Cycle)}\label{class_e_l_f_i_n_1_1_sample_reader_a3037003d168280c0bb1b0139d47a286a}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a20876f3b4c9057273e5d5348310d2b46}{int {\bfseries stop\-Tag\-Read} ()}\label{class_e_l_f_i_n_1_1_sample_reader_a20876f3b4c9057273e5d5348310d2b46}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_ade8eb062c16e2da1c6da377b8e28c3ae}{int {\bfseries read\-Tag\-Memory} (uint16\-\_\-t access\-Password, uint16\-\_\-t epc\-Length, char $\ast$epc, uint16\-\_\-t memory\-Bank, uint16\-\_\-t start\-Address, uint16\-\_\-t data\-Length)}\label{class_e_l_f_i_n_1_1_sample_reader_ade8eb062c16e2da1c6da377b8e28c3ae}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_abc78ffa18065a8883cbad180bf0aef3b}{int {\bfseries write\-Tag\-Memory} (uint16\-\_\-t access\-Password, uint16\-\_\-t epc\-Length, char $\ast$epc, uint16\-\_\-t memory\-Bank, uint16\-\_\-t start\-Address, uint16\-\_\-t data\-Length, char $\ast$data\-To\-Write)}\label{class_e_l_f_i_n_1_1_sample_reader_abc78ffa18065a8883cbad180bf0aef3b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a0f18d5673a11788a4f2169ac33eed45f}{\hyperlink{struct_e_l_f_i_n_1_1_sample_reader_1_1reader}{reader} {\bfseries p\-Reader}}\label{class_e_l_f_i_n_1_1_sample_reader_a0f18d5673a11788a4f2169ac33eed45f}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a7346ac061ad63e57657f077a768ceb45}{boost\-::thread {\bfseries reader\-Thread}}\label{class_e_l_f_i_n_1_1_sample_reader_a7346ac061ad63e57657f077a768ceb45}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_a33fe5f05735397e88e3b694d57e46375}{static const int {\bfseries E\-M\-U\-L\-\_\-\-A\-N\-T\-\_\-\-C\-O\-U\-N\-T} = 4}\label{class_e_l_f_i_n_1_1_sample_reader_a33fe5f05735397e88e3b694d57e46375}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_sample_reader_add50170d9f5c5f53c323d8f5b3823e83}{static const int {\bfseries E\-M\-U\-L\-\_\-\-T\-A\-G\-\_\-\-C\-O\-U\-N\-T} = 10}\label{class_e_l_f_i_n_1_1_sample_reader_add50170d9f5c5f53c323d8f5b3823e83}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Sample\-Reader.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Reader\-Handler/Sample\-Reader.\-h\item 
+elfin\-\_\-src/\-Reader\-Handler/Sample\-Reader.\-cpp\end{DoxyCompactItemize}

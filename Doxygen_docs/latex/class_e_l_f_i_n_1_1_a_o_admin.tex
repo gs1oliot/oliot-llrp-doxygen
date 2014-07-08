@@ -1,0 +1,259 @@
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin}{\section{E\-L\-F\-I\-N\-:\-:A\-O\-Admin Class Reference}
+\label{class_e_l_f_i_n_1_1_a_o_admin}\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+}
+
+
+A\-O\-Admin(\-Access Operation Admin) class manages states of Access\-Specs.  
+
+
+
+
+{\ttfamily \#include $<$A\-O\-Admin.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:A\-O\-Admin\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_a_o_admin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a2e1b2f780de7a4d3312eb0c4d5a9e9cc}{A\-O\-Admin} (\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a06a9286b19631ab519000d86ed81c29b}{$\sim$\-A\-O\-Admin} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a8f0296aef7586d378be8a390f4167e3d}{enable\-Access\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-Access\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Enable the Access\-Spec. If the given Access\-Spec I\-D is 0, enable all Access\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_ac493ec01485f6a3359958919ddace01a}{add\-Access\-Spec} (L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$a\-Access\-Spec)
+\begin{DoxyCompactList}\small\item\em Add the given Access\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_ad93a4f9cb1c041471b0cb451fb06c5c1}{disable\-Access\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-Access\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Disable the Access\-Spec. If the given Access\-Spec I\-D is 0, disable all Access\-Spec. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a1b8efe946d80673b80416c7103018967}{delete\-Access\-Spec} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t a\-Access\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Delete the Access\-Spec. If the given Access\-Spec I\-D is 0, delete all Access\-Spec. \end{DoxyCompactList}\item 
+std\-::vector$<$ L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$ $>$ $\ast$ \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a5bfd2b0c57333304d53c5cea1cdff0f0}{get\-Access\-Specs} ()
+\begin{DoxyCompactList}\small\item\em Store the pointer of all Access\-Specs to vector, and return it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+E\-L\-F\-I\-N\-::\-A\-O\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_abd2953505ee15f57f80bf8d5c094297b}{begin\-A\-O\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+E\-L\-F\-I\-N\-::\-A\-O\-Map\-::iterator \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_aafe66a19da5c9033fcd73142981e96c5}{end\-A\-O\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_a09f489a82b270c4f3d26c2b93241a544}{count\-A\-O\-Map} ()
+\begin{DoxyCompactList}\small\item\em Iterator access method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_ab9467e08db0f0365ada52fcbfba76abb}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Core} $\ast$ {\bfseries \-\_\-p\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_a_o_admin_ab9467e08db0f0365ada52fcbfba76abb}
+
+\item 
+C\-A\-O\-Map \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_acd6bbfe5fce9e349e5b563b73750e191}{\-\_\-\-C\-A\-O\-Map}
+\begin{DoxyCompactList}\small\item\em C\-Access\-Spec container. \end{DoxyCompactList}\item 
+A\-O\-Map \hyperlink{class_e_l_f_i_n_1_1_a_o_admin_aee21fd9858d0f8e3c897e47faaa53483}{\-\_\-\-A\-O\-Map}
+\begin{DoxyCompactList}\small\item\em Access Operation container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\-O\-Admin(\-Access Operation Admin) class manages states of Access\-Specs. 
+
+Definition at line 23 of file A\-O\-Admin.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a2e1b2f780de7a4d3312eb0c4d5a9e9cc}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!A\-O\-Admin@{A\-O\-Admin}}
+\index{A\-O\-Admin@{A\-O\-Admin}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{A\-O\-Admin}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::\-A\-O\-Admin (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-p\-L\-L\-R\-P\-Core}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a2e1b2f780de7a4d3312eb0c4d5a9e9cc}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} class. 
+
+
+
+Definition at line 190 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a06a9286b19631ab519000d86ed81c29b}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!$\sim$\-A\-O\-Admin@{$\sim$\-A\-O\-Admin}}
+\index{$\sim$\-A\-O\-Admin@{$\sim$\-A\-O\-Admin}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{$\sim$\-A\-O\-Admin}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::$\sim$\-A\-O\-Admin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a06a9286b19631ab519000d86ed81c29b}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_a_o_admin}{A\-O\-Admin} class. 
+
+
+
+Definition at line 194 of file A\-O\-Admin.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_ac493ec01485f6a3359958919ddace01a}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!add\-Access\-Spec@{add\-Access\-Spec}}
+\index{add\-Access\-Spec@{add\-Access\-Spec}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{add\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::add\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$}]{a\-Access\-Spec}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_ac493ec01485f6a3359958919ddace01a}
+
+
+Add the given Access\-Spec. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]In case there are multiple Access\-Specs that get matched during a Tag\-Spec lookup, the Reader S\-H\-A\-L\-L only execute the first enabled Access\-Spec that matches, where the ordering of the Access\-Specs is the order in which the Access\-Specs were created by the Client. (L\-L\-R\-P Spec 12.\-2.\-1.\-2) \end{DoxyRefDesc}
+
+
+Definition at line 65 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_abd2953505ee15f57f80bf8d5c094297b}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!begin\-A\-O\-Map@{begin\-A\-O\-Map}}
+\index{begin\-A\-O\-Map@{begin\-A\-O\-Map}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{begin\-A\-O\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-O\-Map\-::iterator E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::begin\-A\-O\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_abd2953505ee15f57f80bf8d5c094297b}
+
+
+Iterator access method. 
+
+
+
+Definition at line 178 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a09f489a82b270c4f3d26c2b93241a544}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!count\-A\-O\-Map@{count\-A\-O\-Map}}
+\index{count\-A\-O\-Map@{count\-A\-O\-Map}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{count\-A\-O\-Map}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::count\-A\-O\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a09f489a82b270c4f3d26c2b93241a544}
+
+
+Iterator access method. 
+
+
+
+Definition at line 186 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a1b8efe946d80673b80416c7103018967}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!delete\-Access\-Spec@{delete\-Access\-Spec}}
+\index{delete\-Access\-Spec@{delete\-Access\-Spec}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{delete\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::delete\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-Access\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a1b8efe946d80673b80416c7103018967}
+
+
+Delete the Access\-Spec. If the given Access\-Spec I\-D is 0, delete all Access\-Spec. 
+
+
+
+Definition at line 124 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_ad93a4f9cb1c041471b0cb451fb06c5c1}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!disable\-Access\-Spec@{disable\-Access\-Spec}}
+\index{disable\-Access\-Spec@{disable\-Access\-Spec}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{disable\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::disable\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-Access\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_ad93a4f9cb1c041471b0cb451fb06c5c1}
+
+
+Disable the Access\-Spec. If the given Access\-Spec I\-D is 0, disable all Access\-Spec. 
+
+
+
+Definition at line 83 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a8f0296aef7586d378be8a390f4167e3d}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!enable\-Access\-Spec@{enable\-Access\-Spec}}
+\index{enable\-Access\-Spec@{enable\-Access\-Spec}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{enable\-Access\-Spec}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::enable\-Access\-Spec (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{a\-Access\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a8f0296aef7586d378be8a390f4167e3d}
+
+
+Enable the Access\-Spec. If the given Access\-Spec I\-D is 0, enable all Access\-Spec. 
+
+
+
+Definition at line 15 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_aafe66a19da5c9033fcd73142981e96c5}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!end\-A\-O\-Map@{end\-A\-O\-Map}}
+\index{end\-A\-O\-Map@{end\-A\-O\-Map}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{end\-A\-O\-Map}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-A\-O\-Map\-::iterator E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::end\-A\-O\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_aafe66a19da5c9033fcd73142981e96c5}
+
+
+Iterator access method. 
+
+
+
+Definition at line 182 of file A\-O\-Admin.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_a5bfd2b0c57333304d53c5cea1cdff0f0}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!get\-Access\-Specs@{get\-Access\-Specs}}
+\index{get\-Access\-Specs@{get\-Access\-Specs}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{get\-Access\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ L\-L\-R\-P\-::\-C\-Access\-Spec $\ast$ $>$ $\ast$ E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::get\-Access\-Specs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_a_o_admin_a5bfd2b0c57333304d53c5cea1cdff0f0}
+
+
+Store the pointer of all Access\-Specs to vector, and return it. 
+
+\begin{DoxyWarning}{Warning}
+You should delete the returned vector to avoid memory leakage.\par
+And you must not delete the Access\-Specs in the vector, because they are original ones. 
+\end{DoxyWarning}
+
+
+Definition at line 170 of file A\-O\-Admin.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_aee21fd9858d0f8e3c897e47faaa53483}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!\-\_\-\-A\-O\-Map@{\-\_\-\-A\-O\-Map}}
+\index{\-\_\-\-A\-O\-Map@{\-\_\-\-A\-O\-Map}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{\-\_\-\-A\-O\-Map}]{\setlength{\rightskip}{0pt plus 5cm}A\-O\-Map E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::\-\_\-\-A\-O\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_a_o_admin_aee21fd9858d0f8e3c897e47faaa53483}
+
+
+Access Operation container. 
+
+
+
+Definition at line 52 of file A\-O\-Admin.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_a_o_admin_acd6bbfe5fce9e349e5b563b73750e191}{\index{E\-L\-F\-I\-N\-::\-A\-O\-Admin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}!\-\_\-\-C\-A\-O\-Map@{\-\_\-\-C\-A\-O\-Map}}
+\index{\-\_\-\-C\-A\-O\-Map@{\-\_\-\-C\-A\-O\-Map}!ELFIN::AOAdmin@{E\-L\-F\-I\-N\-::\-A\-O\-Admin}}
+\subsubsection[{\-\_\-\-C\-A\-O\-Map}]{\setlength{\rightskip}{0pt plus 5cm}C\-A\-O\-Map E\-L\-F\-I\-N\-::\-A\-O\-Admin\-::\-\_\-\-C\-A\-O\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_a_o_admin_acd6bbfe5fce9e349e5b563b73750e191}
+
+
+C\-Access\-Spec container. 
+
+
+
+Definition at line 50 of file A\-O\-Admin.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_a_o_admin_8h}{A\-O\-Admin.\-h}\item 
+elfin\-\_\-src/\hyperlink{_a_o_admin_8cpp}{A\-O\-Admin.\-cpp}\end{DoxyCompactItemize}

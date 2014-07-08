@@ -1,0 +1,17 @@
+<map id="ELFIN::SampleReader" name="ELFIN::SampleReader">
+<area shape="rect" id="node2" href="$class_e_l_f_i_n_1_1_abstract_reader.html" title="ELFIN::AbstractReader" alt="" coords="857,464,1015,493"/>
+<area shape="rect" id="node4" href="$class_e_l_f_i_n_1_1_stub_reader.html" title="Abstraction for physical RFID reader. " alt="" coords="524,436,660,465"/>
+<area shape="rect" id="node6" href="$class_e_l_f_i_n_1_1_l_l_r_p_core.html" title="LLRP Core Operation Component. " alt="" coords="872,235,1000,264"/>
+<area shape="rect" id="node32" href="$class_e_l_f_i_n_1_1_stub_reader_app.html" title="Reader application which starts and controls LLRP Wrapper. LLRP Wrapper calls callbacks of this objec..." alt="" coords="856,524,1016,553"/>
+<area shape="rect" id="node8" href="$class_e_l_f_i_n_1_1_event_notifier.html" title="Create and send ReaderEventNotifications to the FnC server. " alt="" coords="1173,283,1317,312"/>
+<area shape="rect" id="node13" href="$class_e_l_f_i_n_1_1_a_o_admin.html" title="AOAdmin(Access Operation Admin) class manages states of AccessSpecs. " alt="" coords="1184,163,1307,192"/>
+<area shape="rect" id="node18" href="$class_e_l_f_i_n_1_1_r_o_admin.html" title="ROAdmin(Reader Operation Admin) class manages states and operations of ROSpecs and schedules them..." alt="" coords="1183,43,1308,72"/>
+<area shape="rect" id="node11" href="$class_e_l_f_i_n_1_1_l_l_r_p_reader_config.html" title="Stores default configurations which can be defined with SET_READER_CONFIG message. Also, it parses the contents of default config file (config.llrp) and stores it as a default configuration. " alt="" coords="501,317,683,347"/>
+<area shape="rect" id="node16" href="$class_e_l_f_i_n_1_1_program_options.html" title="Parse the configuration file and store it. " alt="" coords="204,328,367,357"/>
+<area shape="rect" id="node20" href="$class_e_l_f_i_n_1_1_g_p_i_event_listener.html" title="Interface for handling the signal from the GPI port of LLRP Reader. " alt="" coords="851,5,1021,35"/>
+<area shape="rect" id="node25" href="$class_e_l_f_i_n_1_1_c_connection_fn_c_mgr.html" title="Inherits CConnection class. It has additional methods for Reader role. " alt="" coords="497,189,687,219"/>
+<area shape="rect" id="node27" href="$class_e_l_f_i_n_1_1_c_connection_fn_c.html" title="Inherits LLRP::CConnection class. It has additional methods for Reader role. " alt="" coords="201,189,369,219"/>
+<area shape="rect" id="node35" href="$struct_e_l_f_i_n_1_1_sample_reader_1_1reader.html" title="ELFIN::SampleReader\l::reader" alt="" coords="859,591,1013,638"/>
+<area shape="rect" id="node37" href="$struct_e_l_f_i_n_1_1_sample_reader_1_1antenna.html" title="ELFIN::SampleReader\l::antenna" alt="" coords="515,595,669,642"/>
+<area shape="rect" id="node39" href="$struct_e_l_f_i_n_1_1_sample_reader_1_1tag.html" title="ELFIN::SampleReader::tag" alt="" coords="196,604,375,633"/>
+</map>

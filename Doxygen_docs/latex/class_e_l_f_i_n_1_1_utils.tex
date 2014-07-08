@@ -1,0 +1,292 @@
+\hypertarget{class_e_l_f_i_n_1_1_utils}{\section{E\-L\-F\-I\-N\-:\-:Utils Class Reference}
+\label{class_e_l_f_i_n_1_1_utils}\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+}
+
+
+Some utils that are used in L\-L\-R\-P Wrapper. This includes printing log, getting timestamp, etc.  
+
+
+
+
+{\ttfamily \#include $<$E\-L\-F\-I\-N\-\_\-\-Platform.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_e_l_f_i_n_1_1_utils_a3c791ae458bce5e26979093f39575896}{L\-O\-G} (enum E\-Log\-Type log\-Type, const char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em Prints log with given Log\-Type format. \end{DoxyCompactList}\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_a8718299422d3ee447662ea401fbe2328}{set\-Log\-Level} (enum E\-Log\-Type \-\_\-\-\_\-p\-Logtype)
+\begin{DoxyCompactList}\small\item\em Set the log level of L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_a7fd97d47741c9fe1891a0bed66c08437}{print\-X\-M\-L\-Message} (L\-L\-R\-P\-::\-C\-Message $\ast$p\-Message)
+\begin{DoxyCompactList}\small\item\em Parse given C\-Message and print it to screen in X\-M\-L format. \end{DoxyCompactList}\item 
+static L\-L\-R\-P\-::\-C\-U\-T\-C\-Timestamp $\ast$ \hyperlink{class_e_l_f_i_n_1_1_utils_a9c277422b971281470b8a5080c5e646d}{get\-Current\-U\-T\-C\-Timestamp} ()
+\begin{DoxyCompactList}\small\item\em Returns current U\-T\-C timestamp in L\-L\-R\-P\-::\-C\-U\-T\-C\-Time\-Stamp type. \end{DoxyCompactList}\item 
+static uint64\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_utils_abd2dc80c4ccc680a9879340dacac8d6a}{get\-Current\-Time\-Milliseconds} ()
+\begin{DoxyCompactList}\small\item\em Returns current U\-T\-C time in millisecond. \end{DoxyCompactList}\item 
+static L\-L\-R\-P\-::llrp\-\_\-utf8v\-\_\-t \hyperlink{class_e_l_f_i_n_1_1_utils_a6a0ad11177ab102ab2ce435a5232ecc2}{get\-U\-T\-F8\-Str} (const char $\ast$p\-Str)
+\begin{DoxyCompactList}\small\item\em Converts given char array to L\-L\-R\-P\-::llrp\-\_\-utf8v\-\_\-t format and return it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_ad17bd0c0b252b5a64971eafbc2ac46bf}{start\-Time\-Count} (int \-\_\-tag\-Count, int \-\_\-ant\-Count)
+\begin{DoxyCompactList}\small\item\em Method for performance test. Not used currently. \end{DoxyCompactList}\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_a4328e115848a4bfdff5729f59117ec88}{stop\-Time\-Count} ()
+\begin{DoxyCompactList}\small\item\em Method for performance test. Not used currently. \end{DoxyCompactList}\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_a36dee2569716bb7f97a0cf711e30c944}{print\-Counted\-Time} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Method for performance test. Not used currently. \end{DoxyCompactList}\item 
+static void \hyperlink{class_e_l_f_i_n_1_1_utils_a2478876ec5a200826a72645e45a523ae}{reset\-Time\-Count} ()
+\begin{DoxyCompactList}\small\item\em Method for performance test. Not used currently. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+Some utils that are used in L\-L\-R\-P Wrapper. This includes printing log, getting timestamp, etc. 
+
+Definition at line 72 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_utils_abd2dc80c4ccc680a9879340dacac8d6a}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!get\-Current\-Time\-Milliseconds@{get\-Current\-Time\-Milliseconds}}
+\index{get\-Current\-Time\-Milliseconds@{get\-Current\-Time\-Milliseconds}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{get\-Current\-Time\-Milliseconds}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t E\-L\-F\-I\-N\-::\-Utils\-::get\-Current\-Time\-Milliseconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_abd2dc80c4ccc680a9879340dacac8d6a}
+
+
+Returns current U\-T\-C time in millisecond. 
+
+
+
+Definition at line 126 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_abd2dc80c4ccc680a9879340dacac8d6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a9c277422b971281470b8a5080c5e646d}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!get\-Current\-U\-T\-C\-Timestamp@{get\-Current\-U\-T\-C\-Timestamp}}
+\index{get\-Current\-U\-T\-C\-Timestamp@{get\-Current\-U\-T\-C\-Timestamp}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{get\-Current\-U\-T\-C\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::\-C\-U\-T\-C\-Timestamp $\ast$ E\-L\-F\-I\-N\-::\-Utils\-::get\-Current\-U\-T\-C\-Timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a9c277422b971281470b8a5080c5e646d}
+
+
+Returns current U\-T\-C timestamp in L\-L\-R\-P\-::\-C\-U\-T\-C\-Time\-Stamp type. 
+
+
+
+Definition at line 118 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_a9c277422b971281470b8a5080c5e646d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a6a0ad11177ab102ab2ce435a5232ecc2}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!get\-U\-T\-F8\-Str@{get\-U\-T\-F8\-Str}}
+\index{get\-U\-T\-F8\-Str@{get\-U\-T\-F8\-Str}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{get\-U\-T\-F8\-Str}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::llrp\-\_\-utf8v\-\_\-t E\-L\-F\-I\-N\-::\-Utils\-::get\-U\-T\-F8\-Str (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a6a0ad11177ab102ab2ce435a5232ecc2}
+
+
+Converts given char array to L\-L\-R\-P\-::llrp\-\_\-utf8v\-\_\-t format and return it. 
+
+
+
+Definition at line 141 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_e_l_f_i_n_1_1_utils_a6a0ad11177ab102ab2ce435a5232ecc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a3c791ae458bce5e26979093f39575896}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!L\-O\-G@{L\-O\-G}}
+\index{L\-O\-G@{L\-O\-G}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Utils\-::\-L\-O\-G (
+\begin{DoxyParamCaption}
+\item[{enum E\-Log\-Type}]{log\-Type, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a3c791ae458bce5e26979093f39575896}
+
+
+Prints log with given Log\-Type format. 
+
+
+
+Definition at line 17 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a36dee2569716bb7f97a0cf711e30c944}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!print\-Counted\-Time@{print\-Counted\-Time}}
+\index{print\-Counted\-Time@{print\-Counted\-Time}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{print\-Counted\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::print\-Counted\-Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a36dee2569716bb7f97a0cf711e30c944}
+
+
+Method for performance test. Not used currently. 
+
+
+
+Definition at line 172 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_a36dee2569716bb7f97a0cf711e30c944_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a7fd97d47741c9fe1891a0bed66c08437}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!print\-X\-M\-L\-Message@{print\-X\-M\-L\-Message}}
+\index{print\-X\-M\-L\-Message@{print\-X\-M\-L\-Message}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{print\-X\-M\-L\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::print\-X\-M\-L\-Message (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{p\-Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a7fd97d47741c9fe1891a0bed66c08437}
+
+
+Parse given C\-Message and print it to screen in X\-M\-L format. 
+
+
+
+Definition at line 85 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a2478876ec5a200826a72645e45a523ae}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!reset\-Time\-Count@{reset\-Time\-Count}}
+\index{reset\-Time\-Count@{reset\-Time\-Count}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{reset\-Time\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::reset\-Time\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a2478876ec5a200826a72645e45a523ae}
+
+
+Method for performance test. Not used currently. 
+
+
+
+Definition at line 190 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_a2478876ec5a200826a72645e45a523ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a8718299422d3ee447662ea401fbe2328}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!set\-Log\-Level@{set\-Log\-Level}}
+\index{set\-Log\-Level@{set\-Log\-Level}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{set\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::set\-Log\-Level (
+\begin{DoxyParamCaption}
+\item[{enum E\-Log\-Type}]{\-\_\-\-\_\-p\-Logtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a8718299422d3ee447662ea401fbe2328}
+
+
+Set the log level of L\-L\-R\-P Wrapper. 
+
+
+
+Definition at line 80 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_a8718299422d3ee447662ea401fbe2328_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_ad17bd0c0b252b5a64971eafbc2ac46bf}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!start\-Time\-Count@{start\-Time\-Count}}
+\index{start\-Time\-Count@{start\-Time\-Count}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{start\-Time\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::start\-Time\-Count (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-tag\-Count, }
+\item[{int}]{\-\_\-ant\-Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_ad17bd0c0b252b5a64971eafbc2ac46bf}
+
+
+Method for performance test. Not used currently. 
+
+
+
+Definition at line 156 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_utils_ad17bd0c0b252b5a64971eafbc2ac46bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_utils_a4328e115848a4bfdff5729f59117ec88}{\index{E\-L\-F\-I\-N\-::\-Utils@{E\-L\-F\-I\-N\-::\-Utils}!stop\-Time\-Count@{stop\-Time\-Count}}
+\index{stop\-Time\-Count@{stop\-Time\-Count}!ELFIN::Utils@{E\-L\-F\-I\-N\-::\-Utils}}
+\subsubsection[{stop\-Time\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Utils\-::stop\-Time\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_e_l_f_i_n_1_1_utils_a4328e115848a4bfdff5729f59117ec88}
+
+
+Method for performance test. Not used currently. 
+
+
+
+Definition at line 164 of file E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_e_l_f_i_n___platform_8h}{E\-L\-F\-I\-N\-\_\-\-Platform.\-h}\item 
+elfin\-\_\-src/\hyperlink{_e_l_f_i_n___platform_8cpp}{E\-L\-F\-I\-N\-\_\-\-Platform.\-cpp}\end{DoxyCompactItemize}

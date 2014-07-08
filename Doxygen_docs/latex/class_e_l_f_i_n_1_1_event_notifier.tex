@@ -1,0 +1,350 @@
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier}{\section{E\-L\-F\-I\-N\-:\-:Event\-Notifier Class Reference}
+\label{class_e_l_f_i_n_1_1_event_notifier}\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+}
+
+
+Create and send Reader\-Event\-Notifications to the Fn\-C server.  
+
+
+
+
+{\ttfamily \#include $<$Event\-Notifier.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Event\-Notifier\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_event_notifier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_event_notifier_a8dbb404de4d2428b4d1c56c941318d27}{Event\-Notifier} (\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$\-\_\-\-\_\-p\-L\-L\-R\-P\-Core)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_event_notifier_a04ffb92dce7ddb26097dcce5546c9aae}{$\sim$\-Event\-Notifier} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a87bfe980b95821a36877e3943d272c84}{send\-G\-P\-I\-Event} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t G\-P\-I\-Port\-Number, L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t G\-P\-I\-Event)
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a3cf83b4e23b8c16fa587e25391dc968b}{send\-R\-O\-Spec\-Event} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t R\-O\-Spec\-I\-D, enum L\-L\-R\-P\-::\-E\-R\-O\-Spec\-Event\-Type Event\-Type, L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t Preemting\-R\-O\-Spec\-I\-D)
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a6526cc3f783409969343a5065efbf22d}{send\-A\-I\-Spec\-Event} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t R\-O\-Spec\-I\-D, L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t Spec\-Index, enum L\-L\-R\-P\-::\-E\-A\-I\-Spec\-Event\-Type Event\-Type)
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a70cc63c7ff09a5ed43e3e8315de34c4f}{send\-Connection\-Attempt\-Event} (enum L\-L\-R\-P\-::\-E\-Connection\-Attempt\-Status\-Type Event\-Type)
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a82b6fdfe8cf4429e4b0624a0421ddbf2}{sedn\-Connection\-Close\-Event} ()
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a667910f5c8ea77f2a30f989c1feaea31}{send\-Spec\-Loop\-Event} (L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t R\-O\-Spec\-I\-D, L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t Loop\-Count)
+\begin{DoxyCompactList}\small\item\em Send corresponding event, if that event notification is enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a03d74a6b19765174ad05013f8f0e51d4}{send\-Hopping\-Event} (int Hop\-Table\-I\-D, int Next\-Channel\-Index)
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_ab1aa4c5e86335d17c6e091b49d8979a8}{send\-Report\-Buffer\-Level\-Warning\-Event} (int Report\-Buffer\-Percentage\-Full)
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_af1beb53b55e0ef06fc5711d86abe7e61}{send\-Report\-Buffer\-Overflow\-Error\-Event} ()
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a756c170fc8e5de0e1ae1c53e69efa833}{send\-Reader\-Exception\-Event} ()
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a7a618ade6fbf12cb93ec11fef5b396cd}{send\-R\-F\-Survey\-Event} (int R\-O\-Spec\-I\-D, int Spec\-Index, enum L\-L\-R\-P\-::\-E\-R\-F\-Survey\-Event\-Type Event\-Type)
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_event_notifier_a5f5c26ba9f40ea6cc9b0f166bdfaca8d}{send\-Antenna\-Event} (int Antenna\-I\-D, enum L\-L\-R\-P\-::\-E\-Antenna\-Event\-Type Event\-Type)
+\begin{DoxyCompactList}\small\item\em These events are not implemented, because they are optional. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_ab9f5bee1cc10452b1accfd726acea89d}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_core}{L\-L\-R\-P\-Core} $\ast$ {\bfseries \-\_\-p\-L\-L\-R\-P\-Core}}\label{class_e_l_f_i_n_1_1_event_notifier_ab9f5bee1cc10452b1accfd726acea89d}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a021bf479e1090a3e7daf403a34fcfefa}{\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} $\ast$ {\bfseries \-\_\-p\-Config}}\label{class_e_l_f_i_n_1_1_event_notifier_a021bf479e1090a3e7daf403a34fcfefa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create and send Reader\-Event\-Notifications to the Fn\-C server. 
+
+\begin{DoxyRemark}{Remarks}
+Event methods of this class can be just called where the event should be sent, because each method checks whether the corresponding event is enabled or not before sending it. 
+\end{DoxyRemark}
+
+
+Definition at line 27 of file Event\-Notifier.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a8dbb404de4d2428b4d1c56c941318d27}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!Event\-Notifier@{Event\-Notifier}}
+\index{Event\-Notifier@{Event\-Notifier}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{Event\-Notifier}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Event\-Notifier\-::\-Event\-Notifier (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-L\-R\-P\-Core} $\ast$}]{\-\_\-\-\_\-p\-L\-L\-R\-P\-Core}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a8dbb404de4d2428b4d1c56c941318d27}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} class. 
+
+
+
+Definition at line 11 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a04ffb92dce7ddb26097dcce5546c9aae}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!$\sim$\-Event\-Notifier@{$\sim$\-Event\-Notifier}}
+\index{$\sim$\-Event\-Notifier@{$\sim$\-Event\-Notifier}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{$\sim$\-Event\-Notifier}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Event\-Notifier\-::$\sim$\-Event\-Notifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a04ffb92dce7ddb26097dcce5546c9aae}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} class. 
+
+
+
+Definition at line 16 of file Event\-Notifier.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a82b6fdfe8cf4429e4b0624a0421ddbf2}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!sedn\-Connection\-Close\-Event@{sedn\-Connection\-Close\-Event}}
+\index{sedn\-Connection\-Close\-Event@{sedn\-Connection\-Close\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{sedn\-Connection\-Close\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::sedn\-Connection\-Close\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a82b6fdfe8cf4429e4b0624a0421ddbf2}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 51 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a6526cc3f783409969343a5065efbf22d}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-A\-I\-Spec\-Event@{send\-A\-I\-Spec\-Event}}
+\index{send\-A\-I\-Spec\-Event@{send\-A\-I\-Spec\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-A\-I\-Spec\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-A\-I\-Spec\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{R\-O\-Spec\-I\-D, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u16\-\_\-t}]{Spec\-Index, }
+\item[{enum L\-L\-R\-P\-::\-E\-A\-I\-Spec\-Event\-Type}]{Event\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a6526cc3f783409969343a5065efbf22d}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 78 of file Event\-Notifier.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_event_notifier_a6526cc3f783409969343a5065efbf22d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a5f5c26ba9f40ea6cc9b0f166bdfaca8d}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Antenna\-Event@{send\-Antenna\-Event}}
+\index{send\-Antenna\-Event@{send\-Antenna\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Antenna\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Antenna\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{Antenna\-I\-D, }
+\item[{enum L\-L\-R\-P\-::\-E\-Antenna\-Event\-Type}]{Event\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a5f5c26ba9f40ea6cc9b0f166bdfaca8d}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 100 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a70cc63c7ff09a5ed43e3e8315de34c4f}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Connection\-Attempt\-Event@{send\-Connection\-Attempt\-Event}}
+\index{send\-Connection\-Attempt\-Event@{send\-Connection\-Attempt\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Connection\-Attempt\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Connection\-Attempt\-Event (
+\begin{DoxyParamCaption}
+\item[{enum L\-L\-R\-P\-::\-E\-Connection\-Attempt\-Status\-Type}]{Event\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a70cc63c7ff09a5ed43e3e8315de34c4f}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 46 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a87bfe980b95821a36877e3943d272c84}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-G\-P\-I\-Event@{send\-G\-P\-I\-Event}}
+\index{send\-G\-P\-I\-Event@{send\-G\-P\-I\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{G\-P\-I\-Port\-Number, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{G\-P\-I\-Event}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a87bfe980b95821a36877e3943d272c84}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 20 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a03d74a6b19765174ad05013f8f0e51d4}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Hopping\-Event@{send\-Hopping\-Event}}
+\index{send\-Hopping\-Event@{send\-Hopping\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Hopping\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Hopping\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{Hop\-Table\-I\-D, }
+\item[{int}]{Next\-Channel\-Index}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a03d74a6b19765174ad05013f8f0e51d4}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 55 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a756c170fc8e5de0e1ae1c53e69efa833}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Reader\-Exception\-Event@{send\-Reader\-Exception\-Event}}
+\index{send\-Reader\-Exception\-Event@{send\-Reader\-Exception\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Reader\-Exception\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Reader\-Exception\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a756c170fc8e5de0e1ae1c53e69efa833}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 69 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_ab1aa4c5e86335d17c6e091b49d8979a8}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Report\-Buffer\-Level\-Warning\-Event@{send\-Report\-Buffer\-Level\-Warning\-Event}}
+\index{send\-Report\-Buffer\-Level\-Warning\-Event@{send\-Report\-Buffer\-Level\-Warning\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Report\-Buffer\-Level\-Warning\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Report\-Buffer\-Level\-Warning\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{Report\-Buffer\-Percentage\-Full}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_ab1aa4c5e86335d17c6e091b49d8979a8}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 60 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_af1beb53b55e0ef06fc5711d86abe7e61}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Report\-Buffer\-Overflow\-Error\-Event@{send\-Report\-Buffer\-Overflow\-Error\-Event}}
+\index{send\-Report\-Buffer\-Overflow\-Error\-Event@{send\-Report\-Buffer\-Overflow\-Error\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Report\-Buffer\-Overflow\-Error\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Report\-Buffer\-Overflow\-Error\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_af1beb53b55e0ef06fc5711d86abe7e61}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 65 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a7a618ade6fbf12cb93ec11fef5b396cd}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-R\-F\-Survey\-Event@{send\-R\-F\-Survey\-Event}}
+\index{send\-R\-F\-Survey\-Event@{send\-R\-F\-Survey\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-R\-F\-Survey\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-R\-F\-Survey\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{R\-O\-Spec\-I\-D, }
+\item[{int}]{Spec\-Index, }
+\item[{enum L\-L\-R\-P\-::\-E\-R\-F\-Survey\-Event\-Type}]{Event\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a7a618ade6fbf12cb93ec11fef5b396cd}
+
+
+These events are not implemented, because they are optional. 
+
+
+
+Definition at line 73 of file Event\-Notifier.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a3cf83b4e23b8c16fa587e25391dc968b}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-R\-O\-Spec\-Event@{send\-R\-O\-Spec\-Event}}
+\index{send\-R\-O\-Spec\-Event@{send\-R\-O\-Spec\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-R\-O\-Spec\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-R\-O\-Spec\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{R\-O\-Spec\-I\-D, }
+\item[{enum L\-L\-R\-P\-::\-E\-R\-O\-Spec\-Event\-Type}]{Event\-Type, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{Preemting\-R\-O\-Spec\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a3cf83b4e23b8c16fa587e25391dc968b}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 24 of file Event\-Notifier.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_e_l_f_i_n_1_1_event_notifier_a3cf83b4e23b8c16fa587e25391dc968b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_event_notifier_a667910f5c8ea77f2a30f989c1feaea31}{\index{E\-L\-F\-I\-N\-::\-Event\-Notifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}!send\-Spec\-Loop\-Event@{send\-Spec\-Loop\-Event}}
+\index{send\-Spec\-Loop\-Event@{send\-Spec\-Loop\-Event}!ELFIN::EventNotifier@{E\-L\-F\-I\-N\-::\-Event\-Notifier}}
+\subsubsection[{send\-Spec\-Loop\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Event\-Notifier\-::send\-Spec\-Loop\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{R\-O\-Spec\-I\-D, }
+\item[{L\-L\-R\-P\-::llrp\-\_\-u32\-\_\-t}]{Loop\-Count}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_event_notifier_a667910f5c8ea77f2a30f989c1feaea31}
+
+
+Send corresponding event, if that event notification is enabled. 
+
+
+
+Definition at line 105 of file Event\-Notifier.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_event_notifier_a667910f5c8ea77f2a30f989c1feaea31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_event_notifier_8h}{Event\-Notifier.\-h}\item 
+elfin\-\_\-src/\hyperlink{_event_notifier_8cpp}{Event\-Notifier.\-cpp}\end{DoxyCompactItemize}

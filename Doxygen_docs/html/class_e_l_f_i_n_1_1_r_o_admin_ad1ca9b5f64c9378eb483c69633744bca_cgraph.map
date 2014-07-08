@@ -1,0 +1,5 @@
+<map id="ELFIN::ROAdmin::disableROSpec" name="ELFIN::ROAdmin::disableROSpec">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_reader_operation.html#a71a40f124e322dd5179079797c70bdf7" title="Static method to stop and delete given ReaderOperation. " alt="" coords="279,27,444,74"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_timer_task.html#aa60dedafaff878ad1a6632c017d08c17" title="Immediately let this TimerTask wake from blocking and be stopped. " alt="" coords="493,5,669,35"/>
+<area shape="rect" id="node7" href="$class_e_l_f_i_n_1_1_reader_operation.html#af2a3eca438c14f42f68f3558f6c0e908" title="Send stop command to this ReaderOperation and wait until it actually stops. " alt="" coords="499,58,664,105"/>
+</map>

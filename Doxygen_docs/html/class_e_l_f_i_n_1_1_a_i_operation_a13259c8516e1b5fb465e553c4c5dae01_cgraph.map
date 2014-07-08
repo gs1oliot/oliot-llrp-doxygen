@@ -1,0 +1,6 @@
+<map id="ELFIN::AIOperation::run" name="ELFIN::AIOperation::run">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_utils.html#abd2dc80c4ccc680a9879340dacac8d6a" title="Returns current UTC time in millisecond. " alt="" coords="471,5,633,51"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_a_i_operation.html#a8cc8f6baacabcddac43853a5f72fa580" title="This method is used to make thread for stop trigger which is related to time. After given time..." alt="" coords="216,34,421,81"/>
+<area shape="rect" id="node8" href="$class_e_l_f_i_n_1_1_access_operation.html#a9f928363dd0ab1a6a0ef2f3e594e60a4" title="Match the provided StubTag and ROSpecID to the current C1G2TargetTag. " alt="" coords="235,103,403,150"/>
+<area shape="rect" id="node10" href="$class_e_l_f_i_n_1_1_access_operation.html#a7b21dfebb3248fe9e4105c8dca4ce897" title="Apply OpSpec to the provided StubTag. The OpSpecResult would be stored to the pTagReport object..." alt="" coords="235,173,403,219"/>
+</map>

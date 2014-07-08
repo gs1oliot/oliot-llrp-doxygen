@@ -1,0 +1,20 @@
+<map id="elfin_src/AbstractAntennaOperation.h" name="elfin_src/AbstractAntennaOperation.h">
+<area shape="rect" id="node7" href="$_stub_reader_8h.html" title="Stubs/StubReader.h" alt="" coords="831,101,969,131"/>
+<area shape="rect" id="node25" href="$_e_l_f_i_n___platform_8h.html" title="ELFIN_Platform.h" alt="" coords="1487,429,1612,459"/>
+<area shape="rect" id="node87" href="$_timer_task_8h.html" title="TimerTask.h" alt="" coords="1780,101,1873,131"/>
+<area shape="rect" id="node91" href="$_scheduler_8h.html" title="Scheduler.h" alt="" coords="1865,179,1956,208"/>
+<area shape="rect" id="node11" href="$_l_l_r_p_core_8h.html" title="../LLRPCore.h" alt="" coords="781,179,888,208"/>
+<area shape="rect" id="node62" href="$_stub_antenna_8h.html" title="StubAntenna.h" alt="" coords="151,179,257,208"/>
+<area shape="rect" id="node66" href="$_stub_tag_8h.html" title="StubTag.h" alt="" coords="159,343,241,372"/>
+<area shape="rect" id="node71" href="$_stub_g_p_i_port_8h.html" title="StubGPIPort.h" alt="" coords="912,179,1019,208"/>
+<area shape="rect" id="node75" href="$_stub_g_p_o_port_8h.html" title="StubGPOPort.h" alt="" coords="1043,179,1155,208"/>
+<area shape="rect" id="node79" href="$_stub_app_8h.html" title="StubApp.h" alt="" coords="339,256,421,285"/>
+<area shape="rect" id="node15" href="$_c_connection_fn_c_mgr_8h.html" title="CConnectionFnCMgr.h" alt="" coords="1151,256,1305,285"/>
+<area shape="rect" id="node44" href="$_e_l_f_i_n___prog_opts_8h.html" title="ELFIN_ProgOpts.h" alt="" coords="569,343,703,372"/>
+<area shape="rect" id="node50" href="$_r_o_admin_8h.html" title="ROAdmin.h" alt="" coords="884,256,975,285"/>
+<area shape="rect" id="node19" href="$_c_connection_fn_c_8h.html" title="CConnectionFnC.h" alt="" coords="1161,343,1295,372"/>
+<area shape="rect" id="node35" href="$_e_l_f_i_n___defs_8h_source.html" title="ELFIN_Defs.h" alt="" coords="248,507,355,536"/>
+<area shape="rect" id="node39" href="$_reader_capabilities_8h.html" title="Definitions for reader device capabilities. " alt="" coords="1001,507,1236,536"/>
+<area shape="rect" id="node41" href="$_l_l_r_p_reader___configurations_8h.html" title="LLRPReader_Configurations.h" alt="" coords="1260,507,1457,536"/>
+<area shape="rect" id="node55" href="$_g_p_i_event_listener_8h.html" title="GPIEventListener.h" alt="" coords="777,343,913,372"/>
+</map>

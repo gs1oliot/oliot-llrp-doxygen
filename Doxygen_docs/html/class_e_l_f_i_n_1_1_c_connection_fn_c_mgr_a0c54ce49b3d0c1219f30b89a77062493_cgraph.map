@@ -1,0 +1,3 @@
+<map id="ELFIN::CConnectionFnCMgr::startKeepaliveThread" name="ELFIN::CConnectionFnCMgr::startKeepaliveThread">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_c_connection_fn_c_mgr.html#a0f4f281ce4e577eb32c8df5052106fa3" title="This method is used to make thread for keepalive. Send KEEPALIVE message and check the KEEPALIVE_ACK ..." alt="" coords="247,5,436,51"/>
+</map>

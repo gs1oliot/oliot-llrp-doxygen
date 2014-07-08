@@ -1,0 +1,452 @@
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr}{\section{E\-L\-F\-I\-N\-:\-:C\-Connection\-Fn\-C\-Mgr Class Reference}
+\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr}\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+}
+
+
+Inherits C\-Connection class. It has additional methods for Reader role.  
+
+
+
+
+{\ttfamily \#include $<$C\-Connection\-Fn\-C\-Mgr.\-h$>$}
+
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:C\-Connection\-Fn\-C\-Mgr\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59be0f0430708f38db8876fad91ed523}{C\-Connection\-Fn\-C\-Mgr} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr}{C\-Connection\-Fn\-C\-Mgr} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a1237e5c2eac852fd12bc3547b11bcd99}{$\sim$\-C\-Connection\-Fn\-C\-Mgr} (void)
+\begin{DoxyCompactList}\small\item\em Destructor of C\-Connection\-Fnc\-Mgr class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ad1f332c28661f74ea58f7dfa4131fdad}{close\-Connection\-To\-Fn\-C} (int \-\_\-\-\_\-is\-Reader\-Initiated)
+\begin{DoxyCompactList}\small\item\em Close connection to the Fn\-C server. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af7ee83a8a9546bae5c1f83c4f282d56a}{send\-Connection\-Attempt\-Event} ()
+\begin{DoxyCompactList}\small\item\em Send Connection\-Attempt\-Event notification to the Fn\-C server. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0b5e1d5ffe5b49aef3b52254d443ffef}{send\-Connection\-Close\-Event} ()
+\begin{DoxyCompactList}\small\item\em Send Connection\-Close\-Event notification to the Fn\-C server. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0c54ce49b3d0c1219f30b89a77062493}{start\-Keepalive\-Thread} (int period\-M\-S)
+\begin{DoxyCompactList}\small\item\em Create the keepalive thread. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa23c373881a560ef974cd1152ea76c43}{stop\-Keepalive\-Thread} ()
+\begin{DoxyCompactList}\small\item\em Interrupt and stop the keepalive thread. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0f4f281ce4e577eb32c8df5052106fa3}{keepalive\-\_\-run} (int period\-M\-S)
+\begin{DoxyCompactList}\small\item\em This method is used to make thread for keepalive. Send K\-E\-E\-P\-A\-L\-I\-V\-E message and check the K\-E\-E\-P\-A\-L\-I\-V\-E\-\_\-\-A\-C\-K periodically. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_afeb7e321253ac8ab298958393ecfabc5}{start\-Connection} (\hyperlink{class_e_l_f_i_n_1_1_program_options}{Program\-Options} $\ast$\-\_\-\-\_\-prog\-Opt)
+\begin{DoxyCompactList}\small\item\em Start connection to the Fn\-C server. Checks reader\-\_\-initiated option to decide whether to initiate connection or wait for connection. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::\-C\-Message $\ast$ \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a615454a57231aca62fc6f0fa73df64dd}{recv\-Message} (int n\-Max\-M\-S)
+\begin{DoxyCompactList}\small\item\em Receive the message in recv buffer. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a48b283f30ddd8c2b0c2ed55e844085f8}{send\-Message} (L\-L\-R\-P\-::\-C\-Message $\ast$p\-Message)
+\begin{DoxyCompactList}\small\item\em Queue the message to send buffer. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aea8e109f15d3f1fb041407e84fdfa934}{get\-Connect\-Error} (void)
+\begin{DoxyCompactList}\small\item\em Get currently stored error string. \end{DoxyCompactList}\item 
+const L\-L\-R\-P\-::\-C\-Error\-Details $\ast$ \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ab2e92f43c03191db481e2270d829186e}{get\-Recv\-Error} (void)
+\begin{DoxyCompactList}\small\item\em Get currenlty stored C\-Error\-Details. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0058da7de14d9c84027a46e3bde38d7e}{get\-Received\-Keepalive\-Id} ()
+\begin{DoxyCompactList}\small\item\em Returns recently received keepalive id. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a248b1ad1d6138f5ade40892f3afb5a68}{set\-Received\-Keepalive\-Id} (int \-\_\-\-\_\-received\-Keepalive\-I\-D)
+\begin{DoxyCompactList}\small\item\em Set the \-\_\-received\-Keepalive\-I\-D id with given id. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa27f8bb83349b52dffe670824cfa0e53}{is\-Connected} ()
+\begin{DoxyCompactList}\small\item\em Check whether the L\-L\-R\-P Wapper is connected to Fn\-C server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a61fa802e7be0de0e84bb6a802abf1ab8}{boost\-::thread $\ast$ {\bfseries \-\_\-keepalive\-Thread}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a61fa802e7be0de0e84bb6a802abf1ab8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59b5a84c9df6d5e706ada67fc32ad0b5}{open\-Connection\-To\-Fn\-C} (const char $\ast$p\-Reader\-Host\-Name)
+\begin{DoxyCompactList}\small\item\em Initiate connection to the Fn\-C server (client mode) \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af86142cdff404912079d5b48883378ad}{wait\-For\-Connection} ()
+\begin{DoxyCompactList}\small\item\em Wait for connection from the Fn\-C server (server mode) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af3dc94baee99fcf490529f5f83877d3c}{boost\-::recursive\-\_\-mutex {\bfseries \-\_\-send\-Mtx}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af3dc94baee99fcf490529f5f83877d3c}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa290b78891b2051cc929966c888c020b}{\hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c}{C\-Connection\-Fn\-C} $\ast$ {\bfseries \-\_\-p\-Conn}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa290b78891b2051cc929966c888c020b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a4bcad4503a1df5c5f3aa89633ea60acf}{int {\bfseries \-\_\-port\-Num}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a4bcad4503a1df5c5f3aa89633ea60acf}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a06f5ea6a6b927aacce077f5f87a85b20}{int {\bfseries \-\_\-received\-Keepalive\-I\-D}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a06f5ea6a6b927aacce077f5f87a85b20}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ac094be115074540e3d5973f44f23ef24}{boost\-::mutex {\bfseries \-\_\-ka\-Mtx}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ac094be115074540e3d5973f44f23ef24}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a56a8b82f5207f52aa01090de57db36f4}{int {\bfseries \-\_\-ka\-Stop}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a56a8b82f5207f52aa01090de57db36f4}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a2c4071479448d0f8776ad12c702c0258}{int {\bfseries \-\_\-is\-Reader\-Initiated}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a2c4071479448d0f8776ad12c702c0258}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a63e7b158229fecafc937fb00dec062a6}{L\-L\-R\-P\-::\-C\-Type\-Registry $\ast$ {\bfseries \-\_\-p\-Type\-Registry}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a63e7b158229fecafc937fb00dec062a6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a222ec6d5e7584850027b0847af257db3}{static int {\bfseries \-\_\-is\-Connected} = 0}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a222ec6d5e7584850027b0847af257db3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherits C\-Connection class. It has additional methods for Reader role. 
+
+Definition at line 27 of file C\-Connection\-Fn\-C\-Mgr.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59be0f0430708f38db8876fad91ed523}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!C\-Connection\-Fn\-C\-Mgr@{C\-Connection\-Fn\-C\-Mgr}}
+\index{C\-Connection\-Fn\-C\-Mgr@{C\-Connection\-Fn\-C\-Mgr}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{C\-Connection\-Fn\-C\-Mgr}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::\-C\-Connection\-Fn\-C\-Mgr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59be0f0430708f38db8876fad91ed523}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr}{C\-Connection\-Fn\-C\-Mgr} class. 
+
+
+
+Definition at line 14 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a1237e5c2eac852fd12bc3547b11bcd99}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!$\sim$\-C\-Connection\-Fn\-C\-Mgr@{$\sim$\-C\-Connection\-Fn\-C\-Mgr}}
+\index{$\sim$\-C\-Connection\-Fn\-C\-Mgr@{$\sim$\-C\-Connection\-Fn\-C\-Mgr}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{$\sim$\-C\-Connection\-Fn\-C\-Mgr}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::$\sim$\-C\-Connection\-Fn\-C\-Mgr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a1237e5c2eac852fd12bc3547b11bcd99}
+
+
+Destructor of C\-Connection\-Fnc\-Mgr class. 
+
+
+
+Definition at line 25 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ad1f332c28661f74ea58f7dfa4131fdad}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!close\-Connection\-To\-Fn\-C@{close\-Connection\-To\-Fn\-C}}
+\index{close\-Connection\-To\-Fn\-C@{close\-Connection\-To\-Fn\-C}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{close\-Connection\-To\-Fn\-C}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::close\-Connection\-To\-Fn\-C (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-is\-Reader\-Initiated}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ad1f332c28661f74ea58f7dfa4131fdad}
+
+
+Close connection to the Fn\-C server. 
+
+
+
+Definition at line 305 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aea8e109f15d3f1fb041407e84fdfa934}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!get\-Connect\-Error@{get\-Connect\-Error}}
+\index{get\-Connect\-Error@{get\-Connect\-Error}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{get\-Connect\-Error}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::get\-Connect\-Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aea8e109f15d3f1fb041407e84fdfa934}
+
+
+Get currently stored error string. 
+
+
+
+Definition at line 295 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0058da7de14d9c84027a46e3bde38d7e}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!get\-Received\-Keepalive\-Id@{get\-Received\-Keepalive\-Id}}
+\index{get\-Received\-Keepalive\-Id@{get\-Received\-Keepalive\-Id}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{get\-Received\-Keepalive\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::get\-Received\-Keepalive\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0058da7de14d9c84027a46e3bde38d7e}
+
+
+Returns recently received keepalive id. 
+
+
+
+Definition at line 299 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ab2e92f43c03191db481e2270d829186e}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!get\-Recv\-Error@{get\-Recv\-Error}}
+\index{get\-Recv\-Error@{get\-Recv\-Error}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{get\-Recv\-Error}]{\setlength{\rightskip}{0pt plus 5cm}const L\-L\-R\-P\-::\-C\-Error\-Details $\ast$ E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::get\-Recv\-Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_ab2e92f43c03191db481e2270d829186e}
+
+
+Get currenlty stored C\-Error\-Details. 
+
+
+
+Definition at line 247 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa27f8bb83349b52dffe670824cfa0e53}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa27f8bb83349b52dffe670824cfa0e53}
+
+
+Check whether the L\-L\-R\-P Wapper is connected to Fn\-C server. 
+
+
+
+Definition at line 376 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0f4f281ce4e577eb32c8df5052106fa3}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!keepalive\-\_\-run@{keepalive\-\_\-run}}
+\index{keepalive\-\_\-run@{keepalive\-\_\-run}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{keepalive\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::keepalive\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{int}]{period\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0f4f281ce4e577eb32c8df5052106fa3}
+
+
+This method is used to make thread for keepalive. Send K\-E\-E\-P\-A\-L\-I\-V\-E message and check the K\-E\-E\-P\-A\-L\-I\-V\-E\-\_\-\-A\-C\-K periodically. 
+
+
+
+Definition at line 349 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0f4f281ce4e577eb32c8df5052106fa3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59b5a84c9df6d5e706ada67fc32ad0b5}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!open\-Connection\-To\-Fn\-C@{open\-Connection\-To\-Fn\-C}}
+\index{open\-Connection\-To\-Fn\-C@{open\-Connection\-To\-Fn\-C}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{open\-Connection\-To\-Fn\-C}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::open\-Connection\-To\-Fn\-C (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Reader\-Host\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a59b5a84c9df6d5e706ada67fc32ad0b5}
+
+
+Initiate connection to the Fn\-C server (client mode) 
+
+
+
+Definition at line 251 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a615454a57231aca62fc6f0fa73df64dd}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!recv\-Message@{recv\-Message}}
+\index{recv\-Message@{recv\-Message}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{recv\-Message}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::\-C\-Message $\ast$ E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::recv\-Message (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Max\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a615454a57231aca62fc6f0fa73df64dd}
+
+
+Receive the message in recv buffer. 
+
+
+
+Definition at line 236 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af7ee83a8a9546bae5c1f83c4f282d56a}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!send\-Connection\-Attempt\-Event@{send\-Connection\-Attempt\-Event}}
+\index{send\-Connection\-Attempt\-Event@{send\-Connection\-Attempt\-Event}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{send\-Connection\-Attempt\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::send\-Connection\-Attempt\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af7ee83a8a9546bae5c1f83c4f282d56a}
+
+
+Send Connection\-Attempt\-Event notification to the Fn\-C server. 
+
+
+
+Definition at line 132 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af7ee83a8a9546bae5c1f83c4f282d56a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0b5e1d5ffe5b49aef3b52254d443ffef}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!send\-Connection\-Close\-Event@{send\-Connection\-Close\-Event}}
+\index{send\-Connection\-Close\-Event@{send\-Connection\-Close\-Event}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{send\-Connection\-Close\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::send\-Connection\-Close\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0b5e1d5ffe5b49aef3b52254d443ffef}
+
+
+Send Connection\-Close\-Event notification to the Fn\-C server. 
+
+
+
+Definition at line 185 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0b5e1d5ffe5b49aef3b52254d443ffef_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a48b283f30ddd8c2b0c2ed55e844085f8}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!send\-Message@{send\-Message}}
+\index{send\-Message@{send\-Message}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::send\-Message (
+\begin{DoxyParamCaption}
+\item[{L\-L\-R\-P\-::\-C\-Message $\ast$}]{p\-Message}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a48b283f30ddd8c2b0c2ed55e844085f8}
+
+
+Queue the message to send buffer. 
+
+
+
+Definition at line 264 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a248b1ad1d6138f5ade40892f3afb5a68}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!set\-Received\-Keepalive\-Id@{set\-Received\-Keepalive\-Id}}
+\index{set\-Received\-Keepalive\-Id@{set\-Received\-Keepalive\-Id}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{set\-Received\-Keepalive\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::set\-Received\-Keepalive\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-\-\_\-received\-Keepalive\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a248b1ad1d6138f5ade40892f3afb5a68}
+
+
+Set the \-\_\-received\-Keepalive\-I\-D id with given id. 
+
+
+
+Definition at line 321 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_afeb7e321253ac8ab298958393ecfabc5}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!start\-Connection@{start\-Connection}}
+\index{start\-Connection@{start\-Connection}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{start\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::start\-Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Program\-Options} $\ast$}]{\-\_\-\-\_\-prog\-Opt}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_afeb7e321253ac8ab298958393ecfabc5}
+
+
+Start connection to the Fn\-C server. Checks reader\-\_\-initiated option to decide whether to initiate connection or wait for connection. 
+
+
+
+Definition at line 50 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_afeb7e321253ac8ab298958393ecfabc5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0c54ce49b3d0c1219f30b89a77062493}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!start\-Keepalive\-Thread@{start\-Keepalive\-Thread}}
+\index{start\-Keepalive\-Thread@{start\-Keepalive\-Thread}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{start\-Keepalive\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::start\-Keepalive\-Thread (
+\begin{DoxyParamCaption}
+\item[{int}]{period\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0c54ce49b3d0c1219f30b89a77062493}
+
+
+Create the keepalive thread. 
+
+
+
+Definition at line 327 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_a0c54ce49b3d0c1219f30b89a77062493_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa23c373881a560ef974cd1152ea76c43}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!stop\-Keepalive\-Thread@{stop\-Keepalive\-Thread}}
+\index{stop\-Keepalive\-Thread@{stop\-Keepalive\-Thread}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{stop\-Keepalive\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::stop\-Keepalive\-Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_aa23c373881a560ef974cd1152ea76c43}
+
+
+Interrupt and stop the keepalive thread. 
+
+
+
+Definition at line 341 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af86142cdff404912079d5b48883378ad}{\index{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}!wait\-For\-Connection@{wait\-For\-Connection}}
+\index{wait\-For\-Connection@{wait\-For\-Connection}!ELFIN::CConnectionFnCMgr@{E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr}}
+\subsubsection[{wait\-For\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-C\-Connection\-Fn\-C\-Mgr\-::wait\-For\-Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_c_connection_fn_c_mgr_af86142cdff404912079d5b48883378ad}
+
+
+Wait for connection from the Fn\-C server (server mode) 
+
+
+
+Definition at line 117 of file C\-Connection\-Fn\-C\-Mgr.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_c_connection_fn_c_mgr_8h}{C\-Connection\-Fn\-C\-Mgr.\-h}\item 
+elfin\-\_\-src/\hyperlink{_c_connection_fn_c_mgr_8cpp}{C\-Connection\-Fn\-C\-Mgr.\-cpp}\end{DoxyCompactItemize}

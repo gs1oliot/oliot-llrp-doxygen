@@ -1,0 +1,279 @@
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{\section{E\-L\-F\-I\-N\-:\-:L\-L\-R\-P\-Reader\-Config Class Reference}
+\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+}
+
+
+Stores default configurations which can be defined with S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message.\par
+Also, it parses the contents of default config file ({\itshape config.\-llrp}) and stores it as a default configuration.  
+
+
+
+
+{\ttfamily \#include $<$L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4f55e8679938e946b457a600c7ea5016}{L\-L\-R\-P\-Reader\-Config} (const char $\ast$\-\_\-\-\_\-p\-Config\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} class. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a30a347d49f018e52fa872b6a69e8931d}{$\sim$\-L\-L\-R\-P\-Reader\-Config} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a91159abaa6a11a46528d199b1c7cda70}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize the object by setting default specs, loading default config file, and build config map. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4463324245c5a0158e1ab0010e14f1b7}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear all default specs. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1cf22a9b6a589946549f9f8ea0722609}{reset\-To\-Factory\-Default} ()
+\begin{DoxyCompactList}\small\item\em Clear and re-\/initialize this object. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a0095d39a3ef2511c0571c429c02c3ce3}{invalidate\-State\-Value} ()
+\begin{DoxyCompactList}\small\item\em Change L\-L\-R\-P\-Configuration\-State\-Value randomly. If this value is changed, we can assume that some configuration values have changed. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_aca8c99f935626d94e87f7fe7f9257def}{load\-Default\-Config\-File} ()
+\begin{DoxyCompactList}\small\item\em Load, parse, and store the default config file ({\itshape config.\-llrp}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a8eedf26161181c2ca8df8da811f75fb0}{char $\ast$ {\bfseries \-\_\-p\-Config\-File\-Name}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a8eedf26161181c2ca8df8da811f75fb0}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a0a973a98e996c0f938a73e10c092b8f6}{L\-L\-R\-P\-::\-C\-R\-O\-Report\-Spec $\ast$ {\bfseries \-\_\-p\-Default\-R\-O\-Report\-Spec}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a0a973a98e996c0f938a73e10c092b8f6}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a365badc2a55000ea5e5418f1a0caa2e7}{L\-L\-R\-P\-::\-C\-Access\-Report\-Spec $\ast$ {\bfseries \-\_\-p\-Default\-Access\-Report\-Spec}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a365badc2a55000ea5e5418f1a0caa2e7}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a6ddbccd547e9ac044c71e2e5748cda29}{L\-L\-R\-P\-::\-C\-Keepalive\-Spec $\ast$ {\bfseries \-\_\-p\-Default\-Keepalive\-Spec}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a6ddbccd547e9ac044c71e2e5748cda29}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_af47f84dedf9c34699e002cf4923cfebe}{L\-L\-R\-P\-::\-C\-Events\-And\-Reports $\ast$ {\bfseries \-\_\-p\-Default\-Events\-And\-Reports}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_af47f84dedf9c34699e002cf4923cfebe}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a3ae04ccf93bf633df9a6f9000d00c7aa}{L\-L\-R\-P\-::\-C\-Reader\-Event\-Notification\-Spec $\ast$ {\bfseries \-\_\-p\-Default\-Reader\-Event\-Notification\-Spec}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a3ae04ccf93bf633df9a6f9000d00c7aa}
+
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a5fee5f1463166944eb78a26d2b39858d}{\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value}
+\begin{DoxyCompactList}\small\item\em This value is changed randomly, when some configuration value is changed. If this value is changed, we can assume that some configuration values have changed. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_ac956371ce5b8c395bdbf5debf4fe9968}{\-\_\-p\-Event\-Noti\-Array} \mbox{[}E\-V\-E\-N\-T\-\_\-\-N\-O\-T\-I\-\_\-\-K\-I\-N\-D\-\_\-\-C\-O\-U\-N\-T\mbox{]}
+\begin{DoxyCompactList}\small\item\em Reader\-Event\-Notification configuration map. \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} refers this map to determine which event should be sent. \end{DoxyCompactList}\item 
+L\-L\-R\-P\-::\-C\-Message $\ast$ \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1ea5b8b04a69ffaf325a7c989c1cf3af}{\-\_\-p\-Default\-Config}
+\begin{DoxyCompactList}\small\item\em Default S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message object, which is loaded from default config file ({\itshape config.\-llrp}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a694134666941b94248c9a57082252fc1}{set\-Default\-Specs} ()
+\begin{DoxyCompactList}\small\item\em Set the default specs. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a8ecdc94d9c07bf1ede23093618b0f836}{build\-Config\-Maps} ()
+\begin{DoxyCompactList}\small\item\em Build Reader\-Event\-Notification configuration map for \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores default configurations which can be defined with S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message.\par
+Also, it parses the contents of default config file ({\itshape config.\-llrp}) and stores it as a default configuration. 
+
+Definition at line 15 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4f55e8679938e946b457a600c7ea5016}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!L\-L\-R\-P\-Reader\-Config@{L\-L\-R\-P\-Reader\-Config}}
+\index{L\-L\-R\-P\-Reader\-Config@{L\-L\-R\-P\-Reader\-Config}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{L\-L\-R\-P\-Reader\-Config}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::\-L\-L\-R\-P\-Reader\-Config (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\-\_\-\-\_\-p\-Config\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4f55e8679938e946b457a600c7ea5016}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} class. 
+
+
+
+Definition at line 12 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4f55e8679938e946b457a600c7ea5016_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a30a347d49f018e52fa872b6a69e8931d}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!$\sim$\-L\-L\-R\-P\-Reader\-Config@{$\sim$\-L\-L\-R\-P\-Reader\-Config}}
+\index{$\sim$\-L\-L\-R\-P\-Reader\-Config@{$\sim$\-L\-L\-R\-P\-Reader\-Config}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{$\sim$\-L\-L\-R\-P\-Reader\-Config}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::$\sim$\-L\-L\-R\-P\-Reader\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a30a347d49f018e52fa872b6a69e8931d}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_l_l_r_p_reader_config}{L\-L\-R\-P\-Reader\-Config} class. 
+
+
+
+Definition at line 59 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a8ecdc94d9c07bf1ede23093618b0f836}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!build\-Config\-Maps@{build\-Config\-Maps}}
+\index{build\-Config\-Maps@{build\-Config\-Maps}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{build\-Config\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::build\-Config\-Maps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a8ecdc94d9c07bf1ede23093618b0f836}
+
+
+Build Reader\-Event\-Notification configuration map for \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier}. 
+
+
+
+Definition at line 222 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4463324245c5a0158e1ab0010e14f1b7}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!clear@{clear}}
+\index{clear@{clear}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a4463324245c5a0158e1ab0010e14f1b7}
+
+
+Clear all default specs. 
+
+
+
+Definition at line 22 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a91159abaa6a11a46528d199b1c7cda70}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!init@{init}}
+\index{init@{init}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a91159abaa6a11a46528d199b1c7cda70}
+
+
+Initialize the object by setting default specs, loading default config file, and build config map. 
+
+
+
+Definition at line 64 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a91159abaa6a11a46528d199b1c7cda70_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a0095d39a3ef2511c0571c429c02c3ce3}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!invalidate\-State\-Value@{invalidate\-State\-Value}}
+\index{invalidate\-State\-Value@{invalidate\-State\-Value}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{invalidate\-State\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::invalidate\-State\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a0095d39a3ef2511c0571c429c02c3ce3}
+
+
+Change L\-L\-R\-P\-Configuration\-State\-Value randomly. If this value is changed, we can assume that some configuration values have changed. 
+
+
+
+Definition at line 238 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_aca8c99f935626d94e87f7fe7f9257def}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!load\-Default\-Config\-File@{load\-Default\-Config\-File}}
+\index{load\-Default\-Config\-File@{load\-Default\-Config\-File}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{load\-Default\-Config\-File}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::load\-Default\-Config\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_aca8c99f935626d94e87f7fe7f9257def}
+
+
+Load, parse, and store the default config file ({\itshape config.\-llrp}) 
+
+
+
+Definition at line 75 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1cf22a9b6a589946549f9f8ea0722609}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!reset\-To\-Factory\-Default@{reset\-To\-Factory\-Default}}
+\index{reset\-To\-Factory\-Default@{reset\-To\-Factory\-Default}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{reset\-To\-Factory\-Default}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::reset\-To\-Factory\-Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1cf22a9b6a589946549f9f8ea0722609}
+
+
+Clear and re-\/initialize this object. 
+
+
+
+Definition at line 138 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a694134666941b94248c9a57082252fc1}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!set\-Default\-Specs@{set\-Default\-Specs}}
+\index{set\-Default\-Specs@{set\-Default\-Specs}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{set\-Default\-Specs}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::set\-Default\-Specs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a694134666941b94248c9a57082252fc1}
+
+
+Set the default specs. 
+
+
+
+Definition at line 144 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1ea5b8b04a69ffaf325a7c989c1cf3af}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!\-\_\-p\-Default\-Config@{\-\_\-p\-Default\-Config}}
+\index{\-\_\-p\-Default\-Config@{\-\_\-p\-Default\-Config}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{\-\_\-p\-Default\-Config}]{\setlength{\rightskip}{0pt plus 5cm}L\-L\-R\-P\-::\-C\-Message$\ast$ E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::\-\_\-p\-Default\-Config}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a1ea5b8b04a69ffaf325a7c989c1cf3af}
+
+
+Default S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message object, which is loaded from default config file ({\itshape config.\-llrp}) 
+
+
+
+Definition at line 53 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_ac956371ce5b8c395bdbf5debf4fe9968}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!\-\_\-p\-Event\-Noti\-Array@{\-\_\-p\-Event\-Noti\-Array}}
+\index{\-\_\-p\-Event\-Noti\-Array@{\-\_\-p\-Event\-Noti\-Array}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{\-\_\-p\-Event\-Noti\-Array}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::\-\_\-p\-Event\-Noti\-Array\mbox{[}E\-V\-E\-N\-T\-\_\-\-N\-O\-T\-I\-\_\-\-K\-I\-N\-D\-\_\-\-C\-O\-U\-N\-T\mbox{]}}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_ac956371ce5b8c395bdbf5debf4fe9968}
+
+
+Reader\-Event\-Notification configuration map. \hyperlink{class_e_l_f_i_n_1_1_event_notifier}{Event\-Notifier} refers this map to determine which event should be sent. 
+
+
+
+Definition at line 50 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h.
+
+\hypertarget{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a5fee5f1463166944eb78a26d2b39858d}{\index{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}!\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value@{\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value}}
+\index{\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value@{\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value}!ELFIN::LLRPReaderConfig@{E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config}}
+\subsubsection[{\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-L\-L\-R\-P\-Reader\-Config\-::\-\_\-p\-L\-L\-R\-P\-Configuration\-State\-Value}}\label{class_e_l_f_i_n_1_1_l_l_r_p_reader_config_a5fee5f1463166944eb78a26d2b39858d}
+
+
+This value is changed randomly, when some configuration value is changed. If this value is changed, we can assume that some configuration values have changed. 
+
+
+
+Definition at line 48 of file L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\hyperlink{_l_l_r_p_reader___configurations_8h}{L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-h}\item 
+elfin\-\_\-src/\hyperlink{_l_l_r_p_reader___configurations_8cpp}{L\-L\-R\-P\-Reader\-\_\-\-Configurations.\-cpp}\end{DoxyCompactItemize}

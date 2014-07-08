@@ -1,0 +1,4 @@
+<map id="ELFIN::AbstractAntennaOperation" name="ELFIN::AbstractAntennaOperation">
+<area shape="rect" id="node3" href="$class_e_l_f_i_n_1_1_a_i_operation.html" title="A single antenna inventory operation generated based on the AISpec parameter in the given ROSpec..." alt="" coords="5,83,141,112"/>
+<area shape="rect" id="node5" href="$class_e_l_f_i_n_1_1_r_f_survey_operation.html" title="A single RF Survey operation generated based on the RFSurveySpec parameter in the given ROSpec..." alt="" coords="165,83,347,112"/>
+</map>

@@ -1,0 +1,445 @@
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app}{\section{E\-L\-F\-I\-N\-:\-:Stub\-Reader\-App Class Reference}
+\label{class_e_l_f_i_n_1_1_stub_reader_app}\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+}
+
+
+Reader application which starts and controls L\-L\-R\-P Wrapper. L\-L\-R\-P Wrapper calls callbacks of this object.\par
+Developer of L\-L\-R\-P Wrapper should inherit this class to make reader application.  
+
+
+
+
+{\ttfamily \#include $<$Stub\-App.\-h$>$}
+
+
+
+Inheritance diagram for E\-L\-F\-I\-N\-:\-:Stub\-Reader\-App\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_e_l_f_i_n_1_1_stub_reader_app__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for E\-L\-F\-I\-N\-:\-:Stub\-Reader\-App\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_app__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a0c5b8fe45e73ff5071248696d87fde0f}{Stub\-Reader\-App} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. This is usually called by inherited reader applications. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a0fa68ca9f7fd64491b0bbf44749833fa}{Stub\-Reader\-App} (\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$\-\_\-\-\_\-physical\-Reader)
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. This is usually called by \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a839056516b5ea5e800ea88448fbf0643}{$\sim$\-Stub\-Reader\-App} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a74872ae8bc6a4c826d8edc1882b7cc67}{reg\-G\-P\-I\-Callback} (boost\-::function$<$ int(\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$, uint16\-\_\-t, int)$>$ callback)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} registers \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd}{Stub\-Reader\-::invoke\-G\-P\-I\-Event\-Callback} to \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} with this method. This callback is called in \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a4ad90b511e2fa84cc69319ec302a6d4a}{invoke\-G\-P\-I\-Event()}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_afb38719e5bd42ea03c4cd7d396b24f33}{initializaion\-Finished\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server and ready to work. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a735d892b7f4bc81d21076bea419d23cd}{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback} (int p\-R\-O\-Spec\-I\-D, Tag\-Vector $\ast$p\-Reported\-Tag\-Vector)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the R\-O\-Spec with G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a543e972efc7806cf15338aa21a4c148a}{Inventory\-Operation\-Finished\-Callback} (int p\-R\-O\-Spec\-I\-D, Tag\-Vector $\ast$p\-Reported\-Tag\-Vector)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the R\-O\-Spec with non-\/\-G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_ac904a86d2a2e9b2f53d5c241b67426c7}{notify\-Connection\-Result\-Callback} (int conn\-Result)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_abb3f9fb61d1cadf87438e60271ad4bbd}{ready\-To\-Connect\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the L\-L\-R\-P Wrapper is initialized and ready to start connection with F\&C server. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a772915f831ab5504f76f03cdd9eac65c}{connection\-Closed\-Callback} ()
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the connection to F\&C server is closed and L\-L\-R\-P Wrapper is re-\/initialized. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a4cf4f7c31e213da02eab0905c78dd0b1}{G\-P\-O\-Event\-Callback} (int port\-Num, int state)
+\begin{DoxyCompactList}\small\item\em This callback is invoked when the S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message ordered to change G\-P\-O port value. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a9f95210c0b1316d3c296b1f2d974dd41}{clear\-Virtual\-Tag\-Of\-Reader} ()
+\begin{DoxyCompactList}\small\item\em Remove all virtual tags of the L\-L\-R\-P Wrapper. \end{DoxyCompactList}\item 
+\hyperlink{class_e_l_f_i_n_1_1_stub_tag}{E\-L\-F\-I\-N\-::\-Stub\-Tag} $\ast$ \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a54b75fc44c267ad96e8e4f0a20681065}{add\-Virtual\-Tag\-To\-Reader} (int p\-Antenna\-I\-D, const char $\ast$E\-P\-C\-I\-D)
+\begin{DoxyCompactList}\small\item\em Add a virtual tag to the L\-L\-R\-P Wrapper with given parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_ae9b048735f277c916267213368f47de0}{remove\-Virtual\-Tag\-From\-Reader} (const char $\ast$E\-P\-C\-I\-D)
+\begin{DoxyCompactList}\small\item\em Remove a virtual tag of the L\-L\-R\-P Wrapper which has same E\-P\-C\-I\-D with the given parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a6aa69e9301dd6e009a6c2beef51b5fae}{add\-Random\-Virtual\-Tags} (int num\-Of\-Tags\-Per\-Antenna)
+\begin{DoxyCompactList}\small\item\em Add virtual tags with randomly generated E\-P\-C\-I\-D. If there is 4 antennas and parameter is 3, 12 different virtual tags are added. \end{DoxyCompactList}\item 
+int \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a4ad90b511e2fa84cc69319ec302a6d4a}{invoke\-G\-P\-I\-Event} (unsigned short int G\-P\-I\-Port\-Num, int state)
+\begin{DoxyCompactList}\small\item\em When G\-P\-I event is invoked, call this method to send it to registered callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a65b12bc97c5c428576cb9465f2e1d344}{\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} $\ast$ {\bfseries \-\_\-p\-Reader}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a65b12bc97c5c428576cb9465f2e1d344}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a660d9e1214b10b13ae02bcd7189d4008}{boost\-::function$<$ int(\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} \\*
+$\ast$, uint16\-\_\-t, int)$>$ {\bfseries \-\_\-\-G\-P\-I\-Call\-Back}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a660d9e1214b10b13ae02bcd7189d4008}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_ad32bf4c300cda075cced5e3649f26b5b}{int {\bfseries \-\_\-is\-Emulator}}\label{class_e_l_f_i_n_1_1_stub_reader_app_ad32bf4c300cda075cced5e3649f26b5b}
+
+\item 
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a56cb9681a9849663216e05412aa7617f}{int {\bfseries \-\_\-is\-Connected\-To\-Reader}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a56cb9681a9849663216e05412aa7617f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reader application which starts and controls L\-L\-R\-P Wrapper. L\-L\-R\-P Wrapper calls callbacks of this object.\par
+Developer of L\-L\-R\-P Wrapper should inherit this class to make reader application. 
+
+Definition at line 26 of file Stub\-App.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a0c5b8fe45e73ff5071248696d87fde0f}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!Stub\-Reader\-App@{Stub\-Reader\-App}}
+\index{Stub\-Reader\-App@{Stub\-Reader\-App}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{Stub\-Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::\-Stub\-Reader\-App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a0c5b8fe45e73ff5071248696d87fde0f}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. This is usually called by inherited reader applications. 
+
+
+
+Definition at line 12 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a0fa68ca9f7fd64491b0bbf44749833fa}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!Stub\-Reader\-App@{Stub\-Reader\-App}}
+\index{Stub\-Reader\-App@{Stub\-Reader\-App}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{Stub\-Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::\-Stub\-Reader\-App (
+\begin{DoxyParamCaption}
+\item[{{\bf Stub\-Reader} $\ast$}]{\-\_\-\-\_\-physical\-Reader}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a0fa68ca9f7fd64491b0bbf44749833fa}
+
+
+Constructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. This is usually called by \hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader}. 
+
+
+
+Definition at line 17 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a839056516b5ea5e800ea88448fbf0643}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!$\sim$\-Stub\-Reader\-App@{$\sim$\-Stub\-Reader\-App}}
+\index{$\sim$\-Stub\-Reader\-App@{$\sim$\-Stub\-Reader\-App}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{$\sim$\-Stub\-Reader\-App}]{\setlength{\rightskip}{0pt plus 5cm}E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::$\sim$\-Stub\-Reader\-App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a839056516b5ea5e800ea88448fbf0643}
+
+
+Destructor of \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} class. 
+
+
+
+Definition at line 21 of file Stub\-App.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a6aa69e9301dd6e009a6c2beef51b5fae}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!add\-Random\-Virtual\-Tags@{add\-Random\-Virtual\-Tags}}
+\index{add\-Random\-Virtual\-Tags@{add\-Random\-Virtual\-Tags}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{add\-Random\-Virtual\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::add\-Random\-Virtual\-Tags (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Of\-Tags\-Per\-Antenna}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a6aa69e9301dd6e009a6c2beef51b5fae}
+
+
+Add virtual tags with randomly generated E\-P\-C\-I\-D. If there is 4 antennas and parameter is 3, 12 different virtual tags are added. 
+
+
+
+Definition at line 107 of file Stub\-App.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_app_a6aa69e9301dd6e009a6c2beef51b5fae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_app_a6aa69e9301dd6e009a6c2beef51b5fae_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a54b75fc44c267ad96e8e4f0a20681065}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!add\-Virtual\-Tag\-To\-Reader@{add\-Virtual\-Tag\-To\-Reader}}
+\index{add\-Virtual\-Tag\-To\-Reader@{add\-Virtual\-Tag\-To\-Reader}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{add\-Virtual\-Tag\-To\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-L\-F\-I\-N\-::\-Stub\-Tag} $\ast$ E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::add\-Virtual\-Tag\-To\-Reader (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-Antenna\-I\-D, }
+\item[{const char $\ast$}]{E\-P\-C\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a54b75fc44c267ad96e8e4f0a20681065}
+
+
+Add a virtual tag to the L\-L\-R\-P Wrapper with given parameter. 
+
+\begin{DoxyWarning}{Warning}
+E\-P\-C\-I\-D should be a char array of 24 chars and one last null char.\par
+Example\-: this-\/$>$add\-Virtual\-Tag\-To\-Reader(1, \char`\"{}35123456789\-A\-B\-C\-D\-E\-F0123456\char`\"{}); 
+\end{DoxyWarning}
+
+
+Definition at line 70 of file Stub\-App.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_app_a54b75fc44c267ad96e8e4f0a20681065_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a9f95210c0b1316d3c296b1f2d974dd41}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!clear\-Virtual\-Tag\-Of\-Reader@{clear\-Virtual\-Tag\-Of\-Reader}}
+\index{clear\-Virtual\-Tag\-Of\-Reader@{clear\-Virtual\-Tag\-Of\-Reader}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{clear\-Virtual\-Tag\-Of\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::clear\-Virtual\-Tag\-Of\-Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a9f95210c0b1316d3c296b1f2d974dd41}
+
+
+Remove all virtual tags of the L\-L\-R\-P Wrapper. 
+
+
+
+Definition at line 129 of file Stub\-App.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_e_l_f_i_n_1_1_stub_reader_app_a9f95210c0b1316d3c296b1f2d974dd41_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a772915f831ab5504f76f03cdd9eac65c}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!connection\-Closed\-Callback@{connection\-Closed\-Callback}}
+\index{connection\-Closed\-Callback@{connection\-Closed\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{connection\-Closed\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::connection\-Closed\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a772915f831ab5504f76f03cdd9eac65c}
+
+
+This callback is invoked when the connection to F\&C server is closed and L\-L\-R\-P Wrapper is re-\/initialized. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_ac6971b9bead2c6f631fbac1c654faa1c}{Reader\-App}.
+
+
+
+Definition at line 62 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a735d892b7f4bc81d21076bea419d23cd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!G\-P\-I\-Triggered\-Inventory\-Finished\-Callback@{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}}
+\index{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback@{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{G\-P\-I\-Triggered\-Inventory\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::\-G\-P\-I\-Triggered\-Inventory\-Finished\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-R\-O\-Spec\-I\-D, }
+\item[{Tag\-Vector $\ast$}]{p\-Reported\-Tag\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a735d892b7f4bc81d21076bea419d23cd}
+
+
+This callback is invoked when the R\-O\-Spec with G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_af303ef50ad88ff71262cc37963720715}{Reader\-App}.
+
+
+
+Definition at line 36 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a4cf4f7c31e213da02eab0905c78dd0b1}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!G\-P\-O\-Event\-Callback@{G\-P\-O\-Event\-Callback}}
+\index{G\-P\-O\-Event\-Callback@{G\-P\-O\-Event\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{G\-P\-O\-Event\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::\-G\-P\-O\-Event\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{port\-Num, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a4cf4f7c31e213da02eab0905c78dd0b1}
+
+
+This callback is invoked when the S\-E\-T\-\_\-\-R\-E\-A\-D\-E\-R\-\_\-\-C\-O\-N\-F\-I\-G message ordered to change G\-P\-O port value. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_a8ec4922b19ffc8db003380f7ee3a5fb5}{Reader\-App}.
+
+
+
+Definition at line 55 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_afb38719e5bd42ea03c4cd7d396b24f33}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!initializaion\-Finished\-Callback@{initializaion\-Finished\-Callback}}
+\index{initializaion\-Finished\-Callback@{initializaion\-Finished\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{initializaion\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::initializaion\-Finished\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_afb38719e5bd42ea03c4cd7d396b24f33}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server and ready to work. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_a9188fcc8bb91a42d0568d9f4fc72c3d3}{Reader\-App}.
+
+
+
+Definition at line 32 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a543e972efc7806cf15338aa21a4c148a}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!Inventory\-Operation\-Finished\-Callback@{Inventory\-Operation\-Finished\-Callback}}
+\index{Inventory\-Operation\-Finished\-Callback@{Inventory\-Operation\-Finished\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{Inventory\-Operation\-Finished\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::\-Inventory\-Operation\-Finished\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-R\-O\-Spec\-I\-D, }
+\item[{Tag\-Vector $\ast$}]{p\-Reported\-Tag\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a543e972efc7806cf15338aa21a4c148a}
+
+
+This callback is invoked when the R\-O\-Spec with non-\/\-G\-P\-I start trigger finished its operation and sent R\-O\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-E\-P\-O\-R\-T. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_ae90a98ed653ffa829a7dd3ddff98244b}{Reader\-App}.
+
+
+
+Definition at line 39 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a4ad90b511e2fa84cc69319ec302a6d4a}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!invoke\-G\-P\-I\-Event@{invoke\-G\-P\-I\-Event}}
+\index{invoke\-G\-P\-I\-Event@{invoke\-G\-P\-I\-Event}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{invoke\-G\-P\-I\-Event}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::invoke\-G\-P\-I\-Event (
+\begin{DoxyParamCaption}
+\item[{unsigned short int}]{G\-P\-I\-Port\-Num, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a4ad90b511e2fa84cc69319ec302a6d4a}
+
+
+When G\-P\-I event is invoked, call this method to send it to registered callback. 
+
+
+
+Definition at line 46 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_ac904a86d2a2e9b2f53d5c241b67426c7}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!notify\-Connection\-Result\-Callback@{notify\-Connection\-Result\-Callback}}
+\index{notify\-Connection\-Result\-Callback@{notify\-Connection\-Result\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{notify\-Connection\-Result\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::notify\-Connection\-Result\-Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{conn\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_ac904a86d2a2e9b2f53d5c241b67426c7}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is successfully connected to F\&C server. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_a8a2cc18b3a9e771032e763ac170957a2}{Reader\-App}.
+
+
+
+Definition at line 42 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_abb3f9fb61d1cadf87438e60271ad4bbd}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!ready\-To\-Connect\-Callback@{ready\-To\-Connect\-Callback}}
+\index{ready\-To\-Connect\-Callback@{ready\-To\-Connect\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{ready\-To\-Connect\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::ready\-To\-Connect\-Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_e_l_f_i_n_1_1_stub_reader_app_abb3f9fb61d1cadf87438e60271ad4bbd}
+
+
+This callback is invoked when the L\-L\-R\-P Wrapper is initialized and ready to start connection with F\&C server. 
+
+
+
+Reimplemented in \hyperlink{class_reader_app_a05825232b6db23daff3ffc5e59be2043}{Reader\-App}.
+
+
+
+Definition at line 58 of file Stub\-App.\-cpp.
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_a74872ae8bc6a4c826d8edc1882b7cc67}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!reg\-G\-P\-I\-Callback@{reg\-G\-P\-I\-Callback}}
+\index{reg\-G\-P\-I\-Callback@{reg\-G\-P\-I\-Callback}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{reg\-G\-P\-I\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}int E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::reg\-G\-P\-I\-Callback (
+\begin{DoxyParamCaption}
+\item[{boost\-::function$<$ int({\bf Stub\-Reader} $\ast$, uint16\-\_\-t, int)$>$}]{callback}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_a74872ae8bc6a4c826d8edc1882b7cc67}
+
+
+\hyperlink{class_e_l_f_i_n_1_1_stub_reader}{Stub\-Reader} registers \hyperlink{class_e_l_f_i_n_1_1_stub_reader_a2007cb9835b37c68409bde94ca1b27cd}{Stub\-Reader\-::invoke\-G\-P\-I\-Event\-Callback} to \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app}{Stub\-Reader\-App} with this method. This callback is called in \hyperlink{class_e_l_f_i_n_1_1_stub_reader_app_a4ad90b511e2fa84cc69319ec302a6d4a}{invoke\-G\-P\-I\-Event()}. 
+
+
+
+Definition at line 26 of file Stub\-App.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_e_l_f_i_n_1_1_stub_reader_app_a74872ae8bc6a4c826d8edc1882b7cc67_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_e_l_f_i_n_1_1_stub_reader_app_ae9b048735f277c916267213368f47de0}{\index{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}!remove\-Virtual\-Tag\-From\-Reader@{remove\-Virtual\-Tag\-From\-Reader}}
+\index{remove\-Virtual\-Tag\-From\-Reader@{remove\-Virtual\-Tag\-From\-Reader}!ELFIN::StubReaderApp@{E\-L\-F\-I\-N\-::\-Stub\-Reader\-App}}
+\subsubsection[{remove\-Virtual\-Tag\-From\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}void E\-L\-F\-I\-N\-::\-Stub\-Reader\-App\-::remove\-Virtual\-Tag\-From\-Reader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{E\-P\-C\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_e_l_f_i_n_1_1_stub_reader_app_ae9b048735f277c916267213368f47de0}
+
+
+Remove a virtual tag of the L\-L\-R\-P Wrapper which has same E\-P\-C\-I\-D with the given parameter. 
+
+\begin{DoxyWarning}{Warning}
+E\-P\-C\-I\-D should be a char array of 24 chars and one last null char.\par
+Example\-: this-\/$>$add\-Virtual\-Tag\-To\-Reader(1, \char`\"{}35123456789\-A\-B\-C\-D\-E\-F0123456\char`\"{}); 
+\end{DoxyWarning}
+
+
+Definition at line 86 of file Stub\-App.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_app_8h}{Stub\-App.\-h}\item 
+elfin\-\_\-src/\-Stubs/\hyperlink{_stub_app_8cpp}{Stub\-App.\-cpp}\end{DoxyCompactItemize}
